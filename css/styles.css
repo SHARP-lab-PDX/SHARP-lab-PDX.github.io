@@ -1,0 +1,334 @@
+html {
+    scroll-padding-top: 5rem;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    /* font-size: 1.2rem !important; */
+    /* background-image: linear-gradient(to bottom right, #02282b, #08032b); */
+    background-color: rgb(10, 19, 39);
+    background-repeat: none;
+}
+
+nav {
+    font-size: 1.1rem;
+    font-family: 'Sintony', sans-serif;
+}
+
+section {
+    padding-top: 50px;
+    color: white;
+
+}
+
+section:last-of-type {
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.blank {
+    min-height: 20rem;
+    border: 1px solid white;
+}
+
+
+
+
+/* Fonts */
+
+.fjalla {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.sintony {
+    font-family: 'Sintony', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sourcesans {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+/* Font styles */
+
+.bold {
+    font-weight: 600;
+}
+
+.extrabold {
+    font-weight: 700;
+}
+
+
+/* Color */
+.logo-color {
+    color: rgb(149, 196, 196);
+}
+
+
+
+/* Masks */
+
+.light-mask {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.white-mask-25 {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dark-mask {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))
+}
+
+
+
+
+/* Nav */
+
+.navbar-custom {
+    background-color: rgba(14, 19, 28, 1);
+}
+
+.navbar-nav .nav-item {
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.nav-link:hover,
+.navbar-brand,
+.dropdown-item:hover,
+.accordion-button:hover {
+    color: rgb(149, 196, 196) !important;
+}
+
+/* a:visited {
+    color: white !important;
+}
+
+ul.nav li a:hover,
+ul.nav li a:active {
+    color: rgb(149, 196, 196) !important;
+}
+
+ul.nav li.active a {
+    color: white !important;
+} */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.dropdown-menu {
+    background-color: rgba(14, 19, 28, 1);
+    text-align: end;
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(14, 19, 28, 1);
+}
+
+/* Accordion */
+
+footer .accordion-button,
+.accordion-body {
+    background-color: rgba(14, 19, 28, 1);
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.accordion-item {
+    background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: rgba(14, 19, 28, 1);
+}
+
+/* Change accordion arrow button to white */
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    margin-left: 1rem;
+}
+
+/* Remove border from accordion when clicked*/
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+
+
+/* Herobox on homepage */
+
+.hero-container {
+    flex-direction: column;
+    height: 85vh;
+}
+
+.bgimage {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/blue-green-paper-waves-bg.jpeg');
+    /* background: url('../images/blue-green-paper-waves-bg.jpeg'); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home-features {
+    margin-top: 40px;
+}
+
+
+
+
+/* Other page jumbotrons */
+
+.jumbotron {
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.jumbo-title {
+    padding-top: 15vh;
+    padding-left: 2rem;
+}
+
+.mycard {
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    width: 100%;
+    --bs-card-title-spacer-y: 0rem;
+}
+
+.card-title {
+    background-color: rgba(0, 0, 0, 0.64);
+    width: 100%;
+}
+
+.dark-filter {
+    filter: brightness(50%);
+}
+
+/* About page */
+.about-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.806), rgba(0, 0, 0, 0.178)), url(../images/optic-fibers-bg-crop.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Footer */
+
+footer {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 3rem;
+    /* text-align: center; */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .nav-link,
+.nav-item,
+.accordion-button {
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.footer-logo {
+    text-align: start;
+}
+
+
+
+
+
+
+/* Media queries  */
+
+/* Mobile */
+@media (min-width: 0px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+}
+
+/* Large phones */
+@media (min-width: 479px) {
+    .tagline {
+        font-size: 1.2rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .tagline {
+        font-size: 1.4rem;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    .hero-desc {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* Large */
+@media (min-width: 992px) {
+    /* .hero-desc {
+        font-size: 1.3rem;
+    } */
+
+    .tagline {
+        font-size: 1.6rem;
+    }
+}
