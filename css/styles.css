@@ -7,8 +7,10 @@ body {
     font-weight: 300;
     /* font-size: 1.2rem !important; */
     /* background-image: linear-gradient(to bottom right, #02282b, #08032b); */
-    background-color: rgb(10, 19, 39);
+    /* background-color: rgb(10, 19, 39); */
+    background-color: rgb(10, 34, 59);
     background-repeat: none;
+    font-size: 1.2rem;
 }
 
 nav {
@@ -18,7 +20,8 @@ nav {
 
 section {
     padding-top: 50px;
-    color: white;
+    padding-bottom: 40px;
+    color: rgb(241, 241, 241);
 
 }
 
@@ -26,10 +29,13 @@ section:last-of-type {
     padding-bottom: 40px;
 }
 
+.no-padding {
+    padding: 0px;
+}
+
 a {
     text-decoration: none;
     color: white;
-
 }
 
 .blank {
@@ -72,17 +78,40 @@ a {
 }
 
 
-/* Color */
+/* Color palette */
 .logo-color {
     color: rgb(149, 196, 196);
 }
+
+.light-theme {
+    /* background-color: rgb(169, 189, 206); */
+    background-color: rgb(153, 181, 196);
+    color: rgba(14, 19, 28, 1);
+}
+
+.lightest-green {
+    color: rgb(208, 228, 228);
+}
+
+.blueish-black {
+    color: rgb(12, 23, 35);
+}
+
+.almost-white {
+    color: rgb(241, 241, 241);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px #00000056;
+}
+
 
 
 
 /* Masks */
 
 .light-mask {
-    background-color: rgba(255, 255, 255, 0.47);
+    background-color: rgba(255, 255, 255, 0.524);
 }
 
 .white-mask-25 {
@@ -96,10 +125,15 @@ a {
 
 
 
+
+
+
 /* Nav */
 
 .navbar-custom {
-    background-color: rgba(14, 19, 28, 1);
+    /* background-color: rgba(14, 19, 28, 1); */
+    background-color: rgb(6, 9, 14);
+
 }
 
 .navbar-nav .nav-item {
@@ -110,8 +144,7 @@ a {
 
 .nav-link:hover,
 .navbar-brand,
-.dropdown-item:hover,
-.accordion-button:hover {
+.dropdown-item:hover {
     color: rgb(149, 196, 196) !important;
 }
 
@@ -142,39 +175,6 @@ ul.nav li.active a {
     background-color: rgba(14, 19, 28, 1);
 }
 
-/* Accordion */
-
-footer .accordion-button,
-.accordion-body {
-    background-color: rgba(14, 19, 28, 1);
-    font-size: 1.2rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.accordion-item {
-    background-color: transparent;
-}
-
-.accordion-button:not(.collapsed) {
-    color: white;
-    background-color: rgba(14, 19, 28, 1);
-}
-
-/* Change accordion arrow button to white */
-.accordion-button:after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-    margin-left: 1rem;
-}
-
-/* Remove border from accordion when clicked*/
-:focus {
-    outline: 0 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
 
 
 
@@ -213,8 +213,9 @@ footer .accordion-button,
 
 
 .jumbo-title {
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-left: 2rem;
+    text-shadow: 2px 2px 8px #000000b1;
 }
 
 .mycard {
@@ -223,10 +224,11 @@ footer .accordion-button,
     /* background-position: center; */
     width: 100%;
     --bs-card-title-spacer-y: 0rem;
+
 }
 
 .card-title {
-    background-color: rgba(0, 0, 0, 0.64);
+    background-color: rgba(0, 0, 0, 0.74);
     width: 100%;
 }
 
@@ -234,12 +236,107 @@ footer .accordion-button,
     filter: brightness(50%);
 }
 
+
+
+
 /* About page */
+
 .about-image {
     background: linear-gradient(rgba(0, 0, 0, 0.806), rgba(0, 0, 0, 0.178)), url(../images/optic-fibers-bg-crop.jpeg);
     background-size: cover;
     background-position: center;
 }
+
+
+section img {
+    margin: auto;
+    display: block;
+}
+
+
+
+
+/* People pages */
+.people-card .card-title {
+    background-color: transparent;
+}
+
+.people-card {
+    max-width: 25rem;
+    background-color: rgb(211, 226, 239);
+}
+
+.people-card .accordion-item {
+    background-color: transparent;
+}
+
+.people-card .accordion {
+    --bs-accordion-body-padding-y: 0px;
+    --bs-accordion-body-padding-: 0px;
+}
+
+.people-card .accordion-button {
+    background-color: transparent;
+    font-size: 1.1em;
+    color: rgb(6, 9, 14);
+    margin: 0px;
+    font-weight: 300;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 43%;
+}
+
+/* Change accordion arrow button to white */
+.people-card .accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2306090E'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    margin-left: 1rem;
+}
+
+.people-card :focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.people-card .accordion-button:hover {
+    color: none;
+}
+
+.people-card .accordion-body {
+    background-color: transparent;
+}
+
+.bio-text {
+    font-size: 0.9em;
+    text-align: left;
+}
+
+
+/* Social icons styling */
+
+.social-icons {
+    font-size: 1rem;
+    color: rgb(6, 9, 14);
+}
+
+.social-icons a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fa-github:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover {
+    color: rgb(107, 162, 177);
+    cursor: pointer;
+}
+
+.fab {
+    color: rgb(6, 9, 14);
+    font-size: 2rem;
+}
+
+
+
 
 
 /* Footer */
@@ -265,6 +362,48 @@ footer .nav-link,
 .footer-logo {
     text-align: start;
 }
+
+/* Footer Accordion */
+
+footer .accordion-button,
+.accordion-body {
+    /* background-color: rgba(14, 19, 28, 1); */
+    background-color: rgb(6, 9, 14);
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer .accordion-item {
+    background-color: transparent;
+}
+
+footer .accordion-button:not(.collapsed) {
+    color: white;
+    /* background-color: rgba(14, 19, 28, 1); */
+    background-color: rgb(6, 9, 14);
+
+}
+
+footer .accordion-button:hover {
+    color: rgb(149, 196, 196) !important;
+}
+
+/* Change accordion arrow button to white */
+footer .accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    margin-left: 1rem;
+}
+
+/* Remove border from accordion when clicked*/
+footer :focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
 
 
 
@@ -309,7 +448,7 @@ footer .nav-link,
     }
 
     body {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .hero-desc {
