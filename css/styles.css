@@ -133,6 +133,8 @@ a {
 .navbar-custom {
     /* background-color: rgba(14, 19, 28, 1); */
     background-color: rgb(6, 9, 14);
+    --bs-navbar-padding-y: 0rem;
+    --bs-navbar-brand-padding-y: 0.1rem;
 
 }
 
@@ -236,6 +238,19 @@ ul.nav li.active a {
     filter: brightness(50%);
 }
 
+
+/* Media carousel */
+
+.rel-img {
+    position: relative;
+}
+
+.overlay-txt {
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    color: #fff;
+}
 
 
 
