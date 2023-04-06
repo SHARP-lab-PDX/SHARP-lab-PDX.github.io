@@ -8,9 +8,15 @@ body {
     /* font-size: 1.2rem !important; */
     /* background-image: linear-gradient(to bottom right, #02282b, #08032b); */
     /* background-color: rgb(10, 19, 39); */
-    background-color: rgb(10, 34, 59);
+    /* background-color: rgb(10, 34, 59); */
+    background-color: rgb(15, 48, 69);
     background-repeat: none;
     font-size: 1.2rem;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 nav {
@@ -31,6 +37,10 @@ section:last-of-type {
 
 .no-padding {
     padding: 0px;
+}
+
+.no-margin {
+    margin: 0px;
 }
 
 a {
@@ -85,7 +95,8 @@ a {
 
 .light-theme {
     /* background-color: rgb(169, 189, 206); */
-    background-color: rgb(153, 181, 196);
+    /* background-color: rgb(153, 181, 196); */
+    background-color: #86b3b5;
     color: rgba(14, 19, 28, 1);
 }
 
@@ -105,13 +116,37 @@ a {
     text-shadow: 2px 2px 4px #00000056;
 }
 
+.nav-accent {
+    color: #3f9696;
+}
+
+.filter-green {
+    filter: invert(90%) sepia(22%) saturate(308%) hue-rotate(121deg) brightness(84%) contrast(87%);
+}
+
+.filter-teal {
+    filter: invert(63%) sepia(16%) saturate(712%) hue-rotate(124deg) brightness(81%) contrast(85%);
+}
+
+.filter-test {
+    filter: invert(49%) sepia(16%) saturate(1004%) hue-rotate(131deg) brightness(91%) contrast(90%);
+}
+
+
+
+.carousel-text {
+    color: #fff;
+    text-align: left;
+    padding-left: 2rem;
+}
+
 
 
 
 /* Masks */
 
 .light-mask {
-    background-color: rgba(255, 255, 255, 0.524);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .white-mask-25 {
@@ -119,7 +154,14 @@ a {
 }
 
 .dark-mask {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))
+    background: linear-gradient(rgba(4, 23, 38, 0.7), rgba(4,
+                23,
+                38,
+                0.7))
+}
+
+.light-fade {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(241, 243, 243, 0.2));
 }
 
 
@@ -132,7 +174,8 @@ a {
 
 .navbar-custom {
     /* background-color: rgba(14, 19, 28, 1); */
-    background-color: rgb(6, 9, 14);
+    /* background-color: rgb(6, 9, 14); */
+    background-color: #06151e;
     --bs-navbar-padding-y: 0rem;
     --bs-navbar-brand-padding-y: 0.1rem;
 
@@ -189,7 +232,7 @@ ul.nav li.active a {
 
 .bgimage {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/blue-green-paper-waves-bg.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0)), url('../images/paper-waves.png');
     /* background: url('../images/blue-green-paper-waves-bg.jpeg'); */
     background-size: cover;
     background-position: center;
@@ -197,8 +240,10 @@ ul.nav li.active a {
 }
 
 .home-features {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
+
+
 
 
 
@@ -229,6 +274,10 @@ ul.nav li.active a {
 
 }
 
+.mycard img {
+    position: top;
+}
+
 .card-title {
     background-color: rgba(0, 0, 0, 0.74);
     width: 100%;
@@ -247,10 +296,22 @@ ul.nav li.active a {
 
 .overlay-txt {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     left: 12%;
     color: #fff;
+    width: 70%;
+    font-size: 1.2rem;
 }
+
+.overlay-txt p {
+    font-size: 1rem;
+}
+
+/*, .carousel-indicators */
+/* .carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+} */
 
 
 
@@ -278,7 +339,8 @@ section img {
 
 .people-card {
     max-width: 25rem;
-    background-color: rgb(211, 226, 239);
+    /* background-color: rgb(211, 226, 239); */
+    background-color: #c7e8e6;
 }
 
 .people-card .accordion-item {
@@ -378,52 +440,6 @@ footer .nav-link,
     text-align: start;
 }
 
-/* Footer Accordion */
-
-footer .accordion-button,
-.accordion-body {
-    /* background-color: rgba(14, 19, 28, 1); */
-    background-color: rgb(6, 9, 14);
-    font-size: 1.2rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-footer .accordion-item {
-    background-color: transparent;
-}
-
-footer .accordion-button:not(.collapsed) {
-    color: white;
-    /* background-color: rgba(14, 19, 28, 1); */
-    background-color: rgb(6, 9, 14);
-
-}
-
-footer .accordion-button:hover {
-    color: rgb(149, 196, 196) !important;
-}
-
-/* Change accordion arrow button to white */
-footer .accordion-button:after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-    margin-left: 1rem;
-}
-
-/* Remove border from accordion when clicked*/
-footer :focus {
-    outline: 0 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
-
-
-
-
-
-
 
 /* Media queries  */
 
@@ -453,6 +469,19 @@ footer :focus {
     .tagline {
         font-size: 1.2rem;
     }
+
+    .overlay-txt {
+        position: absolute;
+        bottom: 5%;
+        left: 12%;
+        color: #fff;
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .overlay-txt p {
+        font-size: 1rem;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -472,6 +501,19 @@ footer :focus {
 
     nav {
         font-size: 1.1rem;
+    }
+
+    .overlay-txt {
+        position: absolute;
+        bottom: 5%;
+        left: 12%;
+        color: #fff;
+        width: 70%;
+        font-size: 2rem;
+    }
+
+    .overlay-txt p {
+        font-size: 1.2rem;
     }
 
 }
