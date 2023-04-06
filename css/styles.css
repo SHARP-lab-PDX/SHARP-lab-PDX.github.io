@@ -9,7 +9,7 @@ body {
     /* background-image: linear-gradient(to bottom right, #02282b, #08032b); */
     /* background-color: rgb(10, 19, 39); */
     /* background-color: rgb(10, 34, 59); */
-    background-color: rgb(15, 48, 69);
+    background-color: rgb(14, 45, 64);
     background-repeat: none;
     font-size: 1.2rem;
 }
@@ -154,10 +154,7 @@ a {
 }
 
 .dark-mask {
-    background: linear-gradient(rgba(4, 23, 38, 0.7), rgba(4,
-                23,
-                38,
-                0.7))
+    background: linear-gradient(rgba(4, 23, 38, 0.8), rgba(4, 23, 38, 0.8))
 }
 
 .light-fade {
