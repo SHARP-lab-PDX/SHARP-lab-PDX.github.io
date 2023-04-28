@@ -13,13 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Serif&family=Open+Sans:wght@300;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Sintony&family=Source+Sans+Pro:wght@300;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sintony&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap"
-        rel="stylesheet">
-
 
 
     <!-- Bootstrap CSS -->
@@ -63,6 +58,9 @@
                     <a class="nav-link" href="html/publications.html">Publications</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="html/press.html">Press &amp; Media</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="html/join-the-lab.html">Join the Lab</a>
                 </li>
                 <li class="nav-item">
@@ -83,10 +81,11 @@
     <!-- Herobox -->
     <section class="bgimage" id="home">
         <div class="container-fluid hero-container d-flex justify-content-end align-items-end p-0">
-            <div class="col-12 text-end pe-5">
+            <div class="col-12 text-end pe-2 pe-md-5">
                 <h1 class="lightest-green fjalla text-shadow display-1">SHARP Lab</h1>
             </div>
-            <div class="col-12 text-end pb-4 tagline pe-5 sintony lightest-green text-shadow">Sleep &amp; Health Applied
+            <div class="col-12 text-end pb-4 tagline pe-2 pe-md-5 sintony lightest-green text-shadow">Sleep &amp; Health
+                Applied
                 Research
                 Program
             </div>
@@ -102,7 +101,7 @@
 
     <!-- Welcome -->
 
-    <section class="">
+    <section class="" id="Welcome">
         <div class="container-fluid">
 
             <div class="row d-flex align-items-center justify-content-around g-4">
@@ -112,8 +111,12 @@
 
 
                     <div class="">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate iste eveniet commodi
-                            amet minima repellat sint culpa tempore? Quis, consequuntur.</p>
+                        <p>Since 2016,
+                            SHARP has grown
+                            rapidly and made a number of foundational discoveries in the form of impactful abstracts,
+                            manuscripts,
+                            presentations,
+                            and additional grant funding and supported career growth for its lab members.</p>
                         <p>
                             Lorem ipsum dolor sit amet consectetur,
                             adipisicing
@@ -137,12 +140,12 @@
                 <div class="light-theme col-10 col-lg-4 p-4 mx-auto text-center rounded">
                     <h3 class="sintony fs-3 pt-2 pb-4">SHARP Research Leads</h3>
 
-                    <div class="row">
+                    <div class="row" id="Directors">
 
                         <div class="col-6">
                             <img class="img-fluid img-thumbnail" src="images/miranda-lim-thumbnail-crop.jpeg" alt="">
                             <h5 class="pt-3">Miranda Lim, MD, PhD</h5>
-                            <a href="#" class="btn btn-outline-dark">Faculty Bio</a>
+                            <a href="#LimBio" class="btn btn-outline-dark" onclick="toggler('LimBio');">Bio</a>
                         </div>
 
 
@@ -150,30 +153,163 @@
                             <img class="img-fluid img-thumbnail" src="images/jonathan-elliott-thumbnail-crop.jpeg"
                                 alt="">
                             <h5 class="pt-3">Jonathan Elliott, PhD</h5>
-                            <a href="#" class="btn btn-outline-dark">Faculty Bio</a>
+                            <a href="#ElliotBio" class="btn btn-outline-dark" onclick="toggler('ElliotBio');">Bio</a>
                         </div>
 
 
                     </div>
                 </div>
-
-
-                <!-- <div class="col p-4 m-4 text-center">
-                    <div class="contact-info justify-content-center">
-                        <a href="mailto:name@email.com" class="btn btn-outline-light fs-5 sintony">Send us an email</a>
-                    </div>
-                </div> -->
-
-
-                <!-- <div class="col-5 p-4">
-                    <div class="contact-image text-center">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFofwUrghJYQsEpWh9OEOZvifhKsI_punMhsJUlNNTlvdD3FSkIRqiX3fToikU5OIqois&usqp=CAU"
-                            class="rounded-circle" alt="">
-                    </div>
-                    Send us an email!
-                </div> -->
             </div>
         </div>
+
+    </section>
+
+    <section class="hidden light-theme" id="LimBio">
+
+        <div class="container">
+            <div class="d-flex flex-row-reverse">
+                <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
+                    onclick="toggler('LimBio');"></a>
+            </div>
+
+            <div class="row">
+                <div class="col-3 col-lg-2 ">
+                    <img class="img-fluid img-thumbnail float-start" src="images/miranda-lim-thumbnail-crop.jpeg"
+                        alt="">
+                </div>
+                <div class="col-9 col-lg-10">
+                    <h3 class="bold">SHARP Director</h3>
+
+                    <h2>Miranda Lim, MD, PhD</h2>
+
+                    <div style="font-size: .8em;">
+                        <p>
+                            Associate Professor | Department of Neurology |
+                            Associate Director | NIA-Layton Oregon Alzheimer's Disease Research Center (OADRC)<br>
+                            Oregon Health & Science University (OHSU)
+                        </p>
+                        <p>
+                            Staff Neurologist | Sleep Disorders Clinic | Parkinson’s Disease Research, Education and
+                            Clinical Centers (PADRECC)
+                            |
+                            Associate Director of Research and Co-Associate Director of Education (MIRT) | VA VISN20
+                            Northwest Mental Illness
+                            Research Education Clinical Center (MIRECC)<br>
+                            VA Portland Health Care System
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-3 offset-3 offset-lg-2">
+
+                <p>Dr. Lim earned a combined MD/PhD degree from Emory University in Atlanta in 2006 and completed a
+                    neurology residency at
+                    Washington University in Saint Louis in 2010. She then completed fellowship training in Sleep
+                    Medicine
+                    at the University
+                    of Pennsylvania. Notable scientific contributions include understanding mechanisms of social
+                    behavior in
+                    the monogamous
+                    prairie vole (Lim et al., Nature, 2004; Jones et al., Science Advances, 2019), defining the role
+                    of
+                    sleep in the
+                    pathogenesis of Alzheimer's disease (Kang, Lim et al., Science, 2009), traumatic brain injury
+                    (Lim et
+                    al., Science
+                    Translational Medicine, 2013), and Parkinson's and related disorders (Elliott, Lim et al.,
+                    Annals of
+                    Clinical and
+                    Translational Neurology, 2023).</p>
+                <p>Within and beyond SHARP, Dr. Lim's goal is to conduct high impact sleep research across rodents
+                    and
+                    humans to advance
+                    our understanding of fundamental biology and health. She strives to foster a dynamic and
+                    engaging
+                    scientific environment
+                    that respects diverse strengths and backgrounds, and welcomes a culture of lifelong learning and
+                    feedback through active
+                    mentorship at all levels. She values teamwork and independence, organization and creativity,
+                    perseverance and
+                    sustainability, scientific rigor and transparency, and responsibility and professionalism.</p>
+                <p>On a personal note, Miranda enjoys taking on new challenges and is always open to trying new
+                    things.
+                    Prior examples of
+                    this outside of science include, living in 6 states across all corners of the US, playing NCAA
+                    Division
+                    I Women’s Water
+                    Polo at University of Southern California, running marathons, rock climbing, yoga, ecstatic
+                    dance, and
+                    most recently,
+                    parenting and mindfulness meditation (by far, the greatest challenges yet!). Given all this, you
+                    might
+                    be surprised to
+                    learn that her number 1 strength per StrengthsFinder is RELATOR -- perhaps the highly social
+                    prairie
+                    voles that she has
+                    been studying since 1999 have finally rubbed off?
+                </p>
+                <div class="text-end pb-4"><a href="#Directors" class="btn btn-outline-dark fs-6" aria-label="Close"
+                        onclick="toggler('LimBio');">Close</a></div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="hidden light-theme" id="ElliotBio">
+
+        <div class="container">
+            <div class="d-flex flex-row-reverse">
+                <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
+                    onclick="toggler('ElliotBio');"></a>
+            </div>
+
+            <div class="row">
+                <div class="col-3 col-lg-2 ">
+                    <img class="img-fluid img-thumbnail float-start" src="images/jonathan-elliott-thumbnail-crop.jpeg"
+                        alt="">
+                </div>
+                <div class="col-9 col-lg-10">
+                    <h3 class="bold">SHARP Director</h3>
+
+                    <h2>Jonathan Elliot, PhD</h2>
+
+                    <div style="font-size: .8em;">
+                        <p>
+                            Associate Professor | Department of Neurology |
+                            Associate Director | NIA-Layton Oregon Alzheimer's Disease Research Center (OADRC)<br>
+                            Oregon Health & Science University (OHSU)
+                        </p>
+                        <p>
+                            Staff Neurologist | Sleep Disorders Clinic | Parkinson’s Disease Research, Education and
+                            Clinical Centers (PADRECC)
+                            |
+                            Associate Director of Research and Co-Associate Director of Education (MIRT) | VA VISN20
+                            Northwest Mental Illness
+                            Research Education Clinical Center (MIRECC)<br>
+                            VA Portland Health Care System
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-3 offset-3 offset-lg-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem illo inventore eum
+                    dicta corrupti eveniet nam placeat. Dolores, repellendus iste saepe minima est tenetur ipsam ducimus
+                    doloremque cupiditate enim sequi rem error quidem recusandae, magnam optio eligendi molestiae omnis
+                    atque! Quidem deleniti voluptatum quasi suscipit possimus quia harum accusantium?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi esse officia commodi tempora
+                    voluptate explicabo soluta sint, nemo laudantium veritatis perspiciatis, repellat doloremque ducimus
+                    sunt quos impedit fugiat voluptatem fuga quidem corrupti vero dolore architecto ullam! Assumenda,
+                    ratione nulla. Atque ab nobis delectus accusantium ut nihil ea porro tempora consectetur itaque eum
+                    vel molestias dolores officiis, perspiciatis enim repellat impedit.</p>
+                <div class="text-end pb-4"><a href="#Directors" class="btn btn-outline-dark fs-6"
+                        onclick="toggler('ElliotBio');">Close</a></div>
+            </div>
+        </div>
+
 
     </section>
 
@@ -228,36 +364,29 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
 
-                                <!-- <div class="carousel-text">
-                                    <p class="display-6">Lim Lab Discovers Super Important Sleep Factor</p>
+                                <img src="images/blur1.png" class="d-block img-fluid rel-image" alt="...">
 
-                                </div> -->
-
-                                <a href="#">
-                                    <img src="images/blur1.png" class="d-block img-fluid rel-image" alt="...">
-                                    <span class="overlay-txt px-1 pb-4 ">SHARP discovers super important thing
-                                        disrupting your sleep patterns
-                                        <p class="pt-3">Read more ></p>
-                                    </span>
-                                </a>
-
+                                <div class="overlay-txt px-1 display-6">
+                                    SHARP PhD student
+                                    <span class="bold">Noah Milman</span>, and Undergraduate
+                                    Research Assistant <span class="bold">Isabella Montano</span> featured on popular
+                                    science podcast <span class="fst-italic">Ologies</span>
+                                    <p>
+                                        <a href="https://www.alieward.com/ologies/fieldtripairport"
+                                            class="btn btn-outline-light">Listen to the episode here</a>
+                                    </p>
+                                </div>
                             </div>
+
                             <div class="carousel-item">
-
-                                <a href="#">
-                                    <img src="images/blur1.png" class="d-block img-fluid rel-image" alt="...">
-                                    <span class="overlay-txt px-1 pb-4">Miranda Lim featured on America's 1
-                                        Smartest People List
-                                        <p class="pt-3">Read more ></p>
-                                    </span>
-                                </a>
-                                <!-- <a href="#">
-                                    <img src="images/blue-wave-crop-400.jpeg" class="d-block img-fluid rel-image"
-                                        alt="...">
-                                    <span class="overlay-txt p-4 display-6">Miranda Lim featured on The Tonight Show for her show-stopping lip synching skills
-                                    </span>
-                                </a> -->
+                                <img src="images/blur1.png" class="d-block img-fluid rel-image" alt="...">
+                                <span class="overlay-txt px-1 pb-4">Miranda Lim featured on America's 1
+                                    Smartest People List
+                                    <p class="pt-3">Read more ></p>
+                                </span>
                             </div>
+
+
                             <div class="carousel-item">
                                 <a href="#">
                                     <img src="images/blur1.png" class="d-block img-fluid rel-image" alt="...">
@@ -355,6 +484,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <!-- This is the JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
