@@ -1,4 +1,9 @@
 /site-screenshots*
+/images/publications/originals
+/images/originals
+/images/research_studies/originals
+/images/people/originals
+/html/people-card-template.html
 
 # General
 .DS_Store
