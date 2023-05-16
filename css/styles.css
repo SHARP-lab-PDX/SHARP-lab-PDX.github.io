@@ -134,9 +134,13 @@ a {
     color: #3f9696;
 }
 
-/* To change SVG logo color */
+/* Use to change SVG logo color */
 .filter-teal {
     filter: invert(63%) sepia(16%) saturate(712%) hue-rotate(124deg) brightness(81%) contrast(85%);
+}
+
+.filter-light {
+    filter: invert(69%) sepia(34%) saturate(246%) hue-rotate(134deg) brightness(93%) contrast(87%);
 }
 
 
@@ -163,7 +167,7 @@ a {
 }
 
 .light-fade {
-    background: linear-gradient(rgba(119, 42, 42, 0.5), rgb(14, 45, 64, 0.9) );
+    background: linear-gradient(rgba(119, 42, 42, 0.5), rgb(14, 45, 64, 0.9));
 }
 
 
@@ -280,7 +284,7 @@ a {
 
 .overlay-txt {
     position: absolute;
-    bottom: 5%;
+    top: 15%;
     left: 12%;
     color: #fff;
     width: 80%;
@@ -342,7 +346,6 @@ section img {
 
 .people-card {
     /* max-width: 25rem; */
-    /* background-color: rgb(211, 226, 239); */
     background-color: #c7e8e6;
 }
 
@@ -436,6 +439,10 @@ section img {
     font-size: 2rem;
 }
 
+.fa-btn-link {
+    padding-left: 0.4rem;
+}
+
 
 /* ************************** */
 /* Publications page */
@@ -450,6 +457,11 @@ section img {
     color: rgb(241, 241, 241);
     border: none;
     box-shadow: 3px 4px 0px 0px #111313;
+}
+
+.dblink:hover {
+    text-shadow: none;
+    background-color: #badadc;
 }
 
 .publink {
@@ -544,6 +556,18 @@ footer .nav-link,
         min-width: 100%;
     }
 
+    .overlay-txt {
+        font-size: 1.1rem;
+    }
+
+    .overlay-txt a {
+        font-size: 1.1rem;
+    }
+
+    .hublink {
+        font-size: 1.1rem;
+    }
+
 }
 
 /* Large phones */
@@ -553,16 +577,16 @@ footer .nav-link,
     }
 
     .overlay-txt {
-        position: absolute;
-        bottom: 8%;
-        left: 12%;
-        color: #fff;
         width: 75%;
         font-size: 1.5rem;
     }
 
     .overlay-txt a {
         font-size: 1rem;
+    }
+
+    .hublink {
+        font-size: 1.5rem;
     }
 }
 
@@ -573,16 +597,15 @@ footer .nav-link,
     }
 
     .overlay-txt {
-        position: absolute;
-        bottom: 10%;
-        left: 12%;
-        color: #fff;
-        width: 75%;
         font-size: 1.8rem;
     }
 
     .overlay-txt a {
         font-size: 1.2rem;
+    }
+
+    .hublink {
+        font-size: 2rem;
     }
 }
 
@@ -606,16 +629,16 @@ footer .nav-link,
     }
 
     .overlay-txt {
-        position: absolute;
-        bottom: 15%;
-        left: 12%;
-        color: #fff;
         width: 70%;
         font-size: 2.3rem;
     }
 
     .overlay-txt a {
         font-size: 1.4rem;
+    }
+
+    .hublink {
+        font-size: 2.3rem;
     }
 
 }
@@ -631,11 +654,6 @@ footer .nav-link,
     }
 
     .overlay-txt {
-        position: absolute;
-        bottom: 5%;
-        left: 12%;
-        color: #fff;
-        width: 70%;
         font-size: 1.5rem;
     }
 
@@ -664,11 +682,6 @@ footer .nav-link,
     }
 
     .overlay-txt {
-        position: absolute;
-        bottom: 5%;
-        left: 12%;
-        color: #fff;
-        width: 70%;
         font-size: 2rem;
     }
 
