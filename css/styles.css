@@ -272,6 +272,9 @@ a {
     filter: brightness(80%);
 }
 
+.myhover:hover {
+    background-color: #3f969650;
+}
 
 
 
@@ -332,6 +335,24 @@ a {
 section img {
     margin: auto;
     display: block;
+}
+
+.img-border {
+    border-radius: 0.25rem;
+    border-color: #081b27;
+    border-width: .25rem;
+    border-style: solid;
+}
+
+.img-border-light {
+    border-radius: 0.25rem;
+    border-color: #c7e8e6;
+    border-width: .25rem;
+    border-style: solid;
+}
+
+.img-slant-left {
+    border-radius: 10% 25%;
 }
 
 

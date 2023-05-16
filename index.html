@@ -137,26 +137,26 @@
 
                 </div>
 
-                <div class="light-theme col-10 col-lg-4 p-4 mx-auto text-center rounded">
-                    <h3 class="sintony fs-3 pt-2 pb-4">SHARP Directors</h3>
+                <div class="light-theme col-10 col-lg-4 p-4 mx-auto text-center rounded shadow">
+                    <h3 class="sintony display-6 pt-2 pb-4">SHARP Directors</h3>
 
                     <div class="row" id="Directors">
 
                         <div class="col-6">
-                            <img class="img-fluid img-thumbnail" src="images/people/miranda-lim-close.jpeg" alt="">
+                            <img class="img-fluid rounded shadow" src="images/people/miranda-lim-close.jpeg" alt="">
                             <h5 class="pt-3 bold">Miranda Lim, MD, PhD</h5>
                             <!-- <p class="bold">SHARP Director</p> -->
-                            <a href="#LimBio" class="btn btn-outline-dark dblink fs-5" onclick="toggler('LimBio');">Bio
+                            <a href="#LimBio" class="btn btn-outline-light dblink fs-5" onclick="toggler('LimBio');">Bio
                                 <i class="fa-solid fa-user ps-2"></i></a>
                         </div>
 
 
                         <div class="col-6">
-                            <img class="img-fluid img-thumbnail" src="images/people/jonathan_elliott.jpeg" alt="">
+                            <img class="img-fluid rounded shadow" src="images/people/jonathan_elliott.jpeg" alt="">
                             <h5 class="pt-3 bold">Jonathan Elliott, PhD</h5>
                             <!-- <p class="bold">SHARP Director</p> -->
-                            <a href="#ElliotBio" class="btn btn-outline-dark dblink fs-5"
-                                onclick="toggler('LimBio');">Bio <i class="ps-2 fa-solid fa-user"></i></a>
+                            <a href="#ElliottBio" class="btn btn-outline-light dblink fs-5"
+                                onclick="toggler('ElliottBio');">Bio <i class="ps-2 fa-solid fa-user"></i></a>
                         </div>
 
 
@@ -177,7 +177,7 @@
 
             <div class="row">
                 <div class="col-3 col-lg-2 ">
-                    <img class="img-fluid img-thumbnail float-start" src="images/people/miranda-lim-close.jpeg" alt="">
+                    <img class="img-fluid rounded shadow float-start" src="images/people/miranda-lim-close.jpeg" alt="">
                 </div>
                 <div class="col-9 col-lg-10">
                     <h3 class="bold">SHARP Director</h3>
@@ -261,17 +261,17 @@
 
     </section>
 
-    <section class="hidden light-theme" id="ElliotBio">
+    <section class="hidden light-theme" id="ElliottBio">
 
         <div class="container">
             <div class="d-flex flex-row-reverse">
                 <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
-                    onclick="toggler('ElliotBio');"></a>
+                    onclick="toggler('ElliottBio');"></a>
             </div>
 
             <div class="row">
                 <div class="col-3 col-lg-2 ">
-                    <img class="img-fluid img-thumbnail float-start" src="images/people/jonathan_elliott.jpeg" alt="">
+                    <img class="img-fluid rounded shadow float-start" src="images/people/jonathan_elliott.jpeg" alt="">
                 </div>
                 <div class="col-9 col-lg-10">
                     <h3 class="bold">SHARP Director</h3>
@@ -299,7 +299,7 @@
                     ratione nulla. Atque ab nobis delectus accusantium ut nihil ea porro tempora consectetur itaque eum
                     vel molestias dolores officiis, perspiciatis enim repellat impedit.</p>
                 <div class="text-end pb-4"><a href="#Directors" class="btn btn-outline-dark fs-6"
-                        onclick="toggler('ElliotBio');">Close</a></div>
+                        onclick="toggler('ElliottBio');">Close</a></div>
             </div>
         </div>
 
@@ -321,13 +321,13 @@
                         <div class="blank mt-2">Image </div>
                     </a> -->
                     <div class="card mycard border-0">
-                        <img class="card-img-top img-fluid shadow rounded"
+                        <img class="card-img-top img-fluid img-border-light shadow rounded"
                             src="images/home-sleep-study-participant-edit-400px.jpg" alt="Card image">
-                        <div class="card-img-overlay d-flex align-items-end px-0 py-0 shadow rounded">
+                        <div class="card-img-overlay d-flex align-items-end px-0 py-0 shadow rounded myhover">
                             <div class="card-title pt-1 rounded text-center">
-                                <h2 class="sintony lightest-green text-shadow display-6 pt-1 hublink">Join a study</h2>
+                                <h2 class="sintony lightest-green text-shadow display-6 pt-1 hublink"><a href="html/join-a-study.html" class="stretched-link">Join a study</a></h2>
                             </div>
-                            <a href="html/join-a-study.html" class="stretched-link"></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -336,9 +336,9 @@
                 <div class="col-6 col-lg-3 mx-auto p-4">
 
                     <div class="card mycard border-0 rounded">
-                        <img class="card-img-top img-fluid rounded shadow" src="images/group-photo-2022-edit-400px.jpg"
+                        <img class="card-img-top img-fluid rounded shadow img-border-light" src="images/group-photo-2022-edit-400px.jpg"
                             alt="Card image">
-                        <div class="card-img-overlay d-flex align-items-end px-0 py-0 rounded">
+                        <div class="card-img-overlay d-flex align-items-end px-0 py-0 rounded myhover">
                             <div class="card-title pt-1 rounded text-center">
                                 <h2 class="sintony lightest-green text-shadow display-6 pt-1 hublink">Join the lab</h2>
                             </div>
@@ -358,7 +358,7 @@
                     style="background-color: rgba(63, 97, 139, 0);">
 
 
-                    <div id="carouselExample" class="carousel slide  carousel-fade h-100">
+                    <div id="carouselExampleSlide" class="carousel slide h-100" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
