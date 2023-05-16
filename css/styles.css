@@ -25,7 +25,6 @@ body {
 }
 
 nav {
-    font-size: 1.1rem;
     font-family: 'Sintony', sans-serif;
 }
 
@@ -110,7 +109,8 @@ a {
 }
 
 .light-theme {
-    background-color: #86b3b5;
+    /* background-color: #86b3b5; */
+    background-color: #94bec0;
     color: rgba(14, 19, 28, 1);
 }
 
@@ -146,7 +146,7 @@ a {
 
 /* Gradients */
 .card-gradient {
-    background: linear-gradient(rgba(175, 239, 229, 0.8), rgba(155, 223, 238, 0.9))
+    background: linear-gradient(rgba(175, 239, 229, 0.8), rgba(155, 228, 238, 0.9))
 }
 
 
@@ -179,17 +179,70 @@ a {
 /* Nav */
 /* ************************** */
 
-.navbar-custom {
-    /* background-color: rgba(14, 19, 28, 1); */
-    /* background-color: rgb(6, 9, 14); */
-    background-color: #06151e;
-    --bs-navbar-padding-y: 0rem;
-    --bs-navbar-brand-padding-y: 0.1rem;
 
+/* Navbar animation */
+
+/* remove border from burger button */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* add animation to burger menu icon */
+.navbar-toggler span {
+    display: block;
+    background-color: #ffffff;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+
+/* Navbar styling */
+
+.navbar-custom {
+    background-color: #06151E;
+    padding: 0;
 }
 
 .navbar-nav .nav-item {
-    text-align: right;
+    text-align: center;
     padding-right: 10px;
 }
 
@@ -274,6 +327,7 @@ a {
 
 .myhover:hover {
     background-color: #3f969650;
+    color: #06151e;
 }
 
 
@@ -485,7 +539,7 @@ section img {
     background-color: #badadc;
 }
 
-.publink {
+.publink-light {
     margin-right: 10px;
     font-size: 1.3rem;
     font-weight: 600;
@@ -501,10 +555,15 @@ section img {
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 0.35rem;
-    background-color: #3f9696;
-    color: #06151e;
+    color: rgb(223, 229, 233);
+    background-color: #0d2434;
     border: none;
     box-shadow: 3px 4px 0px 0px #276873;
+}
+
+.publink:hover {
+    background-color: #398c9f;
+    ;
 }
 
 .pubimg {
@@ -589,6 +648,17 @@ footer .nav-link,
         font-size: 1.1rem;
     }
 
+    /* Full screen navbar */
+    #navbar-content {
+        height: 100vh;
+        align-items: center;
+        background-color: #06151E;
+    }
+
+    .navbar-nav li a {
+        font-size: 2rem;
+    }
+
 }
 
 /* Large phones */
@@ -670,6 +740,15 @@ footer .nav-link,
         font-size: 1.3rem;
     } */
 
+    #navbar-content {
+        height: 80px;
+    }
+
+    .navbar-nav li a {
+        font-size: 1.08rem;
+        text-align: left
+    }
+
     .tagline {
         font-size: 1.6rem;
     }
@@ -697,6 +776,10 @@ footer .nav-link,
     /* .hero-desc {
         font-size: 1.3rem;
     } */
+
+    .navbar-nav li a {
+        font-size: 1.2rem;
+    }
 
     .tagline {
         font-size: 1.6rem;
