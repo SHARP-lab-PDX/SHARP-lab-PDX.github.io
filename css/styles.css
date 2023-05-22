@@ -29,10 +29,9 @@ nav {
 }
 
 section {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: rgb(241, 241, 241);
-
 }
 
 section:last-of-type {
@@ -585,27 +584,39 @@ section img {
 /* ************************** */
 
 footer {
-    color: white;
-    font-size: 1.1rem;
     padding-top: 3rem;
     /* text-align: center; */
 }
 
 footer p {
     margin: 0;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-footer .nav-link,
-.nav-item,
-.accordion-button {
-    color: rgba(255, 255, 255, 0.7);
 
+footer .nav-link,
+.nav-item {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0px;
 }
 
 .footer-logo {
     text-align: start;
 }
 
+hr {
+    margin: 0 auto;
+    width: 90%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.byline {
+    color:rgb(107, 162, 177);
+}
+
+.byline:hover {
+    color: rgb(188, 221, 230);
+}
 
 
 
@@ -641,7 +652,7 @@ footer .nav-link,
     }
 
     .overlay-txt a {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .hublink {
