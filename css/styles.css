@@ -145,7 +145,7 @@ a {
 
 /* Gradients */
 .card-gradient {
-    background: linear-gradient(rgba(175, 239, 229, 0.8), rgba(155, 228, 238, 0.9))
+    background: linear-gradient(rgba(175, 239, 238, 0.8), rgba(155, 228, 238, 0.9))
 }
 
 
@@ -305,6 +305,11 @@ a {
     text-shadow: 2px 2px 8px #000000b1;
 }
 
+.taller-jumbo-title {
+    padding-top: 47vh;
+    text-shadow: 2px 2px 8px #000000b1;
+}
+
 .mycard {
     width: 100%;
     --bs-card-title-spacer-y: 0rem;
@@ -321,7 +326,7 @@ a {
 }
 
 .dark-filter {
-    filter: brightness(80%);
+    filter: brightness(75%);
 }
 
 .myhover:hover {
@@ -336,7 +341,10 @@ a {
 
 .rel-img {
     position: relative;
+
 }
+
+
 
 .overlay-txt {
     position: absolute;
@@ -393,14 +401,14 @@ section img {
 .img-border {
     border-radius: 0.25rem;
     border-color: #081b27;
-    border-width: .25rem;
+    border-width: .20rem;
     border-style: solid;
 }
 
 .img-border-light {
     border-radius: 0.25rem;
     border-color: #c7e8e6;
-    border-width: .25rem;
+    border-width: .20rem;
     border-style: solid;
 }
 
@@ -598,6 +606,8 @@ footer .nav-link,
 .nav-item {
     color: rgba(255, 255, 255, 0.7);
     padding: 0px;
+    padding-top: 0.15rem;
+    font-size: 1.1rem;
 }
 
 .footer-logo {
@@ -606,12 +616,12 @@ footer .nav-link,
 
 hr {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .byline {
-    color:rgb(107, 162, 177);
+    color: rgb(107, 162, 177);
 }
 
 .byline:hover {
