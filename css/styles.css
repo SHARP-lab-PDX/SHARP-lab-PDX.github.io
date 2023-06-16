@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-weight: 300;
     /* font-size: 1.2rem !important; */
     /* background-image: linear-gradient(to bottom right, #02282b, #08032b); */
@@ -80,10 +80,14 @@ a {
 }
 
 .sourcesans {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 /* Font styles (for Source Sans Pro) */
+
+.fw400 {
+    font-weight: 400;
+}
 
 .bold {
     font-weight: 600;
@@ -93,6 +97,13 @@ a {
     font-weight: 700;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.citation {
+    color: rgb(64, 66, 68);
+}
 
 
 /* ************************** */
@@ -109,7 +120,7 @@ a {
 
 .light-theme {
     /* background-color: #86b3b5; */
-    background-color: #94bec0;
+    background-color: #95BEC0;
     color: rgba(14, 19, 28, 1);
 }
 
@@ -145,7 +156,7 @@ a {
 
 /* Gradients */
 .card-gradient {
-    background: linear-gradient(rgba(175, 239, 238, 0.8), rgba(155, 228, 238, 0.9))
+    background: linear-gradient(rgba(206, 240, 240, 0.8), rgba(201, 232, 236, 0.9))
 }
 
 
@@ -162,7 +173,7 @@ a {
 }
 
 .dark-mask {
-    background: linear-gradient(rgba(4, 23, 38, 0.7), rgba(4, 23, 38, 0.7))
+    background: linear-gradient(rgba(4, 23, 38, 0.8), rgba(4, 23, 38, 0.8))
 }
 
 .light-fade {
@@ -275,6 +286,9 @@ a {
     position: relative;
 }
 
+.hero-desc {
+    margin-bottom: 0;
+}
 
 
 
@@ -525,6 +539,15 @@ section img {
     padding-left: 0.4rem;
 }
 
+.ai {
+    color: rgb(6, 9, 14);
+}
+
+.ai:hover {
+    color: rgb(107, 162, 177);
+    cursor: pointer;
+}
+
 
 /* ************************** */
 /* Publications page */
@@ -580,11 +603,13 @@ section img {
 
 
 /* ************************** */
-/* Press and media */
+/* Join the Lab */
 /* ************************** */
 
 
-
+.btn-stretch {
+    width: 100%;
+}
 
 
 /* ************************** */
@@ -753,13 +778,17 @@ hr {
         font-size: 2.3rem;
     }
 
+    .btn-stretch {
+        width: 70%;
+    }
+
 }
 
 /* Large */
 @media (min-width: 992px) {
-    /* .hero-desc {
+    .hero-desc {
         font-size: 1.3rem;
-    } */
+    }
 
     #navbar-content {
         height: 80px;
@@ -788,6 +817,10 @@ hr {
 
     .pubimg {
         border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    .btn-stretch {
+        width: 50%;
     }
 
 }

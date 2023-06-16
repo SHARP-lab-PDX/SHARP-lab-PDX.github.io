@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Sintony&family=Source+Sans+Pro:wght@300;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Sintony&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
 
 
@@ -32,7 +32,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom px-2" data-bs-theme="dark">
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="../index.html">
         <img src="/images/logo-thick-mono.svg" alt="" style="height: 70px;" class="filter-teal">
     </a>
 
@@ -95,11 +95,17 @@
     <div class="row flex-column-reverse flex-md-row">
 
 
-        <div class="col-10 col-md-7 ps-4">
+        <div class="col-12 col-md-7 ps-4 ">
             <section>
                 <h1 class="sintony lightest-green pb-4 ps-4">Finding Us</h1>
                 <div class="col p-4">
-                    <h3 class="sintony pb-2 align-vert"><i class="fa-solid fa-car pe-3 fs-1"></i>Driving directions</h3>
+                    <div class="row">
+
+                        <div class="col-1"><i class="fa-solid fa-car pe-3 fs-1"></i></div>
+                        <div class="col-11">
+                            <h3 class="sintony pb-3 ps-3 align-vert">Driving directions</h3>
+                        </div>
+                    </div>
                     <ol>
                         <li>
                             Use the address:
@@ -115,9 +121,18 @@
                         <li>Take the garage elevators up to the main hospital lobby.</li>
                     </ol>
                 </div>
+
                 <div class="col p-4">
-                    <h3 class="sintony pb-2 align-vert"><i class="fa-solid fa-bus pe-3 fs-1"></i>Public transit
-                        directions</h3>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-bus fs-1"></i>
+                        </div>
+                        <div class="col-11">
+                            <h3 class="sintony pb-3 align-vert ps-3">Public transit
+                                directions</h3>
+                        </div>
+                    </div>
                     <ul>
                         <li>
                             Bus lines that drop off at the VA:
@@ -135,9 +150,17 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="col p-4">
-                    <h3 class="sintony pb-2"><i class="fa-solid fa-cable-car pe-3 fs-1"></i>From the Portland Aerial
-                        Tram </h3>
+
+
+                    <div class="row">
+                        <div class="col-1"><i class="fa-solid fa-cable-car pe-3 fs-1"></i></div>
+                        <div class="col-11">
+                            <h3 class="sintony pb-3 ps-3">From the Portland Aerial
+                                Tram </h3>
+                        </div>
+                    </div>
                     <ol>
                         <li>
                             Take the aerial tram up to OHSU. Tickets are $7.00, or free with proof
@@ -162,7 +185,7 @@
             </section>
         </div>
 
-        <div class="col-10 col-md-5 ">
+        <div class="col-12 col-md-5 ">
 
             <section class="light-theme ps-5 pe-2">
                 <div class="general-contact pb-4">
@@ -194,7 +217,6 @@
                     <h3><i class="fa-solid fa-location-dot pe-3"></i>Physical location</h3>
                     <p>
                         VA Portland Health Care System <br>
-                        Building 101, 5th floor<br>
                     </p>
                 </div>
 
@@ -219,6 +241,9 @@
                     <p class="fjalla fs-4 logo-color">SHARP Lab</p>
 
                     <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
