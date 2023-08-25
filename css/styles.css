@@ -280,7 +280,7 @@ a {
 .bgimage {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../images/blue-green-paper-waves-bg.jpeg');
-    /* background: url('../images/blue-green-paper-waves-bg.jpeg'); */
+    /* background: url('images/blue-green-paper-waves-bg.jpeg'); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -400,11 +400,11 @@ a {
 
 /* About page */
 
-.about-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.806), rgba(0, 0, 0, 0.178)), url(../images/optic-fibers-bg-crop.jpeg);
+/* .about-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.806), rgba(0, 0, 0, 0.178)), url('../images/optic-fibers-bg-crop.jpeg');
     background-size: cover;
     background-position: center;
-}
+} */
 
 
 section img {
