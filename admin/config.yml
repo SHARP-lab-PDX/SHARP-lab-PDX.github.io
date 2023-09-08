@@ -4,9 +4,13 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 collections:
-  - label: "External Links"
-    file: "_data/ext-resources.yml"
-    create: true
-    fields:
-      - {label: "Site name", name: title, widget: string}
-      - {label: "URL", name: url, widget: string}
+  - label: "Global"
+    name: "global"
+    files:
+    - label: "External Links"
+      name: "ext-resources"
+      file: "_data/ext-resources.yml"
+      create: true
+      fields:
+        - {label: "Site name", name: title, widget: string}
+        - {label: "URL", name: url, widget: string}
