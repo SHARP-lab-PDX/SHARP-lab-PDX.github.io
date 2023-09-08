@@ -525,3 +525,16 @@ permalink: /
 <!-- <div class="text-center">
             <img src="/images/sharp_group_lab.jpeg" alt="" class="img-fluid p-4">
         </div> -->
+
+<!-- Netlify -->
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
