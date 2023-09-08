@@ -1,0 +1,23 @@
+- title: Home
+  url: /
+
+- title: About
+  url: /about
+
+- title: People
+  url: /people
+
+- title: Publications
+  url: /publications
+
+- title: Press & Media
+  url: /press
+
+- title: Join the Lab
+  url: /join-the-lab
+
+- title: Join a Study
+  url: /join-a-study
+
+- title: Contact
+  url: /contact

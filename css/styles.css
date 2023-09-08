@@ -257,6 +257,11 @@ a {
 }
 
 
+
+.nav-item a.active {
+    color: rgb(211, 238, 238);
+}
+
 .nav-link:hover,
 .navbar-brand,
 .dropdown-item:hover {
@@ -471,7 +476,7 @@ section img {
     margin: 0px;
     font-weight: 300;
     padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-bottom: 0.5rem;
     padding-left: 43%;
 }
 
@@ -500,9 +505,8 @@ section img {
 }
 
 .bio-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: left;
-    padding-top: .5rem;
 }
 
 
@@ -628,7 +632,7 @@ footer p {
 
 
 footer .nav-link,
-.nav-item {
+footer .nav-item {
     color: rgba(255, 255, 255, 0.7);
     padding: 0px;
     padding-top: 0.15rem;
@@ -664,6 +668,11 @@ hr {
 
     body {
         font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .bold {
+        font-weight: 700;
     }
 
     .hero-desc {
@@ -672,6 +681,10 @@ hr {
 
     nav {
         font-size: 1rem;
+    }
+
+    footer {
+        font-weight: 300;
     }
 
     .tagline {
@@ -755,6 +768,11 @@ hr {
 
     body {
         font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .bold {
+        font-weight: 600;
     }
 
     .hero-desc {

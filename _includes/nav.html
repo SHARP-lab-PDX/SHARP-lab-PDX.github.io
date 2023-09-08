@@ -1,45 +1,30 @@
+---
+---
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom px-2" data-bs-theme="dark">
 
-    <a class="navbar-brand" href="#home">
-        <img src="/images/logo-thick-mono.svg" alt="" style="height: 70px;" class="filter-teal">
-    </a>
+  <a class="navbar-brand" href="#home">
+    <img src="/images/logo-thick-mono.svg" alt="" style="height: 70px;" class="filter-teal">
+  </a>
 
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="background-color: white;"></span>
-        <span></span>
-        <span></span>
-    </button>
+  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="background-color: white;"></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto" id="navbar-content">
-            <li class="nav-item">
-                <a class="nav-link" href="./">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./people">People</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./publications">Publications</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./press">Press &amp; Media</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./join-the-lab">Join the Lab</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./join-a-study">Join a Study</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contact">Contact</a>
-            </li>
-        </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto" id="navbar-content">
+      {% for item in site.data.navigation %}
+      <li class="nav-item">
+        <a href="{{ item.url }}" {% if page.url==item.url %} class="active nav-link" aria-current="page" {% else %}
+          class="nav-link" {% endif %}>{{
+          item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
 
-    </div>
+  </div>
 </nav>
