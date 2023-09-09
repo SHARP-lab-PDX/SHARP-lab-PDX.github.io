@@ -46,6 +46,17 @@ publications:
     summary: Test summary
     doi: https://www.sharplabpdx.com
     image: /images/uploads/sharperwave.png
+  - title: "Dietary Supplementation With Branched Chain Amino Acids to Improve Sleep
+      in Veterans With Traumatic Brain Injury: A Randomized Double-Blind
+      Placebo-Controlled Pilot and Feasibility Trial"
+    citation: "Elliott JE, Keil AT, Mithani S, Gill JM, O'Neil ME, Cohen AS, Lim MM.
+      Front Syst Neurosci. 2022 May 4;16:854874. doi: 10.3389/fnsys.2022.854874.
+      PMID: 35602971; PMCID: PMC9114805. "
+    summary: " First-in-human small pilot randomized clinical trial for branched
+      chain amino acid dietary supplementation to improve sleep in Veterans with
+      TBI - translated from our previous studies in mice. "
+    doi: https://doi.org/10.3389/fnsys.2022.854874
+    image: /images/publications/fnsys-16-854874-g003A.jpeg
 publication:
   - title: Test
     citation: test
