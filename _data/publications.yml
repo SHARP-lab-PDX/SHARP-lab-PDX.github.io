@@ -1,7 +1,7 @@
 publications:
   - title: The temporal structure of REM sleep shows minute-scale fluctuations
       across brain and body in mice and humans
-    citation: "Bueno-Junior LS, Ruckstuhl MS, Lim MM, Watson BO. Proc Natl Acad Sci
+    citation: "Bueno-Junior LS, Ruckstuhl MS, **Lim MM**, Watson BO. Proc Natl Acad Sci
       USA. 2023 May 2;120(18):e2213438120. doi: 10.1073/pnas.2213438120. Epub
       2023 Apr 24. PMID: 37094161."
     summary: Comprehensive review on risk factors for Parkinson's Disease and
@@ -11,7 +11,7 @@ publications:
     image: /images/publications/milman-2023-graphicalabstract.jpg
   - title: Baseline characteristics of the North American prodromal Synucleinopathy
       cohort
-    citation: "Elliott JE, Lim MM, Keil AT, Postuma RB, Pelletier A, Gagnon JF, St.
+    citation: "**Elliott JE, Lim MM, Keil AT**, Postuma RB, Pelletier A, Gagnon JF, St.
       Louis EK, Forsberg LK, Fields JA, Huddleston DE, Bliwise DL, Avidan AY,
       Howell MJ, Schenck CH, McLeland J, Criswell SR, Videnovic A, During EH,
       Miglis MG, Shprecher DR, Lee-Iannotti JK, Boeve BF, Ju YS. Ann Clin Transl
@@ -101,9 +101,3 @@ publications:
       for the diagnostic methods for TBI used in SHARP studies. "
     doi: https://doi.org/10.1089/neu.2021.0031
     image: /images/publications/neu.2021.0031_figure4B.jpeg
-publication:
-  - title: Test
-    citation: test
-    summary: test
-    doi: test
-    image: test

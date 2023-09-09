@@ -28,7 +28,7 @@ collections:
           widget: list
           fields:
             - {label: "Title", name: title, widget: string}
-            - {label: "Citation", name: citation, widget: string}
-            - {label: "Summary", name: summary, widget: string}
+            - {label: "Citation", name: citation, widget: markdown}
+            - {label: "Summary", name: summary, widget: text}
             - {label: "DOI URL", name: doi, widget: string}
-            - {label: "Image", name: image, widget: image}
+            - {label: "Image", name: image, widget: image, allow_multiple: false, media_folder: /images/publications}
