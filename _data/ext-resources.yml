@@ -1,18 +1,13 @@
 resource:
   - title: Portland VA Research Foundation
     url: https://www.pvarf.org/
-
   - title: Portland VA Research Service
     url: https://www.va.gov/PORTLANDRESEARCH/index.asp
-
   - title: OHSU Behavioral Neuroscience
     url: https://www.ohsu.edu/school-of-medicine/behavioral-neuroscience
-
   - title: Behavioral Neuroscience Diversity, Equity & Inclusion
     url: https://www.ohsu.edu/school-of-medicine/behavioral-neuroscience/diversity-equity-inclusion-behavioral-neuroscience
-
   - title: OHSU Layton Aging &amp; Alzheimer's Center
     url: https://www.ohsu.edu/alzheimers-disease-research-center
-
-  - title: North American Prodromal Synucleinopathy Consortium
+  - title: North American Prodromal Synucleinopathy Consortiums
     url: https://www.naps-rbd.org/
