@@ -67,6 +67,16 @@ publications:
       nearly 400 Veterans with TBI. "
     doi: https://doi.org/10.1089/neu.2022.0019
     image: /images/publications/Balba-2022-Fig6.png
+  - doi: https://www.sharplabpdx.com/images/publications/pone.0262955.g002A.jpeg
+    title: Feasibility and preliminary efficacy for morning bright light therapy to
+      improve sleep and plasma biomarkers in US Veterans with TBI. A
+      prospective, open-label, single-arm trial
+    citation: "Elliott JE, McBride AA, Balba NM, Thomas SV, Pattinson CL, Morasco
+      BJ, Wilkerson A, Gill JM, Lim MM. PLoS One. 2022 Apr 14;17(4):e0262955.
+      doi: 10.1371/journal.pone.0262955. PMID: 35421086; PMCID: PMC9009710. "
+    summary: Clinical trial examining the feasibility of using light therapy to
+      improve sleep and blood-based biomarkers in Veterans with TBI.
+    image: /images/publications/pone.0262955.g002A.jpeg
 publication:
   - title: Test
     citation: test
