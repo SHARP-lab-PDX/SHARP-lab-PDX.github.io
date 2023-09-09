@@ -102,3 +102,25 @@ publications:
     summary: Test summary
     doi: https://www.sharplabpdx.com
     image: /images/publications/favicon-square.png
+  - title: "The Bidirectional Link Between Sleep Disturbances and Traumatic Brain
+      Injury Symptoms: A Role for Glymphatic Dysfunction?"
+    citation: "Piantino JA, Iliff JJ, **Lim MM**. Biol Psychiatry. 2022 Mar
+      1;91(5):478-487. doi: 10.1016/j.biopsych.2021.06.025. Epub 2021 Jul 14.
+      PMID: 34481662; PMCID: PMC8758801."
+    summary: High profile review proposing the hypothesis for how glymphatic
+      dysfunction underlies the bidirectional relationship between TBI and sleep
+      disturbances.
+    doi: https://doi.org/10.1016/j.biopsych.2021.06.025
+    image: /images/publications/Piantino-2021-schematic.jpg
+  - title: Posttraumatic stress disorder increases the odds of REM sleep behavior
+      disorder and other parasomnias in Veterans with and without comorbid
+      traumatic brain injury.
+    citation: "**Elliott JE, Opel RA, Pleshakov D**, Rachakonda T, **Chau AQ,
+      Weymann KB, Lim MM**. Sleep. 2020 Mar 12;43(3):zsz237. doi:
+      10.1093/sleep/zsz237. PMID: 31587047; PMCID: PMC7315766."
+    summary: "Prospective consecutive study showing significantly elevated
+      diagnostic rates of REM sleep behavior disorder among Veterans with TBI
+      and PTSD, which has implications for linking TBI/PTSD to neurodegenerative
+      disease. "
+    doi: https://doi.org/10.1093/sleep/zsz237
+    image: /images/publications/Elliott-2020-Sleep.jpeg
