@@ -31,4 +31,3 @@ collections:
             - {label: "Citation", name: citation, widget: string}
             - {label: "Summary", name: Summary, widget: string}
             - {label: "DOI URL", name: doi, widget: string}
-            - {label: "Figure", name: image, widget: image, default: "/images/uploads", allow_multiple: false}
