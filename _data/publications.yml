@@ -1,28 +1,109 @@
 publications:
-  - title: "The temporal structure of REM sleep shows minute-scale fluctuations across brain and body in mice and humans"
-    citation: "Bueno-Junior LS, Ruckstuhl MS, Lim MM, Watson BO. Proc Natl Acad Sci USA. 2023 May 2;120(18):e2213438120. doi: 10.1073/pnas.2213438120. Epub 2023 Apr 24. PMID: 37094161."
-    summary: "Comprehensive review on risk factors for Parkinson's Disease and evidence-based screening and neuroprotective approaches to prevent progression of disease."
+  - title: The temporal structure of REM sleep shows minute-scale fluctuations
+      across brain and body in mice and humans
+    citation: "Bueno-Junior LS, Ruckstuhl MS, Lim MM, Watson BO. Proc Natl Acad Sci
+      USA. 2023 May 2;120(18):e2213438120. doi: 10.1073/pnas.2213438120. Epub
+      2023 Apr 24. PMID: 37094161."
+    summary: Comprehensive review on risk factors for Parkinson's Disease and
+      evidence-based screening and neuroprotective approaches to prevent
+      progression of disease.
     doi: https://doi.org/10.1073/pnas.2213438120
     image: /images/publications/milman-2023-graphicalabstract.jpg
-  - title: "Baseline characteristics of the North American prodromal Synucleinopathy cohort"
-    citation: "Elliott JE, Lim MM, Keil AT, Postuma RB, Pelletier A, Gagnon JF, St. Louis EK, Forsberg LK, Fields JA, Huddleston DE, Bliwise DL, Avidan AY, Howell MJ, Schenck CH, McLeland J, Criswell SR, Videnovic A, During EH, Miglis MG, Shprecher DR, Lee-Iannotti JK, Boeve BF, Ju YS. Ann Clin Transl Neurol. 2023 Apr;10(4):520-535. doi: 10.1002/acn3.51738. Epub 2023 Feb 8. PMID: 36751940; PMCID: PMC10109527."
-    summary: "Foundational publication describing the baseline characteristics of the NAPS cohort - the world's largest registry of patients with REM sleep behavior disorder (n=361), collected across 10 sites in North America."
+  - title: Baseline characteristics of the North American prodromal Synucleinopathy
+      cohort
+    citation: "Elliott JE, Lim MM, Keil AT, Postuma RB, Pelletier A, Gagnon JF, St.
+      Louis EK, Forsberg LK, Fields JA, Huddleston DE, Bliwise DL, Avidan AY,
+      Howell MJ, Schenck CH, McLeland J, Criswell SR, Videnovic A, During EH,
+      Miglis MG, Shprecher DR, Lee-Iannotti JK, Boeve BF, Ju YS. Ann Clin Transl
+      Neurol. 2023 Apr;10(4):520-535. doi: 10.1002/acn3.51738. Epub 2023 Feb 8.
+      PMID: 36751940; PMCID: PMC10109527."
+    summary: Foundational publication describing the baseline characteristics of the
+      NAPS cohort - the world's largest registry of patients with REM sleep
+      behavior disorder (n=361), collected across 10 sites in North America.
     doi: https://doi.org/10.1002/acn3.51738
     image: /images/publications/acn351738-fig-0001-m.jpg
-  - title: "Loss of sleep when it is needed most - Consequences of persistent developmental sleep disruption: A scoping review of rodent models."
-    citation: "Milman NEP, Tinsley CE, Raju RM, Lim MM. Neurobiology of Sleep and Circadian Rhythms. 2023; 14: 100085. doi: 10.1016/j.nbscr.2022.100085. PMID: 36567958; PMCID: PMC9768382."
-    summary: "Scoping review of rodent studies examining the function of sleep in early development."
+  - title: "Loss of sleep when it is needed most - Consequences of persistent
+      developmental sleep disruption: A scoping review of rodent models."
+    citation: "Milman NEP, Tinsley CE, Raju RM, Lim MM. Neurobiology of Sleep and
+      Circadian Rhythms. 2023; 14: 100085. doi: 10.1016/j.nbscr.2022.100085.
+      PMID: 36567958; PMCID: PMC9768382."
+    summary: Scoping review of rodent studies examining the function of sleep in
+      early development.
     doi: https://doi.org/10.1016%2Fj.nbscr.2022.100085
     image: /images/publications/milman-2023-graphicalabstract.jpg
-  - title: "Screening and Targeting Risk Factors for Prodromal Synucleinopathy: A Prescriptive Multi-modal Framework"
-    citation: "Neilson LE, Quinn JF, Lim MM. Aging and Disease. 2023 Aug 1;14(4):1243-1263. doi: 10.14336/AD.2022.1024. PMID: 37307836; PMCID: PMC10389816."
-    summary: "Comprehensive review on risk factors for Parkinson's Disease and evidence-based screening and neuroprotective approaches to prevent progression of disease."
+  - title: "Screening and Targeting Risk Factors for Prodromal Synucleinopathy: A
+      Prescriptive Multi-modal Framework"
+    citation: "Neilson LE, Quinn JF, Lim MM. Aging and Disease. 2023 Aug
+      1;14(4):1243-1263. doi: 10.14336/AD.2022.1024. PMID: 37307836; PMCID:
+      PMC10389816."
+    summary: Comprehensive review on risk factors for Parkinson's Disease and
+      evidence-based screening and neuroprotective approaches to prevent
+      progression of disease.
     doi: https://doi.org/10.14336/AD.2022.1024
     image: /images/publications/Neilson-ONPAR-flowdiagram.png
-
-    
-
-
-
-
-    
+  - title: Test title
+    citation: Test citation
+    summary: Test summary
+    doi: https://www.sharplabpdx.com
+    image: /images/uploads/sharperwave.png
+  - title: "Dietary Supplementation With Branched Chain Amino Acids to Improve Sleep
+      in Veterans With Traumatic Brain Injury: A Randomized Double-Blind
+      Placebo-Controlled Pilot and Feasibility Trial"
+    citation: "Elliott JE, Keil AT, Mithani S, Gill JM, O'Neil ME, Cohen AS, Lim MM.
+      Front Syst Neurosci. 2022 May 4;16:854874. doi: 10.3389/fnsys.2022.854874.
+      PMID: 35602971; PMCID: PMC9114805. "
+    summary: " First-in-human small pilot randomized clinical trial for branched
+      chain amino acid dietary supplementation to improve sleep in Veterans with
+      TBI - translated from our previous studies in mice. "
+    doi: https://doi.org/10.3389/fnsys.2022.854874
+    image: /images/publications/fnsys-16-854874-g003A.jpeg
+  - title: Photosensitivity Is Associated with Chronic Pain following Traumatic
+      Brain Injury
+    citation: "Balba NM, McBride AA, Callahan ML, Mist SD, Jones KD, Butler MP, Lim
+      MM, Heinricher MM. J Neurotrauma. 2022 Sep;39(17-18):1183-1194. doi:
+      10.1089/neu.2022.0019. Epub 2022 May 17. PMID: 35373595; PMCID:
+      PMC9422792. "
+    summary: "Photosensitivity is strongly associated with chronic pain scores among
+      nearly 400 Veterans with TBI. "
+    doi: https://doi.org/10.1089/neu.2022.0019
+    image: /images/publications/Balba-2022-Fig6.png
+  - doi: https://www.sharplabpdx.com/images/publications/pone.0262955.g002A.jpeg
+    title: Feasibility and preliminary efficacy for morning bright light therapy to
+      improve sleep and plasma biomarkers in US Veterans with TBI. A
+      prospective, open-label, single-arm trial
+    citation: "Elliott JE, McBride AA, Balba NM, Thomas SV, Pattinson CL, Morasco
+      BJ, Wilkerson A, Gill JM, Lim MM. PLoS One. 2022 Apr 14;17(4):e0262955.
+      doi: 10.1371/journal.pone.0262955. PMID: 35421086; PMCID: PMC9009710. "
+    summary: Clinical trial examining the feasibility of using light therapy to
+      improve sleep and blood-based biomarkers in Veterans with TBI.
+    image: /images/publications/pone.0262955.g002A.jpeg
+  - title: Early life sleep disruption alters glutamate and dendritic spines in
+      prefrontal cortex and impairs cognitive flexibility in prairie voles
+    citation: "Jones CE, Chau AQ, Olson RJ, Moore C, Wickham PT, Puranik N,
+      Guizzetti M, Cao H, Meshul CK, Lim MM. Curr Res Neurobiol. 2021;2:100020.
+      doi: 10.1016/j.crneur.2021.100020. Epub 2021 Jul 10. PMID: 35505895;
+      PMCID: PMC9060254."
+    summary: "We had previously shown that early life sleep disruption caused
+      persistently altered affiliative social behavior in normally highly
+      social, monogamous prairie voles. This publication provides a potential
+      explanation for those findings by highlighting changes in glutamate and
+      dendritic spines within prefrontal cortex of the affected prairie voles. "
+    doi: https://doi.org/10.1016/j.crneur.2021.100020
+    image: /images/publications/Jones-2021-CRN-graphicalabstract.jpeg
+  - title: Different Methods for Traumatic Brain Injury Diagnosis Influence Presence
+      and Symptoms of Post-Concussive Syndrome in United States Veterans
+    citation: "Elliott JE, Balba NM, McBride AA, Callahan ML, Street KT, Butler MP,
+      Heinricher MM, Lim MM. J Neurotrauma. 2021 Nov 15;38(22):3126-3136. doi:
+      10.1089/neu.2021.0031. Epub 2021 Sep 8. PMID: 34382417; PMCID: PMC8917885.
+      "
+    summary: "This publication highlights the importance of rigorous diagnostic
+      criteria for TBI in clinical research studies and sets forth the rationale
+      for the diagnostic methods for TBI used in SHARP studies. "
+    doi: https://doi.org/10.1089/neu.2021.0031
+    image: /images/publications/neu.2021.0031_figure4B.jpeg
+publication:
+  - title: Test
+    citation: test
+    summary: test
+    doi: test
+    image: test
