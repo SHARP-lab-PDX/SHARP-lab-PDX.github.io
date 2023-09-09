@@ -12,9 +12,23 @@ collections:
       file: "_data/ext-resources.yml"
       create: true
       fields:
-        - label: resource
+        - label: Resources
           name: resource
           widget: list
           fields:
             - {label: "Name", name: title, widget: string}
             - {label: URL, name: url, widget: string}
+    - label: "Publications"
+      name: "publications"
+      file: "_data/publications.yml"
+      create: true
+      fields:
+        - label: Publications
+          name: publication
+          widget: list
+          fields:
+            - {label: "Title", name: title, widget: string}
+            - {label: "Citation", name: citation, widget: string}
+            - {label: "Summary", name: Summary, widget: string}
+            - {label: "DOI URL", name: doi, widget: string}
+            - {label: "Figure", name: image, widget: image, default: "/images/uploads", allow_multiple: false}

@@ -7,7 +7,7 @@
                 <p class="fjalla fs-4 logo-color">SHARP Lab</p>
 
                 <ul class="nav flex-column">
-                    {% for item in site.data.navigation %}
+                    {% for item in site.data.navigation.navlinks %}
                     <li class="nav-item">
                         <a href="{{ item.url }}" class="nav-link">{{item.title }}</a>
                     </li>

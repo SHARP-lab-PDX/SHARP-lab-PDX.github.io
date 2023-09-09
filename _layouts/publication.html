@@ -1,0 +1,24 @@
+
+{% for pub in site.data.publications.yml %}
+<div class="card mt-4 light-theme card-gradient">
+    <div class="row g-0">
+
+        <div class="col-12 col-lg-7 my-auto">
+            <div class="card-body">
+                <h5 class="fs-3 bold pb-2">{{ pub.title }}</h5>
+                <p class="card-text">{{ pub.citation }}</p>
+                <p class="card-text">{{ pub.summary }}</p>
+                <p>
+                    <a class="btn btn-outline-dark publink" target="_blank"
+                        href="{{ pub.doi }}">Read article<i
+                            class="fa-btn-link fa-solid fa-circle-chevron-right"></i></a>
+                </p>
+
+            </div>
+        </div>
+        <div class="col-lg-5 d-block d-lg-flex align-items-center pubimg">
+            <img src="{{ pub.image }}" class="img-fluid p-2" alt="">
+        </div>
+    </div>
+</div>
+{% endfor %}
