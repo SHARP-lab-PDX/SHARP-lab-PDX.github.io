@@ -98,7 +98,7 @@ publications:
     doi: https://doi.org/10.1089/neu.2021.0031
     image: /images/publications/neu.2021.0031_figure4B.jpeg
   - title: Test title
-    citation: Test citation
+    citation: Test citation **with bold text**
     summary: Test summary
     doi: https://www.sharplabpdx.com
-    image: /images/uploads/sharperwave.png
+    image: /images/publications/favicon-square.png
