@@ -90,6 +90,17 @@ publications:
       dendritic spines within prefrontal cortex of the affected prairie voles. "
     doi: https://doi.org/10.1016/j.crneur.2021.100020
     image: /images/publications/Jones-2021-CRN-graphicalabstract.jpeg
+  - title: Different Methods for Traumatic Brain Injury Diagnosis Influence Presence
+      and Symptoms of Post-Concussive Syndrome in United States Veterans
+    citation: "Elliott JE, Balba NM, McBride AA, Callahan ML, Street KT, Butler MP,
+      Heinricher MM, Lim MM. J Neurotrauma. 2021 Nov 15;38(22):3126-3136. doi:
+      10.1089/neu.2021.0031. Epub 2021 Sep 8. PMID: 34382417; PMCID: PMC8917885.
+      "
+    summary: "This publication highlights the importance of rigorous diagnostic
+      criteria for TBI in clinical research studies and sets forth the rationale
+      for the diagnostic methods for TBI used in SHARP studies. "
+    doi: https://doi.org/10.1089/neu.2021.0031
+    image: /images/publications/neu.2021.0031_figure4B.jpeg
 publication:
   - title: Test
     citation: test
