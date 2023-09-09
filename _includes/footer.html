@@ -18,7 +18,7 @@
             <div class="col-12 col-md-5">
                 <p class="sintony pb-2">Resources</p>
                 <ul class="nav flex-column">
-                    {% for resource in site.data.ext-resources %}
+                    {% for resource in site.data.ext-resources.resource %}
                     <li class="nav-item">
                         <a href="{{ resource.url }}" class="nav-link">{{ resource.title }}</a>
                     </li>
