@@ -31,4 +31,4 @@ collections:
             - {label: "Citation", name: citation, widget: string}
             - {label: "Summary", name: summary, widget: string}
             - {label: "DOI URL", name: doi, widget: string}
-            - {label: "Image", name: image, widget: string}
+            - {label: "Image", name: image, widget: image}
