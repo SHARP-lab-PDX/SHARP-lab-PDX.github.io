@@ -12,7 +12,7 @@ collections:
       file: "_data/ext-resources.yml"
       create: true
       fields:
-        - label: Resources
+        - label: resource
           name: resource
           widget: list
           fields:
@@ -23,8 +23,8 @@ collections:
       file: "_data/publications.yml"
       create: true
       fields:
-        - label: Publications
-          name: publication
+        - label: publications
+          name: publications
           widget: list
           fields:
             - {label: "Title", name: title, widget: string}
