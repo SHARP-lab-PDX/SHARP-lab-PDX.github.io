@@ -124,3 +124,43 @@ publications:
       disease. "
     doi: https://doi.org/10.1093/sleep/zsz237
     image: /images/publications/Elliott-2020-Sleep.jpeg
+  - title: Early-life sleep disruption increases parvalbumin in primary
+      somatosensory cortex and impairs social bonding in prairie voles.
+    citation: "**Jones CE, Opel RA, Kaiser ME, Chau AQ**, Quintana JR, Nipper MA,
+      Finn DA, Hammock EAD, **Lim MM**. Sci Adv. 2019 Jan 30;5(1):eaav5188. doi:
+      10.1126/sciadv.aav5188. PMID: 30729165; PMCID: PMC6353622."
+    summary: "Foundational publication establishing a causal role for sleep in
+      shaping neural circuits during development and social behavior using the
+      prairie vole. "
+    doi: https://doi.org/10.1126/sciadv.aav5188
+    image: /images/publications/Jones-2019-SciAdv-Fig6.jpeg
+  - title: Dietary therapy mitigates persistent wake deficits caused by mild
+      traumatic brain injury.
+    citation: "**Lim MM**, Elkind J, Xiong G, Galante R, Zhu J, Zhang L, Lian J,
+      Rodin J, Kuzma NN, Pack AI, Cohen AS. Sci Transl Med. 2013 Dec
+      11;5(215):215ra173. doi: 10.1126/scitranslmed.3007092. PMID: 24337480;
+      PMCID: PMC3951738."
+    summary: First study showing dietary supplementation with branched chain amino
+      acids in a mouse model of TBI improves sleep via modulation of orexin
+      neurons in the hypothalamus.
+    doi: https://doi.org/10.1126/scitranslmed.3007092
+    image: /images/publications/Lim-2013-SciTranslMed.jpeg
+  - title: Amyloid-beta dynamics are regulated by orexin and the sleep-wake cycle
+    citation: "Kang JE, **Lim MM**, Bateman RJ, Lee JJ, Smyth LP, Cirrito JR, Fujiki
+      N, Nishino S, Holtzman DM. Science. 2009 Nov 13;326(5955):1005-7. doi:
+      10.1126/science.1180962. Epub 2009 Sep 24. PMID: 19779148; PMCID:
+      PMC2789838."
+    summary: "Landmark study first demonstrating a causal role for sleep in driving
+      amyloid-beta pathology in a mouse model of Alzheimer's disease. "
+    image: /images/publications/Kang-2009-Science-Fig4A.jpeg
+    doi: https://doi.org/10.1126/science.1180962
+  - title: Enhanced partner preference in a promiscuous species by manipulating the
+      expression of a single gene.
+    citation: "**Lim MM,** Wang Z, Olazábal DE, Ren X, Terwilliger EF, Young LJ.
+      Nature. 2004 Jun 17;429(6993):754-7. doi: 10.1038/nature02539. PMID:
+      15201909."
+    summary: Surprising study showing that a complex social behavior can be flipped
+      from promiscuous to monogamous tendencies in the vole by manipulating a
+      single gene within a single brain region.
+    doi: https://doi.org/10.1038/nature02539
+    image: /images/publications/Lim-2004-Nature-fig1+3.jpeg
