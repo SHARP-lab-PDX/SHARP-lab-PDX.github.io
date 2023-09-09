@@ -41,6 +41,11 @@ publications:
       progression of disease.
     doi: https://doi.org/10.14336/AD.2022.1024
     image: /images/publications/Neilson-ONPAR-flowdiagram.png
+  - title: Test title
+    citation: Test citation
+    summary: Test summary
+    doi: https://www.sharplabpdx.com
+    image: /images/uploads/sharperwave.png
 publication:
   - title: Test
     citation: test
