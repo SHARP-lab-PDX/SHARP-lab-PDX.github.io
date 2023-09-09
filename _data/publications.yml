@@ -1,4 +1,9 @@
 publications:
+  - title: Test title
+    citation: Test citation **with bold text**
+    summary: Test summary
+    doi: https://www.sharplabpdx.com
+    image: /images/publications/favicon-square.png
   - title: The temporal structure of REM sleep shows minute-scale fluctuations
       across brain and body in mice and humans
     citation: "Bueno-Junior LS, Ruckstuhl MS, **Lim MM**, Watson BO. Proc Natl Acad
@@ -97,11 +102,6 @@ publications:
       for the diagnostic methods for TBI used in SHARP studies. "
     doi: https://doi.org/10.1089/neu.2021.0031
     image: /images/publications/neu.2021.0031_figure4B.jpeg
-  - title: Test title
-    citation: Test citation **with bold text**
-    summary: Test summary
-    doi: https://www.sharplabpdx.com
-    image: /images/publications/favicon-square.png
   - title: "The Bidirectional Link Between Sleep Disturbances and Traumatic Brain
       Injury Symptoms: A Role for Glymphatic Dysfunction?"
     citation: "Piantino JA, Iliff JJ, **Lim MM**. Biol Psychiatry. 2022 Mar
