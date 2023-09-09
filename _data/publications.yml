@@ -77,6 +77,19 @@ publications:
     summary: Clinical trial examining the feasibility of using light therapy to
       improve sleep and blood-based biomarkers in Veterans with TBI.
     image: /images/publications/pone.0262955.g002A.jpeg
+  - title: Early life sleep disruption alters glutamate and dendritic spines in
+      prefrontal cortex and impairs cognitive flexibility in prairie voles
+    citation: "Jones CE, Chau AQ, Olson RJ, Moore C, Wickham PT, Puranik N,
+      Guizzetti M, Cao H, Meshul CK, Lim MM. Curr Res Neurobiol. 2021;2:100020.
+      doi: 10.1016/j.crneur.2021.100020. Epub 2021 Jul 10. PMID: 35505895;
+      PMCID: PMC9060254."
+    summary: "We had previously shown that early life sleep disruption caused
+      persistently altered affiliative social behavior in normally highly
+      social, monogamous prairie voles. This publication provides a potential
+      explanation for those findings by highlighting changes in glutamate and
+      dendritic spines within prefrontal cortex of the affected prairie voles. "
+    doi: https://doi.org/10.1016/j.crneur.2021.100020
+    image: /images/publications/Jones-2021-CRN-graphicalabstract.jpeg
 publication:
   - title: Test
     citation: test
