@@ -57,6 +57,16 @@ publications:
       TBI - translated from our previous studies in mice. "
     doi: https://doi.org/10.3389/fnsys.2022.854874
     image: /images/publications/fnsys-16-854874-g003A.jpeg
+  - title: Photosensitivity Is Associated with Chronic Pain following Traumatic
+      Brain Injury
+    citation: "Balba NM, McBride AA, Callahan ML, Mist SD, Jones KD, Butler MP, Lim
+      MM, Heinricher MM. J Neurotrauma. 2022 Sep;39(17-18):1183-1194. doi:
+      10.1089/neu.2022.0019. Epub 2022 May 17. PMID: 35373595; PMCID:
+      PMC9422792. "
+    summary: "Photosensitivity is strongly associated with chronic pain scores among
+      nearly 400 Veterans with TBI. "
+    doi: https://doi.org/10.1089/neu.2022.0019
+    image: /images/publications/Balba-2022-Fig6.png
 publication:
   - title: Test
     citation: test
