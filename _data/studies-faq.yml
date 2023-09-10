@@ -1,9 +1,18 @@
 faq:
-  - question: "Is there an age limit to participating in your studies?"
-    answer: "Please visit the individual study links above to fill out a screening survey to assess your eligibility."
+  - question: Is there an age limit to participating in your studies?
+    answer: Please visit the individual study links above to fill out a screening
+      survey to assess your eligibility.
+  - question: Will I be compensated for participating?
+    answer: Each study provides reimbursement for time and effort for participation.
+      If you are eligible, a study coordinator will contact you with further
+      details.
+  - question: Do you provide clinical advice or perform clinical testing?
+    answer: While some of our testing is clinical-grade, we do not provide clinical
+      reports or interpretation.
+  - question: This is a new question.
+    answer: |-
+      This is a new answer with a list:
 
-  - question: "Will I be compensated for participating?"
-    answer: "Each study provides reimbursement for time and effort for participation. If you are eligible, a study coordinator will contact you with further details."
-
-  - question: "Do you provide clinical advice or perform clinical testing?"
-    answer: "While some of our testing is clinical-grade, we do not provide clinical reports or interpretation."
+      * list item 1
+      * list item 2
+      * list item 3
