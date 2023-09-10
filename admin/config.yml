@@ -13,13 +13,13 @@ collections:
     fields:
       - {label: "First name", name: "first", widget: "string"}
       - {label: "Last name", name: "last", widget: "string"}
-      - {label: "Display name", name: "displayname", widget: "string", hint: "This is how your name will show up under your photo on the People page - generally your preferred first and last name, followed by any degrees, e.g. \"Miranda Lim, MD, PhD\""}
+      - {label: "Display name", name: "displayname", widget: "string", hint: "The display name is how each name will show up under their photo on the People page - generally their preferred first and last name, followed by any degrees, e.g. \"Miranda Lim, MD, PhD\""}
       - {label: "SHARP role", name: "role", widget: "string"}
-      - {label: "Preferred pronouns", name: "pronouns", widget: select, options: ["she/hers", "he/his", "they/theirs"], default: null, hint: "You can leave this blank to omit."}
+      - {label: "Preferred pronouns", name: "pronouns", widget: select, options: ["she/hers", "he/his", "they/theirs"], default: null, hint: "Leave this blank to omit pronouns.", required: false}
       - {label: "Photo", name: "photo", widget: image, hint: "For best results, photos should be square, no larger than 500 KB, and at least 200px by 200px in dimensions.", allow_multiple: false, default: "/images/profile-placeholder.png", media_folder: "/images/people"}
-      - {label: "Google Scholar URL (Optional)", name: "googlescholar", widget: string, required: false}
-      - {label: "PubMed URL (Optional)", name: "pubmed", widget: string, required: false}
-      - {label: "Bio", name: "body", widget: "markdown", required: false}
+      - {label: "Google Scholar URL", name: "googlescholar", widget: string, required: false, hint: "IMPORTANT! Be to provide the complete URL, beginning with http:// or https://"}
+      - {label: "PubMed URL", name: "pubmed", widget: string, required: false, hint: "IMPORTANT! Be to provide the complete URL, beginning with http:// or https://"}
+      - {label: "Bio", name: "body", widget: "markdown", required: false, hint: "Leave this blank to omit a bio."}
   - label: "Site data"
     name: "Site data"
     files:
@@ -45,14 +45,14 @@ collections:
           fields: 
             - {label: "title", name: "title", widget: "string"}
             - {label: "Media type", name: "type", widget: select, options: ["article", "podcast", "award", "video"] }
-            - {label: "Description (optional)", name: "description", widget: markdown, default: null}
+            - {label: "Description", name: "description", widget: markdown, default: null, required: false}
             - {label: "Source", name: "source", widget: "string", hint: "The name of the host website, magazine, journal, podcast, award-granting institution, etc."}
             - {label: "Month of publication", name: "month", widget: "select", options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
-            - {label: "Year of publication", name: "year", widget: "string"}
-            - {label: "URL", name: "url", widget: string}
-            - {label: "Feature on homepage?", name: "featured", widget: "boolean", default: false}
-            - {label: "Homepage headline", name: "headline", widget: "markdown", hint: "Only necessary if above is marked 'true'. Limit to around ~150 characters.", default: null}
-            - {label: "Button text", name: "button-text", widget: "string", hint: "This is optional. Use to override the 'Read', 'Watch', 'Listen' defaults.", default: null}
+            - {label: "Year of publication (YYYY)", name: "year", widget: "string"}
+            - {label: "URL", name: "url", widget: string, hint: "IMPORTANT! Be to provide the complete URL, beginning with http:// or https://"}
+            - {label: "Feature on homepage?", name: "featured", widget: "boolean", default: false, hint: "Toggle ON to include as a headline on the rotating homepage news carousel, and complete the 'Homepage headline' and, 'Button text' fields below."}
+            - {label: "Homepage headline", name: "headline", widget: "markdown", hint: "IMPORTANT! This field must be filled in if 'Feature on homepage?' is toggled ON. Limit to around ~150 characters.", default: null, required: false}
+            - {label: "Button text", name: "button-text", widget: "string", hint: "Only use if you wish to override the 'Read', 'Watch', 'Listen' button text defaults.", default: null, required: false}
     - label: "Publications"
       name: "publications"
       file: "_data/publications.yml"
@@ -65,7 +65,7 @@ collections:
             - {label: "Title", name: title, widget: string}
             - {label: "Citation", name: citation, widget: markdown, hint: "For consistency, use Vancouver citation formatting."}
             - {label: "Summary", name: summary, widget: text}
-            - {label: "DOI URL", name: doi, widget: string}
+            - {label: "DOI URL", name: doi, widget: string, hint: "IMPORTANT! Be to provide the complete URL, beginning with http:// or https://"}
             - {label: "Image", name: image, widget: image, allow_multiple: false, media_folder: /images/publications, default: "/images/sharperwave.png"}
     - label: "Research Studies"
       name: "studies"
@@ -77,8 +77,8 @@ collections:
           widget: list
           fields:
             - {label: "Study name", name: "title", widget: "string"}
-            - {label: "URL", name: url, widget: "string"}
-            - {label: "Button text", name: "button-text", widget: "string"}
+            - {label: "URL", name: url, widget: "string", hint: "IMPORTANT! Be to provide the complete URL, beginning with http:// or https://"}
+            - {label: "Button text", name: "button-text", widget: "string", default: "Inquire about this study"}
             - {label: "Flyer or other image", name: "image", widget: "image", allow_multiple: false, media_folder: "/images/research_studies", default: "/images/sharperwave.png"}
     - label: "Research studies FAQ"
       name: "faq-studies"
