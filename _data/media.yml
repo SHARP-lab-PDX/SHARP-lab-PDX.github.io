@@ -1,4 +1,22 @@
 media:
+  - month: April
+    button-text: Listen to the podcast
+    featured: true
+    url: /
+    headline: How do your **dreams affect your daily stress levels?** The SHARP lab
+      discusses some of their findings on the subject on the *Two Chatty Dudes*
+      podcast.
+    title: Are my dreams spiking my cortisol?
+    type: podcast
+    source: Two Chatty Dudes.
+    description: >-
+      How do your **dreams affect your daily stress levels?** The SHARP lab
+      discusses some of their findings on the subject on the *Two Chatty Dudes*
+      podcast.
+
+
+      This one should be featured on the homepage
+    year: "2023"
   - month: June
     button-text: Read the story
     featured: true
@@ -224,21 +242,3 @@ media:
     source: Nature News
     description: null
     year: "2004"
-  - month: April
-    button-text: Listen to the podcast
-    featured: true
-    url: /
-    headline: How do your **dreams affect your daily stress levels?** The SHARP lab
-      discusses some of their findings on the subject on the *Two Chatty Dudes*
-      podcast.
-    title: Are my dreams spiking my cortisol?
-    type: podcast
-    source: Two Chatty Dudes.
-    description: >-
-      How do your **dreams affect your daily stress levels?** The SHARP lab
-      discusses some of their findings on the subject on the *Two Chatty Dudes*
-      podcast.
-
-
-      This one should be featured on the homepage
-    year: "2023"
