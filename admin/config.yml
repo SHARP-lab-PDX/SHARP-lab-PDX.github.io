@@ -15,7 +15,7 @@ collections:
       - {label: "Last name", name: "last", widget: "string"}
       - {label: "Display name", name: "displayname", widget: "string", hint: "This is how your name will show up under your photo on the People page - generally your preferred first and last name, followed by any degrees, e.g. \"Miranda Lim, MD, PhD\""}
       - {label: "SHARP role", name: "role", widget: "string"}
-      - {label: "Preferred pronouns", name: "pronouns", widget: select, options: [null, "she/hers", "he/his", "they/theirs"], default: null}
+      - {label: "Preferred pronouns", name: "pronouns", widget: select, options: ["she/hers", "he/his", "they/theirs"], default: null, hint: "You can leave this blank to omit."}
       - {label: "Photo", name: "photo", widget: image, hint: "For best results, photos should be square, no larger than 500 KB, and at least 200px by 200px in dimensions.", allow_multiple: false, default: "/images/profile-placeholder.png", media_folder: "/images/people"}
       - {label: "Google Scholar URL (Optional)", name: "googlescholar", widget: string, required: false}
       - {label: "PubMed URL (Optional)", name: "googlescholar", widget: string, required: false}
