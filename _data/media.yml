@@ -242,3 +242,10 @@ media:
     source: Nature News
     description: null
     year: "2004"
+  - featured: false
+    title: Bare bones entry
+    type: article
+    source: Magazine XYZ
+    month: April
+    year: "2023"
+    url: /
