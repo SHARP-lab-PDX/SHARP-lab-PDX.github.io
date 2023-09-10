@@ -358,6 +358,10 @@ a {
     color: #06151e;
 }
 
+.hublink a {
+    color: rgb(241, 241, 241);
+}
+
 
 
 
@@ -390,6 +394,7 @@ a {
     text-shadow: 2px 2px 4px #00000056;
     background-color: rgba(255, 255, 255, 0.15);
     border-color: rgb(219, 231, 239);
+    color: rgb(241, 241, 241) !important;
 }
 
 .carousel-btn:hover {
@@ -597,7 +602,7 @@ section img {
 }
 
 .pubimg {
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     border-radius: 0 0 0.25rem 0.25rem;
 }
 
