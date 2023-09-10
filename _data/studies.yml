@@ -1,23 +1,22 @@
 studies:
-  - title: "Sleep & Wellness Study"
+  - title: Sleep & Wellness Study
     url: https://octri.ohsu.edu/redcap/surveys/?s=EDAKYRNTF4
-    button-text: "Inquire about this study"
+    button-text: Inquire about this study
     image: /images/research_studies/4268_flyer_v3_ALL_1108_2021-CR2023.jpeg
-
-  - title: "Dietary Supplement for Sleep"
+  - title: Dietary Supplement for Sleep
     url: https://octri.ohsu.edu/redcap/surveys/?s=XP8WXFWDA8
-    button-text: "Inquire about this study"
+    button-text: Inquire about this study
     image: /images/research_studies/SmART%20TBI_flyer_11_22_22.jpeg
-
-  - title: "Photosensitivity and Pain Study"
+  - title: Photosensitivity and Pain Study
     url: https://octri.ohsu.edu/redcap/surveys/?s=FEKE8YHPHN
-    button-text: "Inquire about this study"
+    button-text: Inquire about this study
     image: /images/research_studies/photosensitivity-study_flyer.jpeg
-
-  - title: "REM Sleep Behavior Disorder Study"
+  - title: REM Sleep Behavior Disorder Study
     url: https://www.naps-rbd.org/
-    button-text: "Find out more at NAPS"
+    button-text: Find out more at NAPS
     image: /images/sharperwave.png
-    addinfo: "Or send an email to **[naps@ohsu.edu](mailto:naps@ohsu.edu)**"
-
-
+    addinfo: Or send an email to **[naps@ohsu.edu](mailto:naps@ohsu.edu)**
+  - button-text: More info here
+    image: /images/sharperwave.png
+    title: New SHARP Study
+    url: /
