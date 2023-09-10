@@ -1,0 +1,10 @@
+items:
+    - header: "Data accessibility"
+      paragraphs:
+        - Finalized datasets from our studies and publications will be made available freely at the [CRCNS.org](http://crcns.org/), Mendeley Data, or equivalent websites to the extent feasible and allowable by institutional regulations.
+
+        - The sharing of unpublished information may be subject to confidentiality issues relating to our collaborations with other scientists in academic or corporate laboratories, and will need to be discussed with the appropriate institutions before any request is granted, wholly or in part.
+
+        - Biosamples generated from laboratory research and/or obtained from research participants may be available for sharing with other research groups via request after execution of appropriate Materials Transfer and Data Use Agreements.
+
+        - Regarding code and design sharing, after academic journal publication, GitHub or similar online publication forums for sharing of code, design files and/or plans for our research data will be used. GitHub or another git-related site is preferable as this will allow others in the community to improve upon our work and to commit their changes to an online repository for others to see, share and modify.

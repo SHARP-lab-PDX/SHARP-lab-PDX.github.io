@@ -40,9 +40,9 @@ section:last-of-type {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(241, 241, 241);
+    font-weight: 600;
 }
-
 
 
 /* Layout */
@@ -111,7 +111,7 @@ a {
 /* ************************** */
 
 .body-color {
-    background-color: rgb(14, 45, 64);
+    color: rgb(14, 45, 64);
 }
 
 .logo-color {
@@ -122,6 +122,11 @@ a {
     /* background-color: #86b3b5; */
     background-color: #95BEC0;
     color: rgba(14, 19, 28, 1);
+}
+
+.light-theme a {
+    color: rgb(14, 45, 64);
+    font-weight: 600;
 }
 
 .lightest-green {
@@ -364,21 +369,13 @@ a {
 }
 
 
-
 .overlay-txt {
     position: absolute;
     top: 15%;
     left: 12%;
     color: #fff;
     width: 80%;
-    font-size: 1.2rem;
     text-shadow: 2px 2px 4px #00000056;
-}
-
-.overlay-txt p {
-    font-size: 1rem;
-    padding-top: 2em;
-
 }
 
 /*, .carousel-indicators */
@@ -505,8 +502,8 @@ section img {
 }
 
 .bio-text {
-    font-size: 1.1rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: left !important;
 }
 
 
@@ -589,7 +586,7 @@ section img {
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 0.35rem;
-    color: rgb(223, 229, 233);
+    color: rgb(223, 229, 233) !important;
     background-color: #0d2434;
     border: none;
     box-shadow: 3px 4px 0px 0px #276873;
@@ -597,7 +594,6 @@ section img {
 
 .publink:hover {
     background-color: #398c9f;
-    ;
 }
 
 .pubimg {
@@ -668,7 +664,7 @@ hr {
 
     body {
         font-size: 1.1rem;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .bold {
