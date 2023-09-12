@@ -1,5 +1,5 @@
 ---
-first: Sami
+first: Samantha
 last: Friedrich
 displayname: Sami Friedrich, PhD
 role: Web Developer
