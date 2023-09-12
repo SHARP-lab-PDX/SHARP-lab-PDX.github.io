@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: decap # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
-media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "images/uploads"
 collections:
   - label: "People"
     name: "people"
@@ -16,14 +16,14 @@ collections:
       - {label: "Display name", name: "displayname", widget: "string", hint: "The display name is how each name will show up under their photo on the People page - generally their preferred first and last name, followed by any degrees, e.g. \"Miranda Lim, MD, PhD\""}
       - {label: "SHARP role", name: "role", widget: "string"}
       - {label: "Preferred pronouns", name: "pronouns", widget: select, options: ["she/hers", "he/his", "they/theirs"], default: null, hint: "Leave this blank to omit pronouns.", required: false}
-      - {label: "Photo", name: "photo", widget: image, hint: "For best results, photos should be square, no larger than 500 KB, and at least 200px by 200px in dimensions.", allow_multiple: false, default: "/images/profile-placeholder.png", media_folder: "/images/people"}
+      - {label: "Photo", name: "photo", widget: image, hint: "For best results, photos should be square, no larger than 500 KB, and at least 200px by 200px in dimension.", allow_multiple: false, default: "/images/profile-placeholder.png", media_folder: "/images/people"}
       - {label: "Google Scholar URL", name: "googlescholar", widget: string, required: false, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
       - {label: "PubMed URL", name: "pubmed", widget: string, required: false, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
       - {label: "Bio", name: "body", widget: "markdown", required: false, hint: "Leave this blank to omit a bio."}
   - label: "Site data"
     name: "site-data"
     files:
-    - label: "External Links"
+    - label: "Footer resources"
       name: "ext-resources"
       file: _data/ext-resources.yml
       create: true
@@ -33,8 +33,8 @@ collections:
           widget: list
           fields:
             - {label: "Name", name: title, widget: string}
-            - {label: URL, name: url, widget: string}
-    - label: "Press & Media"
+            - {label: URL, name: url, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
+    - label: "Press & media"
       name: media
       file: _data/media.yml
       create: true
@@ -66,8 +66,13 @@ collections:
             - {label: "Citation", name: citation, widget: markdown, hint: "For consistency, use Vancouver citation formatting."}
             - {label: "Summary", name: summary, widget: text}
             - {label: "DOI URL", name: doi, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
-            - {label: "Image", name: image, widget: image, allow_multiple: false, media_folder: /images/publications, default: "/images/sharperwave.png"}
-    - label: "Research Studies"
+            - {label: "Image", name: image, widget: image, allow_multiple: false, media_folder: /images/publications, default: "/images/sharperwave.png", hint: "For best results, images should be at least 400 px in dimension (does not have to be square) and should not exceed 500 KB."}
+    -label: "Join a Study page text"
+      name: "text-studies"
+      file: "_data/join-a-study-text.yml"
+      fields:
+        -label: 
+    - label: "Research studies"
       name: "studies"
       file: "_data/studies.yml"
       create: true
@@ -79,7 +84,12 @@ collections:
             - {label: "Study name", name: "title", widget: "string"}
             - {label: "URL", name: url, widget: "string", hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
             - {label: "Button text", name: "button-text", widget: "string", default: "Inquire about this study"}
-            - {label: "Flyer or other image", name: "image", widget: "image", allow_multiple: false, media_folder: "/images/research_studies", default: "/images/sharperwave.png"}
+            - label: "Flyer or other image"
+              name: "image"
+              widget: "image"
+              allow_multiple: false
+              media_folder: "/images/research_studies"
+              default: "/images/sharperwave.png"
     - label: "Research studies FAQ"
       name: "faq-studies"
       file: "_data/studies-faq.yml"
@@ -98,7 +108,40 @@ collections:
       fields:
         - label: faq
           name: faq
-          widget : list
+          widget: list
           fields: 
             - {label: "Question", name: "question", widget: "markdown"}
             - {label: "Answer", name: "answer", widget: "markdown"}
+    - label: "Home page text"
+      name: "home-text"
+      file: "_data/home-text.yml"
+      fields:
+        - {label: "Tagline", name: "tagline", widget: "string"}
+        - {label: "Welcome text", name: "text", widget: "markdown"}
+    - label: "Contact page data"
+      name: "contact"
+      file: "_data/contact.yml"
+      fields:
+        - label: "Email"
+          name: "email"
+          widget: "string"
+        - label: "Phone (include area code)"
+          name: "phone"
+          widget: "string"
+        - label: "Mailing address"
+          name: "mailing-address"
+        - label: "Physical location"
+          name: "physical-loc"
+          widget: "string"
+        - label: "Driving directions"
+          name: "driving"
+          widget: "markdown"
+        - label: "Public transit directions"
+          name: "public-transit"
+          widget: "markdown"
+        - label: "Aerial tram directions"
+          name: "tram"
+          widget: "markdown"
+
+
+      

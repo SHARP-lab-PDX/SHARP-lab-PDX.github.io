@@ -3,12 +3,13 @@ title: Join a Study
 layout: default
 permalink: /join-a-study
 ---
+{% assign data = site.data.join-a-study-text %}
 
 <section>
   <div class="jumbotron"
     style="background-image: linear-gradient(rgba(16, 64, 86, 0.5), rgba(3, 48, 68, 0.65)), url(images/sleep_traces_2.png); background-position: center;">
     <div class="container almost-white jumbo-title">
-      <h1 class="display-2 sintony">Join a Research Study</h1>
+      <h1 class="display-2 sintony">{{ page.title }}</h1>
     </div>
   </div>
 </section>
@@ -16,39 +17,20 @@ permalink: /join-a-study
 
 <section>
   <div class="container px-4">
-    <h1 class="sintony display-6 pb-5">We can't do it without you.</h1>
+    <h1 class="sintony display-6 pb-5">{{ data.heading1 }}</h1>
 
     <div class="row gx-5 gy-4">
 
 
       <div class="col-12 col-lg-6">
-        <h3 class="sintony fs-4 bold">Gratitude for our Research Participants</h3>
-        <p>
-          Our work could not exist without the efforts of research participants who volunteer for our
-          studies,
-          giving us both
-          their trust and time so that we may better understand the nature of sleep, chronic pain, and
-          memory
-          problems. We treat
-          all our research participants with respect, dignity and gratitude for the critical role they
-          play in
-          our
-          work. We are
-          committed to providing a safe, caring, professional environment for our subjects.</p>
+        <h3 class="sintony fs-4 bold">{{ data.subheading1 }}</h3>
+        <p>{{ data.text1 | markdownify }}</p>
       </div>
 
 
       <div class="col-12 col-lg-6">
-        <h3 class="sintony fs-4 bold">Diversity and Inclusion Statement</h3>
-        <p>
-          SHARP is committed to embracing inclusivity for all our people, including our staff and our
-          research
-          participants. Our
-          program embraces the diversity of human identity: All races, gender identities, ethnicities,
-          nationalities, sexual
-          orientations, socio-economic backgrounds, political views and faith perspectives are welcome to
-          participate in our work.
-        </p>
+        <h3 class="sintony fs-4 bold">{{ data.subheading2 }}</h3>
+        <p>{{ data.text2 | markdownify }}</p>
       </div>
 
     </div>
@@ -60,19 +42,8 @@ permalink: /join-a-study
 <section class="light-theme">
   <div class="container px-4">
 
-    <h1 class="sintony display-5 pb-4">Current studies</h1>
-    <p>We offer a variety of research studies related to sleep and neurological health. Some can be done 100%
-      remotely via
-      mail, phone, or video visits.
-    </p>
-    <p>
-      <span class="bold">
-
-        Please visit the links to online surveys below to see if you are eligible to
-        participate.
-      </span>
-    </p>
-
+    <h1 class="sintony display-5 pb-4">{{ data.heading2}} </h1>
+    <p>{{ data.text3 | markdownify }}</p>
 
     <div class="row gy-5 text-center pt-5">
 

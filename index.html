@@ -4,6 +4,8 @@ layout: default
 index: true
 permalink: /
 ---
+{% assign home = site.data.home-text | first %}
+
 <!-- Herobox -->
 <section class="bgimage" id="home">
   <div class="container-fluid hero-container d-flex justify-content-end align-items-end p-0">
@@ -12,14 +14,11 @@ permalink: /
     </div>
     <div class="col-12 text-end pb-4 tagline pe-2 pe-md-5 sintony lightest-green text-shadow">Sleep &amp; Health
       Applied
-                                                                                                                                                                              Research
-                                                                                                                                                                              Program
+      Research
+      Program
     </div>
     <div class="col-11 col-md-9 col-lg-10 dark-mask rounded-start-3">
-      <p class="hero-desc p-3">The Sleep &amp; Health Applied Research Program is a community of researchers
-        and clinicians based in Portland, Oregon with a mission to research how sleep affects the brain
-                                                                                                                                                                                                                                        across the lifespan in health and
-                                                                                                                                                                                                                                        disease, and to identify and test new therapies.</p>
+      <p class="hero-desc p-3">{{ home.tagline }}</p>
     </div>
   </div>
 </section>
@@ -33,27 +32,11 @@ permalink: /
     <div class="row d-flex align-items-center justify-content-around g-4">
 
       <div class="col-11 col-lg-7 p-lg-5 pb-lg-0">
-        <p class="lightest-green display-3 sintony text-shadow">Welcome</p>
+        <p class="lightest-green display-3 sintony text-shadow">{{ home.heading }}</p>
 
 
         <div class="about-text">
-          <p>Since 2016,
-            SHARP has grown
-                                                                                                                                                                                                                                                                                                                                                            rapidly and made a number of foundational discoveries in the form of impactful abstracts,
-                                                                                                                                                                                                                                                                                                                                                            manuscripts,
-                                                                                                                                                                                                                                                                                                                                                            presentations,
-                                                                                                                                                                                                                                                                                                                                                            and additional grant funding and supported career growth for its lab members.</p>
-          <p>
-            Our translational approach from rodents to humans investigates the neurobiology of sleep in
-            cognition, social development, and mental and general health outcomes in a variety brain
-                                                                                                                                                                                                                                                                                                                                                            disorders, such as TBI, PTSD, neurodevelopmental disorders and neurodegenerative disease.
-                                                                                                                                                                                                                                                                                                                                                            Our methods include basic science in preclinical models, large-scale observational studies
-                                                                                                                                                                                                                                                                                                                                                            and
-                                                                                                                                                                                                                                                                                                                                                            big data analysis, and randomized clinical intervention trials. We strive to foster a
-                                                                                                                                                                                                                                                                                                                                                            dynamic and
-                                                                                                                                                                                                                                                                                                                                                            engaging scientific environment that respects diverse strengths and backgrounds and welcomes
-                                                                                                                                                                                                                                                                                                                                                            a culture of lifelong learning and feedback through active mentorship at all levels.
-          </p>
+          <p>{{ home.text | markdownify }}</p>
         </div>
 
       </div>
@@ -66,32 +49,20 @@ permalink: /
         <div class="row" id="Directors">
 
           <div class="col-6">
-            <img
-              class="img-fluid rounded shadow"
-              src="/images/people/miranda-lim.jpeg"
-              alt="">
+            <img class="img-fluid rounded shadow" src="/images/people/miranda-lim.jpeg" alt="">
             <h5 class="pt-3 fw400">Dr. Miranda M. Lim, MD, PhD
             </h5>
             <!-- <p class="bold">SHARP Director</p> -->
-            <a
-              href="#LimBio"
-              class="btn btn-outline-light publink fs-5"
-              onclick="toggler('LimBio');">
+            <a href="#LimBio" class="btn btn-outline-light publink fs-5" onclick="toggler('LimBio');">
               <i class="pe-2 fa-solid fa-user"></i>Bio</a>
           </div>
 
 
           <div class="col-6">
-            <img
-              class="img-fluid rounded shadow"
-              src="/images/people/jonathan-elliott.jpeg"
-              alt="">
+            <img class="img-fluid rounded shadow" src="/images/people/jonathan-elliott.jpeg" alt="">
             <h5 class="pt-3 fw400">Dr. Jonathan Elliott, PhD</h5>
             <!-- <p class="bold">SHARP Director</p> -->
-            <a
-              href="#ElliottBio"
-              class="btn btn-outline-light publink fs-5"
-              onclick="toggler('ElliottBio');">
+            <a href="#ElliottBio" class="btn btn-outline-light publink fs-5" onclick="toggler('ElliottBio');">
               <i class="pe-2 fa-solid fa-user"></i>Bio</a>
           </div>
 
@@ -108,26 +79,20 @@ permalink: /
 
   <div class="container">
     <div class="d-flex flex-row-reverse">
-      <a
-        href="#Directors"
-        class="btn btn-close position-absolute"
-        style="margin-top: 5px;"
+      <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
         onclick="toggler('LimBio');"></a>
     </div>
 
     <div class="row d-flex align-items-center">
       <div class="col-3 col-lg-2 ">
-        <img
-          class="img-fluid rounded shadow float-start"
-          src="{{ person.photo }}"
-          alt="">
+        <img class="img-fluid rounded shadow float-start" src="{{ person.photo }}" alt="">
       </div>
       <div class="col-9 col-lg-10">
         <h4 class="body-color fjalla">SHARP Co-Director</h4>
 
         <h1 class="bold display-6">
           {{ person.displayname}} </h1>
-        <h5>(she/her/hers)</h5>
+        <h5>{{ person.pronouns }}</h5>
       </div>
 
       <p>{{ person }}</p>
@@ -135,11 +100,7 @@ permalink: /
 
 
       <div class="text-end pb-4">
-        <a
-          href="#Directors"
-          class="btn btn-outline-dark fs-6"
-          aria-label="Close"
-          onclick="toggler('LimBio');">Close</a>
+        <a href="#Directors" class="btn btn-outline-dark fs-6" aria-label="Close" onclick="toggler('LimBio');">Close</a>
       </div>
     </div>
 
@@ -152,19 +113,13 @@ permalink: /
   {% assign jon = site.people | where: "nameid", "jelliott" | first %}
   <div class="container">
     <div class="d-flex flex-row-reverse">
-      <a
-        href="#Directors"
-        class="btn btn-close position-absolute"
-        style="margin-top: 5px;"
+      <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
         onclick="toggler('ElliottBio');"></a>
     </div>
 
     <div class="row d-flex align-items-center">
       <div class="col-3 col-lg-2 ">
-        <img
-          class="img-fluid rounded shadow float-start"
-          src="{{ jon.photo }}"
-          alt="">
+        <img class="img-fluid rounded shadow float-start" src="{{ jon.photo }}" alt="">
       </div>
       <div class="col-9 col-lg-10">
         <h4 class="body-color fjalla">SHARP Co-Director</h4>
@@ -175,9 +130,8 @@ permalink: /
 
       <p>{{ jon }}</p>
 
+    </div>
   </div>
-
-
 </section>
 
 
@@ -192,10 +146,8 @@ permalink: /
       <div class="col-6 col-lg-3 mx-auto p-4">
 
         <div class="card mycard border-0">
-          <img
-            class="card-img-top img-fluid img-border-light shadow rounded"
-            src="/images/home-sleep-study-participant-edit-400px.jpg"
-            alt="Card image">
+          <img class="card-img-top img-fluid img-border-light shadow rounded"
+            src="/images/home-sleep-study-participant-edit-400px.jpg" alt="Card image">
           <div class="card-img-overlay d-flex align-items-end px-0 py-0 shadow rounded myhover">
             <div class="card-title pt-1 rounded text-center">
               <h2 class="sintony lightest-green text-shadow display-6 pt-1 hublink">
@@ -211,10 +163,8 @@ permalink: /
       <div class="col-6 col-lg-3 mx-auto p-4">
 
         <div class="card mycard border-0 rounded">
-          <img
-            class="card-img-top img-fluid rounded shadow img-border-light"
-            src="/images/group-photo-2022-edit-400px.jpg"
-            alt="Card image">
+          <img class="card-img-top img-fluid rounded shadow img-border-light"
+            src="/images/group-photo-2022-edit-400px.jpg" alt="Card image">
           <div class="card-img-overlay d-flex align-items-end px-0 py-0 rounded myhover">
             <div class="card-title pt-1 rounded text-center">
               <h2 class="sintony lightest-green text-shadow display-6 pt-1 hublink">
@@ -232,61 +182,44 @@ permalink: /
       <div class="col-12 col-lg-6 mx-auto no-padding no-margin" style="background-color: rgba(63, 97, 139, 0);">
 
 
-        <div
-          id="mediaCarousel"
-          class="carousel slide h-100"
-          data-bs-ride="carousel">
+        <div id="mediaCarousel" class="carousel slide h-100" data-bs-ride="carousel">
 
           <div class="carousel-inner">
 
             {% assign features = site.data.media.media | where: "featured", true %}
             {% for feature in features %}
-              {% if feature.description contains "Ologies" %}
-                <div class="carousel-item active">
-                  <img
-                    src="/images/cardbg1.jpeg"
-                    class="d-block img-fluid rel-image dark-filter"
-                    alt="...">
+            {% if feature.description contains "Ologies" %}
+            <div class="carousel-item active">
+              <img src="/images/cardbg1.jpeg" class="d-block img-fluid rel-image dark-filter" alt="...">
 
-                  <div class="overlay-txt px-1 display-6">
-                    <p>{{ feature.headline | markdownify }}</p>
-                    <p class="pt-2">
-                      <a href="{{ feature.url }}" class="btn btn-outline-light carousel-btn">{{ feature.button-text }}</a>
-                    </p>
-                  </div>
-                </div>
-              {% else %}
-                <div class="carousel-item">
-                  <img
-                    src="/images/cardbg1.jpeg"
-                    class="d-block img-fluid rel-image dark-filter"
-                    alt="...">
+              <div class="overlay-txt px-1 display-6">
+                <p>{{ feature.headline | markdownify }}</p>
+                <p class="pt-2">
+                  <a href="{{ feature.url }}" class="btn btn-outline-light carousel-btn">{{ feature.button-text }}</a>
+                </p>
+              </div>
+            </div>
+            {% else %}
+            <div class="carousel-item">
+              <img src="/images/cardbg1.jpeg" class="d-block img-fluid rel-image dark-filter" alt="...">
 
-                  <div class="overlay-txt px-1 display-6">
-                    <p>{{ feature.headline | markdownify }}</p>
-                    <p class="pt-2">
-                      <a href="{{ feature.url }}" class="btn btn-outline-light carousel-btn">{{ feature.button-text }}</a>
-                    </p>
-                  </div>
-                </div>
-              {% endif %}
+              <div class="overlay-txt px-1 display-6">
+                <p>{{ feature.headline | markdownify }}</p>
+                <p class="pt-2">
+                  <a href="{{ feature.url }}" class="btn btn-outline-light carousel-btn">{{ feature.button-text }}</a>
+                </p>
+              </div>
+            </div>
+            {% endif %}
             {% endfor %}
 
           </div>
 
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
