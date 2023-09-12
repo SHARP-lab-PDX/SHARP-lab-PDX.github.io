@@ -9,10 +9,3 @@ faq:
   - question: Do you provide clinical advice or perform clinical testing?
     answer: While some of our testing is clinical-grade, we do not provide clinical
       reports or interpretation.
-  - question: This is a new question.
-    answer: |-
-      This is a new answer with a list:
-
-      * list item 1
-      * list item 2
-      * list item 3
