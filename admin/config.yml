@@ -118,7 +118,7 @@ collections:
         - {label: "Join the lab statement", name: "join-statement", widget: "markdown"}
         - {label: "Open positions list", name: "open-positions", widget: "markdown"}
         - {label: "Internship opportunities", name: "internships", widget: "markdown"}
-    - label: "Contact page data"
+    - label: "Contact page info"
       name: "contact"
       file: "_data/contact.yml"
       fields:
