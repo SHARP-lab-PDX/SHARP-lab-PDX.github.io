@@ -1,7 +1,7 @@
 ---
 first: Samantha
 last: Friedrich
-displayname: Sami Friedrich, PhD
+displayname: Samantha Friedrich, PhD
 role: Web Developer
 pronouns: null
 photo: /images/people/favicon-light.png
