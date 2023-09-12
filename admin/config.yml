@@ -20,128 +20,128 @@ collections:
       - {label: "Google Scholar URL", name: "googlescholar", widget: string, required: false, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
       - {label: "PubMed URL", name: "pubmed", widget: string, required: false, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
       - {label: "Bio", name: "body", widget: "markdown", required: false, hint: "Leave this blank to omit a bio."}
-  - label: "Site data"
-    name: "site-data"
-    files:
-    - label: "Footer resources"
-      name: "ext-resources"
-      file: _data/ext-resources.yml
-      create: true
-      fields:
-        - label: resource
-          name: resource
-          widget: list
-          fields:
-            - {label: "Name", name: title, widget: string}
-            - {label: URL, name: url, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
-    - label: "Press & media"
-      name: media
-      file: _data/media.yml
-      create: true
-      fields:
-        - label: "Media items"
-          name: media
-          widget: list
-          fields: 
-            - {label: "title", name: "title", widget: "string"}
-            - {label: "Media type", name: "type", widget: select, options: ["article", "podcast", "award", "video"] }
-            - {label: "Description", name: "description", widget: markdown, default: null, required: false}
-            - {label: "Source", name: "source", widget: "string", hint: "The name of the host website, magazine, journal, podcast, award-granting institution, etc."}
-            - {label: "Month of publication", name: "month", widget: "select", options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
-            - {label: "Year of publication (YYYY)", name: "year", widget: "string"}
-            - {label: "URL", name: "url", widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
-            - {label: "Feature on homepage?", name: "featured", widget: "boolean", default: false, hint: "Toggle ON to include as a headline on the rotating homepage news carousel, and complete the 'Homepage headline' and, 'Button text' fields below."}
-            - {label: "Homepage headline", name: "headline", widget: "markdown", hint: "IMPORTANT! This field must be filled in if 'Feature on homepage?' is toggled ON. Limit to around ~150 characters.", default: null, required: false}
-            - {label: "Button text", name: "button-text", widget: "string", hint: "Only use if you wish to override the 'Read', 'Watch', 'Listen' button text defaults.", default: null, required: false}
-    - label: "Publications"
-      name: "publications"
-      file: "_data/publications.yml"
-      create: true
-      fields:
-        - label: publications
-          name: publications
-          widget: list
-          fields:
-            - {label: "Title", name: title, widget: string}
-            - {label: "Citation", name: citation, widget: markdown, hint: "For consistency, use Vancouver citation formatting."}
-            - {label: "Summary", name: summary, widget: text}
-            - {label: "DOI URL", name: doi, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
-            - {label: "Image", name: image, widget: image, allow_multiple: false, media_folder: /images/publications, default: "/images/sharperwave.png", hint: "For best results, images should be at least 400 px in dimension (does not have to be square) and should not exceed 500 KB."}
-    -label: "Join a Study page text"
-      name: "text-studies"
-      file: "_data/join-a-study-text.yml"
-      fields:
-        -label: 
-    - label: "Research studies"
-      name: "studies"
-      file: "_data/studies.yml"
-      create: true
-      fields:
-        - label: studies
-          name: studies
-          widget: list
-          fields:
-            - {label: "Study name", name: "title", widget: "string"}
-            - {label: "URL", name: url, widget: "string", hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
-            - {label: "Button text", name: "button-text", widget: "string", default: "Inquire about this study"}
-            - label: "Flyer or other image"
-              name: "image"
-              widget: "image"
-              allow_multiple: false
-              media_folder: "/images/research_studies"
-              default: "/images/sharperwave.png"
-    - label: "Research studies FAQ"
-      name: "faq-studies"
-      file: "_data/studies-faq.yml"
-      create: true
-      fields:
-        - label: faq
-          name: faq
-          widget : list
-          fields: 
-            - {label: "Question", name: "question", widget: "markdown"}
-            - {label: "Answer", name: "answer", widget: "markdown"}
-    - label: "Join the Lab FAQ"
-      name: "faq-lab"
-      file: "_data/lab-faq.yml"
-      create: true
-      fields:
-        - label: faq
-          name: faq
-          widget: list
-          fields: 
-            - {label: "Question", name: "question", widget: "markdown"}
-            - {label: "Answer", name: "answer", widget: "markdown"}
-    - label: "Home page text"
-      name: "home-text"
-      file: "_data/home-text.yml"
-      fields:
-        - {label: "Tagline", name: "tagline", widget: "string"}
-        - {label: "Welcome text", name: "text", widget: "markdown"}
-    - label: "Contact page data"
-      name: "contact"
-      file: "_data/contact.yml"
-      fields:
-        - label: "Email"
-          name: "email"
-          widget: "string"
-        - label: "Phone (include area code)"
-          name: "phone"
-          widget: "string"
-        - label: "Mailing address"
-          name: "mailing-address"
-        - label: "Physical location"
-          name: "physical-loc"
-          widget: "string"
-        - label: "Driving directions"
-          name: "driving"
-          widget: "markdown"
-        - label: "Public transit directions"
-          name: "public-transit"
-          widget: "markdown"
-        - label: "Aerial tram directions"
-          name: "tram"
-          widget: "markdown"
+  # - label: "Site data"
+  #   name: "site-data"
+  #   files:
+  #   - label: "Footer resources"
+  #     name: "ext-resources"
+  #     file: _data/ext-resources.yml
+  #     create: true
+  #     fields:
+  #       - label: resource
+  #         name: resource
+  #         widget: list
+  #         fields:
+  #           - {label: "Name", name: title, widget: string}
+  #           - {label: URL, name: url, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
+  #   - label: "Press & media"
+  #     name: media
+  #     file: _data/media.yml
+  #     create: true
+  #     fields:
+  #       - label: "Media items"
+  #         name: media
+  #         widget: list
+  #         fields: 
+  #           - {label: "title", name: "title", widget: "string"}
+  #           - {label: "Media type", name: "type", widget: select, options: ["article", "podcast", "award", "video"] }
+  #           - {label: "Description", name: "description", widget: markdown, default: null, required: false}
+  #           - {label: "Source", name: "source", widget: "string", hint: "The name of the host website, magazine, journal, podcast, award-granting institution, etc."}
+  #           - {label: "Month of publication", name: "month", widget: "select", options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
+  #           - {label: "Year of publication (YYYY)", name: "year", widget: "string"}
+  #           - {label: "URL", name: "url", widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
+  #           - {label: "Feature on homepage?", name: "featured", widget: "boolean", default: false, hint: "Toggle ON to include as a headline on the rotating homepage news carousel, and complete the 'Homepage headline' and, 'Button text' fields below."}
+  #           - {label: "Homepage headline", name: "headline", widget: "markdown", hint: "IMPORTANT! This field must be filled in if 'Feature on homepage?' is toggled ON. Limit to around ~150 characters.", default: null, required: false}
+  #           - {label: "Button text", name: "button-text", widget: "string", hint: "Only use if you wish to override the 'Read', 'Watch', 'Listen' button text defaults.", default: null, required: false}
+  #   - label: "Publications"
+  #     name: "publications"
+  #     file: "_data/publications.yml"
+  #     create: true
+  #     fields:
+  #       - label: publications
+  #         name: publications
+  #         widget: list
+  #         fields:
+  #           - {label: "Title", name: title, widget: string}
+  #           - {label: "Citation", name: citation, widget: markdown, hint: "For consistency, use Vancouver citation formatting."}
+  #           - {label: "Summary", name: summary, widget: text}
+  #           - {label: "DOI URL", name: doi, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
+  #           - {label: "Image", name: image, widget: image, allow_multiple: false, media_folder: /images/publications, default: "/images/sharperwave.png", hint: "For best results, images should be at least 400 px in dimension (does not have to be square) and should not exceed 500 KB."}
+  #   -label: "Join a Study page text"
+  #     name: "text-studies"
+  #     file: "_data/join-a-study-text.yml"
+  #     fields:
+  #       -label: 
+  #   - label: "Research studies"
+  #     name: "studies"
+  #     file: "_data/studies.yml"
+  #     create: true
+  #     fields:
+  #       - label: studies
+  #         name: studies
+  #         widget: list
+  #         fields:
+  #           - {label: "Study name", name: "title", widget: "string"}
+  #           - {label: "URL", name: url, widget: "string", hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
+  #           - {label: "Button text", name: "button-text", widget: "string", default: "Inquire about this study"}
+  #           - label: "Flyer or other image"
+  #             name: "image"
+  #             widget: "image"
+  #             allow_multiple: false
+  #             media_folder: "/images/research_studies"
+  #             default: "/images/sharperwave.png"
+  #   - label: "Research studies FAQ"
+  #     name: "faq-studies"
+  #     file: "_data/studies-faq.yml"
+  #     create: true
+  #     fields:
+  #       - label: faq
+  #         name: faq
+  #         widget : list
+  #         fields: 
+  #           - {label: "Question", name: "question", widget: "markdown"}
+  #           - {label: "Answer", name: "answer", widget: "markdown"}
+  #   - label: "Join the Lab FAQ"
+  #     name: "faq-lab"
+  #     file: "_data/lab-faq.yml"
+  #     create: true
+  #     fields:
+  #       - label: faq
+  #         name: faq
+  #         widget: list
+  #         fields: 
+  #           - {label: "Question", name: "question", widget: "markdown"}
+  #           - {label: "Answer", name: "answer", widget: "markdown"}
+  #   - label: "Home page text"
+  #     name: "home-text"
+  #     file: "_data/home-text.yml"
+  #     fields:
+  #       - {label: "Tagline", name: "tagline", widget: "string"}
+  #       - {label: "Welcome text", name: "text", widget: "markdown"}
+  #   - label: "Contact page data"
+  #     name: "contact"
+  #     file: "_data/contact.yml"
+  #     fields:
+  #       - label: "Email"
+  #         name: "email"
+  #         widget: "string"
+  #       - label: "Phone (include area code)"
+  #         name: "phone"
+  #         widget: "string"
+  #       - label: "Mailing address"
+  #         name: "mailing-address"
+  #       - label: "Physical location"
+  #         name: "physical-loc"
+  #         widget: "string"
+  #       - label: "Driving directions"
+  #         name: "driving"
+  #         widget: "markdown"
+  #       - label: "Public transit directions"
+  #         name: "public-transit"
+  #         widget: "markdown"
+  #       - label: "Aerial tram directions"
+  #         name: "tram"
+  #         widget: "markdown"
 
 
       
