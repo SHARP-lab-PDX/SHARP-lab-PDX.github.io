@@ -3,7 +3,7 @@ title: About
 layout: default
 permalink: /about
 ---
-
+{% assign data = site.data.about %}
 <section>
     <div class="jumbotron taller-jumbo"
         style="background-image: url(/images/sharp_group_lab-full.jpeg); background-position: 50% 20%; height: 60vh;">
@@ -29,21 +29,7 @@ permalink: /about
             <div class="col-12 col-lg-10 col-xl-5 mx-auto">
                 <h1 class="sintony display-5 pb-4">Our Research</h1>
 
-                <p>We seek to understand the neuroscience of sleep, and how this can be optimized to improve quality
-                    of life in health and
-                    disease.
-                </p>
-                <p> We work closely with the community to improve quality of life
-                    through our cutting
-                    edge research. Our science serves a number of stakeholders, including Veterans and other
-                    affected patients,
-                    clinicians, the scientific
-                    community, and the general public.
-                </p>
-
-                <p>Through our research, we hope to discover new therapies for TBI, PTSD, chronic pain,
-                    neurodevelopmental disorders and
-                    dementia.</p>
+                {{ data.research-summary | markdownify }}
 
             </div>
             <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
@@ -51,42 +37,17 @@ permalink: /about
                     style="width: 100%;" alt="">
             </div>
         </div>
-        <p class="fs-3">We utilize a range of approaches including:</p>
-
-        <div class="row">
-
-            <div class="col-12 col-lg-6 col-xl-6 mx-auto mt-3">
-                <h4>Human Subjects</h4>
-                <ul>
-                    <li>Polysomnography in the sleep clinic or at home</li>
-                    <li>MRI scans of the brain</li>
-                    <li>Randomized clinical trials testing dietary supplements and other lifestyle based
-                        interventions to improve sleep, pain,
-                        memory and/or mood.</li>
-                    <li>Monitoring of activity and sleep using wristwatch-based devices, bed mats, light
-                        sensors,
-                        and/or other unobtrusive
-                        sensors in the home</li>
-                    <li>Survey-based questionnaires</li>
-                    <li>Reaction time and memory testing</li>
-                    <li>Saliva and/or blood collection</li>
-                </ul>
-
-            </div>
-
-            <div class="col-12 col-lg-6 col-xl-6 mx-auto mt-3">
-                <h4>Rodent Subjects</h4>
-                <ul>
-                    <li>Sleep EEG and EMG</li>
-                    <li>Social interaction and social preference testing</li>
-                    <li>Learning and memory testing and conditioning</li>
-                    <li>Gait and locomotor activity assessments</li>
-                    <li>Home cage behavior and naturalistic observations</li>
-                    <li>Functional ultrasound imaging of the brain</li>
-                    <li>Biosensors for neurotransmitters in the brain</li>
-                    <li>Immunohistochemistry and microscopy</li>
-                </ul>
-
+        <div class="pt-3">
+            <h3>We utilize a range of approaches including:</h3>
+            <div class="row">
+                <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
+                    <h4>Human Subjects</h4>
+                    {{ data.human-methods | markdownify }}
+                </div>
+                <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
+                    <h4>Rodent Subjects</h4>
+                    {{ data.animal-methods | markdownify}}
+                </div>
             </div>
         </div>
     </div>
@@ -95,44 +56,21 @@ permalink: /about
 
 
 
-<section class="light-theme mission">
+<section class="light-theme" id="Mission">
     <div class="container">
 
         <div class="col-12 col-lg-10 col-xl-12 mx-auto">
             <h1 class="sintony display-5 pb-4">Mission &amp; Values</h1>
-            <p>SHARP conducts vitally important, impactful research studies in a dynamic and engaging scientific
-                environment.</p>
         </div>
 
         <div class="row">
 
+            <div class="col-12 col-lg-10 col-xl-5 mx-auto my-auto">
+                {{ data.mission | markdownify }}
+            </div>
 
             <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
                 <img src="/images/research-fair.jpg" class="img-fluid shadow img-border img-slant-left" alt="">
-            </div>
-
-
-            <div class="col-12 col-lg-10 col-xl-5 mx-auto my-auto p-3">
-                <p>We are committed to performing ethical research at the highest possible scientific
-                    standards.
-                </p>
-                <!-- </li> -->
-                <!-- <li> -->
-                <p>
-                    We respect diverse strengths and backgrounds, and we welcome a culture of lifelong
-                    learning
-                    and feedback through active
-                    mentorship at all levels.
-                </p>
-                <!-- </li>
-                        <li> -->
-                <p>
-                    We value teamwork, creativity, independence, organization, transparency, responsibility,
-                    perseverance, scientific rigor
-                    and professionalism.
-                </p>
-                <!-- </li> -->
-
             </div>
 
 
@@ -144,43 +82,10 @@ permalink: /about
 
 
 <section>
-    <div class="container px-4">
-
-
+    <div class="container">
         <div class="col-12 col-lg-10 col-xl-12 mx-auto my-auto">
-            <h1>
-                <h1 class="sintony display-5 pb-4">Funding</h1>
-            </h1>
-            <div class="row">
-                <p>
-                    We are grateful to receive funding support from many sources over the years, including:
-                </p>
-                <div class="col-12 col-lg-6 g-0">
-                    <ul class="m-0">
-                        <li>Department of Veterans Affairs</li>
-                        <li>Department of Defense</li>
-                        <li>National Institutes of Health</li>
-                        <li>National Science Foundation</li>
-                        <li>Center for Neuroscience and Regenerative Medicine</li>
-                        <li>American Sleep Medicine Foundation, Medical Research Foundation of Oregon</li>
-                        <li>Medical Research Foundation of Oregon</li>
-                        <li>Collins Medical Trust</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-6 g-0">
-                    <ul class="m-0">
-                        <li>Brain &amp; Behavior Foundation</li>
-                        <li>Paul G. Allen Family Foundation</li>
-                        <li>Hartford Foundation</li>
-                        <li>Parkinson's Center of Oregon</li>
-                        <li>Pacific Northwest National Laboratories</li>
-                        <li>OHSU Oregon Clinical and Translational Research Institute</li>
-                        <li>OHSU Oregon Institute of Occupational Health Sciences</li>
-                        <li>Portland VA Research Foundation (PVARF)</li>
-                    </ul>
-                </div>
-            </div>
-
+            <h1 class="sintony display-5 pb-4">Funding</h1>
+            {{ data.funding | markdownify }}
         </div>
     </div>
 </section>

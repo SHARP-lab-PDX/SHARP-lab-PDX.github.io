@@ -3,7 +3,7 @@ title: Join the Lab
 layout: default
 permalink: /join-the-lab
 ---
-
+{% assign data = site.data.join-the-lab-text %}
 <section>
     <div class="jumbotron taller-jumbo"
         style="background-image: url(images/lab-discusses-data.jpeg); background-position: 65% 30%; height: 50vh">
@@ -18,7 +18,7 @@ permalink: /join-the-lab
 
         <h1 class="sintony display-6 pb-4 almost-white">Become a member of our team</h1>
 
-        <p class="fs-4">The SHARP lab is always looking for passionate, curious individuals to join our team.</p>
+        <h3 class="fs-4">The SHARP lab is always looking for passionate, curious individuals to join our team.</h3>
 
         <div class="row d-flex justify-content-between ligh">
 
@@ -29,32 +29,12 @@ permalink: /join-the-lab
 
 
             <div class="col-12 col-lg-5 p-3 mx-auto my-auto ">
-                <p>SHARP conducts vitally important, impactful research studies in a dynamic and engaging scientific
-                    environment.
-                    We are committed to performing ethical research at the highest possible scientific standards.
-                </p>
-                <p> We respect diverse strengths and backgrounds, and we welcome a culture of lifelong learning and
-                    feedback
-                    through active
-                    mentorship at all levels.
-                    We value <span class="bold">teamwork, creativity, independence, organization, transparency,
-                        responsibility,
-                        perseverance,
-                        scientific rigor,
-                        and professionalism.
-                    </span>
-                </p>
+                {{ data.join-statement | markdownify }}
             </div>
 
             <div class="col">
                 <p class="fs-3 mt-4">We are currently accepting applications for the following positions:</p>
-                <ul>
-                    <li>Graduate students</li>
-                    <li>Postdoctoral students</li>
-                    <li>Research assistants and technicians (full or part time)</li>
-                    <li>Study coordinators</li>
-                    <li>Undergraduate interns</li>
-                </ul>
+                {{ data.open-positions | markdownify }}
             </div>
 
         </div>
@@ -67,32 +47,7 @@ permalink: /join-the-lab
     <div class="container px-4">
 
         <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
-
-        <p>We seek highly motivated, detail oriented, analytical, and creative people who are enthusiastic about
-            learning about
-            sleep and neuroscience in a fast-paced laboratory setting. Summer internships are available by
-            application through the
-            following programs:
-
-        <ul>
-            <li>PVARF summer internship program (posted in Feb/March each year <a
-                    href="https://pvarf.applicantpro.com/jobs"
-                    class="bold blueish-black text-decoration-underline">here</a>)</li>
-            <li>OHSU Occupational Health Sciences Summer Internship program (posted in Jan/Feb each year)</li>
-            <li>University of Oregon Human Physiology Summer Internship program (posted in Jan/Feb each year)</li>
-        </ul>
-
-
-        Training will be provided for all techniques, but candidates are expected to be self-starters. Strong
-        candidates will be
-        highly organized workers who are comfortable working both independently and in team dynamics and are
-        enthusiastic about
-        behavioral neuroscience research. There may be opportunities for exceptional interns to be re-interviewed
-        after
-        completion of their summer program for consideration as full-time employees. Prior research experience is a
-        plus but not
-        required. Positions are in person with occasional telework where appropriate.
-        </p>
+        {{ data.internships | markdownify }}
 
     </div>
 </section>

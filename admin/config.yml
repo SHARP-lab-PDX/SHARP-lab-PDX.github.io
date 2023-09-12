@@ -23,7 +23,7 @@ collections:
   - label: "Site data"
     name: "site-data"
     files:
-    - label: "Footer resources"
+    - label: "Footer resource links"
       name: "ext-resources"
       file: _data/ext-resources.yml
       create: true
@@ -111,8 +111,24 @@ collections:
       name: "home-text"
       file: "_data/home-text.yml"
       fields:
-        - {label: "Tagline", name: "tagline", widget: "string"}
+        - {label: "Tagline/Summary", name: "tagline", widget: "markdown"}
         - {label: "Welcome text", name: "text", widget: "markdown"}
+    - label: "About page text"
+      name: "about"
+      file: "_data/about.yml"
+      fields:
+        - {label: "Research summary", name: "research-summary", widget: "markdown"}
+        - {label: "Human methods", name: "human-methods", widget: "markdown"}
+        - {label: "Animal methods", name: "animal-methods", widget: "markdown"}
+        - {label: "Mission statement", name: "mission", widget: "markdown"}
+        - {label: "Funding sources", name: "funding", widget: "markdown"}
+    - label: "Join the Lab text"
+      name: "join-the-lab"
+      file: "_data/join-the-lab-text.yml"
+      fields:
+        - {label: "Join the lab statement", name: "join-statement", widget: "markdown"}
+        - {label: "Open positions list", name: "open-positions", widget: "markdown"}
+        - {label: "Internship opportunities", name: "internships", widget: "markdown"}
     - label: "Contact page data"
       name: "contact"
       file: "_data/contact.yml"
@@ -125,6 +141,7 @@ collections:
           widget: "string"
         - label: "Mailing address"
           name: "mailing-address"
+          widget: "markdown"
         - label: "Physical location"
           name: "physical-loc"
           widget: "string"
