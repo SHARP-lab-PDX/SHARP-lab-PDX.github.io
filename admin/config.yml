@@ -23,18 +23,22 @@ collections:
   - label: "Site data"
     name: "site-data"
     files:
-    - label: "Footer resource links"
-      name: "ext-resources"
-      file: _data/ext-resources.yml
-      create: true
+    - label: "Home page text"
+      name: "home-text"
+      file: "_data/home-text.yml"
       fields:
-        - label: resource
-          name: resource
-          widget: list
-          fields:
-            - {label: "Name", name: title, widget: string}
-            - {label: URL, name: url, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
-    - label: "Press & media"
+        - {label: "Tagline/Summary", name: "tagline", widget: "markdown"}
+        - {label: "Welcome text", name: "text", widget: "markdown"}
+    - label: "About page text"
+      name: "about"
+      file: "_data/about.yml"
+      fields:
+        - {label: "Research summary", name: "research-summary", widget: "markdown"}
+        - {label: "Human methods", name: "human-methods", widget: "markdown"}
+        - {label: "Animal methods", name: "animal-methods", widget: "markdown"}
+        - {label: "Mission statement", name: "mission", widget: "markdown"}
+        - {label: "Funding sources", name: "funding", widget: "markdown"}
+    - label: "Press & Media"
       name: media
       file: _data/media.yml
       create: true
@@ -67,7 +71,7 @@ collections:
             - {label: "Summary", name: summary, widget: text}
             - {label: "DOI URL", name: doi, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
             - {label: "Image", name: image, widget: image, allow_multiple: false, media_folder: /images/publications, default: "/images/sharperwave.png", hint: "For best results, images should be at least 400 px in dimension (does not have to be square) and should not exceed 500 KB."}
-    - label: "Research study recruitment"
+    - label: "Research studies - Recruitment materials"
       name: "studies"
       file: "_data/studies.yml"
       create: true
@@ -85,7 +89,7 @@ collections:
               allow_multiple: false
               media_folder: "/images/research_studies"
               default: "/images/sharperwave.png"
-    - label: "Research studies FAQ"
+    - label: "Research studies - FAQ"
       name: "faq-studies"
       file: "_data/studies-faq.yml"
       create: true
@@ -96,7 +100,7 @@ collections:
           fields: 
             - {label: "Question", name: "question", widget: "markdown"}
             - {label: "Answer", name: "answer", widget: "markdown"}
-    - label: "Join the Lab FAQ"
+    - label: "Join the Lab - FAQ"
       name: "faq-lab"
       file: "_data/lab-faq.yml"
       create: true
@@ -107,22 +111,7 @@ collections:
           fields: 
             - {label: "Question", name: "question", widget: "markdown"}
             - {label: "Answer", name: "answer", widget: "markdown"}
-    - label: "Home page text"
-      name: "home-text"
-      file: "_data/home-text.yml"
-      fields:
-        - {label: "Tagline/Summary", name: "tagline", widget: "markdown"}
-        - {label: "Welcome text", name: "text", widget: "markdown"}
-    - label: "About page text"
-      name: "about"
-      file: "_data/about.yml"
-      fields:
-        - {label: "Research summary", name: "research-summary", widget: "markdown"}
-        - {label: "Human methods", name: "human-methods", widget: "markdown"}
-        - {label: "Animal methods", name: "animal-methods", widget: "markdown"}
-        - {label: "Mission statement", name: "mission", widget: "markdown"}
-        - {label: "Funding sources", name: "funding", widget: "markdown"}
-    - label: "Join the Lab text"
+    - label: "Join the Lab - Text"
       name: "join-the-lab"
       file: "_data/join-the-lab-text.yml"
       fields:
@@ -154,6 +143,17 @@ collections:
         - label: "Aerial tram directions"
           name: "tram"
           widget: "markdown"
+    - label: "Footer resource links"
+      name: "ext-resources"
+      file: _data/ext-resources.yml
+      create: true
+      fields:
+        - label: resource
+          name: resource
+          widget: list
+          fields:
+            - {label: "Name", name: title, widget: string}
+            - {label: URL, name: url, widget: string, hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://"}
 
 
       
