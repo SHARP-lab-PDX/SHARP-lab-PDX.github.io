@@ -16,7 +16,3 @@ studies:
     button-text: Find out more at NAPS
     image: /images/sharperwave.png
     addinfo: Or send an email to **[naps@ohsu.edu](mailto:naps@ohsu.edu)**
-  - button-text: More info here
-    image: /images/sharperwave.png
-    title: New SHARP Study
-    url: /
