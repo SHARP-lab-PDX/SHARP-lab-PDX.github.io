@@ -74,7 +74,7 @@ permalink: /
 </section>
 
 <section class="hidden light-theme" id="LimBio">
-  {% assign person = site.people | where: "nameid", "mlim" | first %}
+  {% assign miranda = site.data.people.people | where: "nameid", "mlim" | first %}
 
   <div class="container">
     <div class="d-flex flex-row-reverse">
@@ -84,17 +84,17 @@ permalink: /
 
     <div class="row d-flex align-items-center">
       <div class="col-3 col-lg-2 ">
-        <img class="img-fluid rounded shadow float-start" src="{{ person.photo }}" alt="">
+        <img class="img-fluid rounded shadow float-start" src="{{ miranda.photo }}" alt="">
       </div>
       <div class="col-9 col-lg-10">
         <h4 class="body-color fjalla">SHARP Co-Director</h4>
 
         <h1 class="bold display-6">
-          {{ person.displayname}} </h1>
-        <h5>{{ person.pronouns }}</h5>
+          {{ miranda.displayname}} </h1>
+        <h5>{{ miranda.pronouns }}</h5>
       </div>
 
-      <p>{{ person }}</p>
+      <p>{{ miranda.bio | markdownify }}</p>
 
 
 
@@ -109,7 +109,7 @@ permalink: /
 </section>
 
 <section class="hidden light-theme" id="ElliottBio">
-  {% assign jon = site.people | where: "nameid", "jelliott" | first %}
+  {% assign jon = site.data.people.people | where: "nameid", "jelliott" | first %}
   <div class="container">
     <div class="d-flex flex-row-reverse">
       <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
@@ -127,7 +127,7 @@ permalink: /
           {{ jon.displayname}} </h1>
       </div>
 
-      <p>{{ jon }}</p>
+      <p>{{ jon.bio | markdownify }}</p>
 
     </div>
   </div>

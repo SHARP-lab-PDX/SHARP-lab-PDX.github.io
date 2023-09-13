@@ -95,8 +95,7 @@ permalink: /people
               <p>{{ person.role }}</p>
             </div>
             <!-- Bio -->
-            {% assign content = person.content | strip_newlines %}
-            {% if content != "" %}
+            {% if person.bio %}
             <div class="accordion accordion-flush" id="accordion{{ person.last }}">
               <div class="accordion-item">
                 <div class="" id="flush-heading{{ person.last }}">
@@ -110,7 +109,7 @@ permalink: /people
                   aria-labelledby="flush-heading{{ person.last }}" data-bs-parent="#accordion{{ person.last }}">
                   <div class="accordion-body">
                     <p class="bio-text text-left">
-                      {{ content }}
+                      {{ person.bio | markdownify }}
                     </p>
                   </div>
                 </div>
@@ -118,17 +117,22 @@ permalink: /people
             </div>
             {% endif %}
 
-            <div class="social-icons text-center">
+            <div class="text-center social-icons pt-2">
               {% if person.googlescholar %}
               <a href="{{ person.googlescholar }}" target="_blank">
-                <i class="ai ai-google-scholar-square ai-3x"></i>
-                {% endif %}
-                {% if person.pubmed %}
-                <a href="{{ person.pubmed }}" target="_blank">
-                  <i class="ai ai-pubmed-square ai-3x blueish-black"></i>
-                </a>
-                {% endif %}
+                <i class="ai ai-google-scholar-square ai-2x"></i>
               </a>
+              {% endif %}
+              {% if person.pubmed %}
+              <a href="{{ person.pubmed }}" target="_blank">
+                <i class="ai ai-pubmed-square ai-2x"></i>
+              </a>
+              {% endif %}
+              {% if person.linkedin %}
+              <a href="{{ person.linkedin }}" target="_blank">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+              {% endif %}
             </div>
           </div>
 
