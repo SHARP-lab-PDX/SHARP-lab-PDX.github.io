@@ -1,0 +1,203 @@
+people:
+- nameid: "mlim"
+  first: Miranda
+  last: Lim
+  displayname: "Miranda Lim, MD, PhD"
+  pronouns: "she/hers"
+  role: "Co-Director"
+  photo: /images/people/miranda-lim.jpeg
+  bio: |-
+    Associate Professor | Department of Neurology\
+    Co-Director | Oregon Alzheimer's Disease Research Center (OADRC)\
+    **Oregon Health & Science University (OHSU)**
+
+    Staff Neurologist | Sleep Disorders Clinic | Parkinson's Disease Research, Education and Clinical Centers (PADRECC)\
+    Associate Director of Research and Co-Associate Director of Education (MIRT) | VA VISN20 Northwest Mental Illness Research Education Clinical Center (MIRECC)\
+    **VA Portland Health Care System**
+
+
+    Dr. Lim earned a combined MD/PhD degree from Emory University in Atlanta in 2006 and completed a neurology residency at Washington University in Saint Louis in 2010. She then completed fellowship training in Sleep Medicine at the University of Pennsylvania. Notable scientific contributions include understanding mechanisms of social behavior in the monogamous prairie vole *(Lim et al., Nature, 2004; Jones et al., Science Advances, 2019)*, defining the role of sleep in the pathogenesis of Alzheimer's disease *(Kang, Lim et al., Science, 2009)*, traumatic brain injury *(Lim et al., Science Translational Medicine, 2013)*, and Parkinson's and related disorders *(Elliott, Lim et al., Annals of Clinical and Translational Neurology, 2023)*.
+
+    Within and beyond SHARP, Dr. Lim's goal is to conduct high impact sleep research across rodents and humans to advance our understanding of fundamental biology and health. She strives to foster a dynamic and engaging scientific environment that respects diverse strengths and backgrounds, and welcomes a culture of lifelong learning and feedback through active mentorship at all levels. She values teamwork and independence, organization and creativity, perseverance and sustainability, scientific rigor and transparency, and responsibility and professionalism. Since 2016, SHARP has grown rapidly and made a number of foundational discoveries in the form of impactful abstracts, manuscripts, presentations, and additional grant funding and supported career growth for its lab members.
+
+    SHARP is grateful for support from NIH, VA, DoD, NSF, Portland VA Research Foundation and other non-profit organizations to uncover the mechanisms by which sleep impacts promotes brain health across the lifespan in rodent models and humans.
+
+    On a personal note, Miranda enjoys taking on new challenges and is always open to trying new things. Prior examples of this outside of science include, living in 6 states across all far-flung corners of the US, playing NCAA Division I Women's Water Polo at University of Southern California, running half-marathons, rock climbing, yoga, ecstatic dance, partnering, parenting, and most recently, and mindfulness meditation (by far, the greatest challenge yet). Given all this, you might be surprised to learn that her number 1 strength per StrengthsFinder is RELATOR -- perhaps the highly social prairie voles that she has been studying since 1999 have finally rubbed off? 
+
+- nameid: "jelliott"
+  first: Jonathan
+  last: Elliott
+  displayname: "Jonathan E. Elliott, PhD"
+  pronouns: null
+  role: "Co-Director"
+  photo: /images/people/jonathan-elliott.jpeg
+  bio: |-
+    Assistant Professor | Department of Neurology\
+    **Oregon Health & Science University (OHSU)**
+
+    Research Physiologist | Research Service\
+    **VA Portland Health Care System**
+
+    Dr. Elliott earned his PhD in 2014 from the University of Oregon in the Department of Human Physiology, training with Andy Lovering, PhD. Here he conducted in-lab and field-based research on the mechanisms underlying pulmonary gas exchange efficiency in humans in respone to premature birth, exercise, and hypoxia/acclimatization to high-altitude *(Elliott JE, Journal of Physiology, 2014; Elliott JE, Journal of Applied Physiology, 2015; Laurie SS, American Journal of Respiratory Critical Care Medicine , 2018)* with pre-doctoral funding via the American Heart Association. He then completed an NIH NHLBI T32 funded Post-doctoral Fellowship at the Mayo Clinic (Rochester, MN) in the Department of Physiology and Biomedical Engineering, training with Gary Sieck, PhD. During this time he investigated aging-related changes in neuromuscular and mitochondrial function in a basic science capacity *(Elliott JE, American Journal of Physiology: Lung Cell Molecular Physiology, 2016; Elliott JE, Respiratory Physiology & Neurobiology , 2016)*.
+
+    Dr. Elliott then joined SHARP in 2016, completing an additional 1-year NIH NCCIH T32 funded Post- doctoral Fellowship in the Department of Neurology at OHSU - joining the faculty rank as Assistant Professor in 2019 and Co-Director of SHARP in 2022. Within SHARP a primary focus is to better understand the interplay between sleep and pathophysiologic/neuropathologic outcomes related to chronic pain and long-term neurodegeneration. Experimental paradigms include randomized double- blind placebo-controlled clinical trials, cross-sectional analyses, and case/cohort control studies; all in human subjects (Veteran/active-duty service members and civilians). Techniques employed range from overnight in-lab/at-home polysomnography, sleep/wake analyses via actigraphy and mattress-based sensors, quantitative pain assessments, neuropsychological testing, ventilatory function and apnea-threshold assessments, blood/CSF-based biomarkers of peripheral/central inflammation, advanced imaging via 3T and 7T MRI, qualitative self-report, with advanced statistical and signal processing applications.
+
+    Outside of the lab, Jonathan (Jon) enjoys all things Pacific Northwest, including snowboarding, mountain biking, kayaking, and camping, as well as exploring the ever-changing restaurant and brewery scene in Portland. 
+
+
+- first: Carolyn
+  last: Tinsley
+  displayname: Carolyn Tinsley, PhD
+  pronouns: null
+  role: Associate Director
+  photo: /images/people/Carolyn-Tinsley.jpeg
+  googlescholar: https://scholar.google.com/citations?user=bEcZET4AAAAJ&hl=en
+  pubmed: https://www.ncbi.nlm.nih.gov/myncbi/1xK2wovqsjgAd/bibliography/public/
+  bio: |-
+    Carolyn Tinsley (formerly Jones) oversees preclinical research within SHARP as well as logistics and operations of SHARP as a whole. Dr. Tinsley has undergraduate degrees in Biomedical Engineering and Psychology from Duke University, a PhD in Behavioral Neuroscience from the University of Texas at Austin, and Postdoctoral training from Oregon Health & Science University. Her research interests include social development and social behavior, the function of sleep (particularly rapid eye movement sleep) across the lifespan, learning and memory, and rodent behavior. Dr. Tinsley is especially interested in the ontogeny of sleep and behavior and its intersection with health and disease. In her spare time, she enjoys hiking, skiing, kayaking, gardening and enjoying nature in the Pacific Northwest.
+
+- first: Katherine
+  last: Powers
+  displayname: "Katherine Powers"
+  pronouns: null
+  role: "Lead Clinical Research Coordinator"
+  photo: /images/people/Katherine-Powers.jpeg
+  bio: |-
+    Katherine graduated in 2001 with a BA in biology emphasizing neuropsychology. Her sleep career started with running home sleep studies for Dr. Hoddes' Medical Monitoring Services, later working as a sleep technologist at National Jewish MRC, coordinating MRI sleep studies for Dr. Rooney at the OHSU's AIRC, then culminating with joining the SHARP team in November 2020. Research has also been a focus of her work assisting bench and colony immunology research at Dr. Katie Haskins' lab at the University of Colorado in college and later providing over a decade of MR image analysis and clinical research coordination at Dr. Jack Simon's Portland VA laboratory and at the AIRC. She continues to be enthusiastic about advancing neuroscience on a daily basis. When not engaged in research activities, she records professional quality e-learning and meditation voice-overs; if you ask her nicely she may be persuaded to record one for you or your project. An avid tabletop gaming enthusiast, she also enjoys creating paintings in oil or pastel, and geeky crafting. 
+
+- first: Peyton
+  last: Wickham
+  displayname: "Peyton Wickham"
+  pronouns: null
+  role: "Research Associate"
+  photo: /images/profile-placeholder.png
+  bio: |-
+    Peyton Wickham (Née: Teutsch) has an undergraduate degree in Biochemistry from the University of Portland, and has been with SHARP since graduating in 2016. Since joining the lab her roles have evolved, but the core of her time has been in pursuit of better understanding the relationship between developmental sleep and social behavior, the interplay of sleep and trauma, and investigating therapeutic options in these preclinical models. She loves to be involved in research from the roots up, and her research interests center on translational rodent behavior models. When not in the lab, Peyton enjoys reading, gardening, and exploring food around Portland. 
+
+- first: Rachel
+  last: Champaigne
+  displayname: "Rachel Champaigne"
+  pronouns: null
+  role: "Program Manager"
+  photo: /images/people/Rachel-Champaigne.jpeg
+  bio: |-
+    Rachel is the SHARP Program Manager and go-to for any lab management, access, purchasing, training, or other general inquiry. She appreciates any input on processes and efficiency, and is happy to answer questions any time. Rachel has an honors degree in Micro/Molecular Biology, and has worked in dry and wet labs, processing human and animal specimens. She is fascinated by many aspects of translational science and loves being able to contribute to a team and to a greater body of science. Rachel enjoys renovating her historic home and going on outings with her teenagers.
+
+- first: Darren
+  last: Ginder
+  displayname: "Darren Ginder, PhD"
+  pronouns: null
+  role: "Postdoctoral Scholar"
+  photo: /images/people/Darren-Ginder.jpeg
+  bio: |-
+    Darren earned his MS Biology in 2019 from Eastern Washington University where his focus was on interactions between the neurotransmitters dopamine and oxytocin. After completing his MS, he went on to receive his PhD in Experimental Psychology from Washington State University in 2023. The focus of his doctoral research was on neuronal development and endocannabinoid signaling, which is crucial for proper neuronal development during both fetal and adolescent developmental timepoints. At SHARP, Darren plans to continue exploring neurodevelopment, observing how early-life sleep disruptions impact social and reward seeking behaviors in adolescent and adult prairie voles. Outside of research, Darren is very passionate about teaching and educating the next group of potential scientists. At the schools his children have attend he has done outreach activities to teach children about the wonders of the brain. At the college level he has taught multiple psychology classes and human physiology laboratory classes, which he found to be extremely rewarding. On a personal level, Darren enjoys brewing beer and mead, experimenting with various hops, herbs, and fruits. He is also very enthusiastic about trivia, so you may find him at a local bar for trivia nights. 
+
+- first: Noah
+  last: Milman
+  displayname: "Noah Milman"
+  pronouns: he/his
+  role: "PhD Graduate Student"
+  photo: /images/people/Noah-Milman.jpeg
+  googlescholar: https://scholar.google.com/citations?user=mebjC3wAAAAJ&hl=en
+  bio: |-
+    Noah graduated with a BS in Behavioral Neuroscience from Northeastern University in 2021. He was awarded the Alexander Skavenski Excellence in Neuroscience for his outstanding record in coursework, laboratory research, student leadership, and community service. During his time as an undergraduate, he spent two-plus years of full-time work in Dr. Li-Huei Tsai's lab at MIT, where he contributed to studies of non-invasive brain stimulation in Alzheimer's disease, animal models of early-life stress and cognitive resilience. In the summer of 2021, he moved to Portland, OR on a long bike trip from Boston, MA. He joined the lab in spring of 2022, focusing on two main projects revolving around the importance of sleep across the lifespan. In the first, he uses overnight polysomnography from older adults in the WashU Biomarkers of Alzheimer's Disease in Sleep and EEG, to explore the global and regional connectivity of low frequency events as a potential novel biomarker for neurodegeneration. In the other, he investigates the role of early-life REM sleep in the display of affiliative behavior in prairie voles. Broadly, he is interested in the resilience promoting factors or interventions that lead to happier and healthier lives. Understanding the role of sleep is the first step of that research. Outside of lab, he loves to spend time outside, often riding his bike with friends. Previously he volunteered at the non-profit organization Bikes Not Bombs in Boston, MA, as a teacher for a community bike repair course. One day, he hopes to be a Professor at a primarily undergraduate institution. 
+
+- first: Cosette
+  last: Olivo
+  displayname: "Cosette Olivo"
+  pronouns: null
+  role: "Clinical Research Coordinator"
+  photo: /images/people/Cosette-Olivo.jpeg
+  bio: |-
+    Cosette graduated in 2008 from Columbia University with a BA in Biology and Psychology. Her work in clinical research began as a student at Columbia University, when she started working for the Mothers and Newborns Study at the Mailman School of Public Health. After graduating, she continued working with the same cohort on studying the public health impacts of climate change and air pollution. She moved to Portland in 2013 and began working on the VA's Central Studies Program, which concentrates on running multilocation studies at the VA's clinics and hospitals around the nation. She joined SHARP as a Research Coordinator in 2021 after taking some time off to be a fulltime mother to her two children. When she isn't coordinating research with SHARP, she enjoys Pacific Northwest adventures with her family. As an avid vegan baker, she enjoys bringing her creations to share with her wonderful coworkers. She also enjoys planning highly detailed parties for her kids, crafting, and reading/learning about everything.
+
+- first: Arlynn
+  last: Ekis
+  displayname: "Arlynn Ekis"
+  pronouns: null
+  role: "Study Coordinator"
+  photo: /images/people/Arlynn-Ekis.jpeg
+  bio: |-
+    Arlynn has been a SHARP member since August 2022. They have a BS in psychology and are currently in school pursuing their MHA. Arlynn has 3 years of crisis-work experience and is skilled in collaborative problem solving, informational interviewing, and trauma-informed-care. Throughout their professional experience, Arlynn has found a passion for connecting with people, allowing them to feel heard, and ensuring they get the best possible individualized care. Prior to working in research and mental health, not only was Arlynn a competitive dance coach for children ages 4-17, but was a competitive dancer themselves! Arlynn enjoys dance sessions of free movement, camping, trying new restaurants, and playing with their Aussie in the river.
+
+- first: Abbie
+  last: Hansen
+  displayname: "Abbie Hansen"
+  pronouns: she/hers
+  role: "Study Coordinator"
+  photo: /images/people/Abbie-Hansen.jpeg
+  bio: |-
+    Abbie graduated from the University of Northern Colorado with a Master's Degree in Educational Psychology in 2019. Abbie joined the SHARP lab in March 2023 and is hoping to pursue further education in Neuroscience in the future. Before coming to the lab, Abbie taught secondary special education and worked with students who have varying learning disabilities, traumatic brain injuries, and developmental delays. She is passionate about the intersection of education, cognition, and disability. Outside the lab, Abbie loves getting outdoors and experiencing all the beautiful things Oregon has to offer with her husband and labradoodle puppy!
+
+- first: Kayla
+  last: McDaniel
+  displayname: "Kayla McDaniel"
+  pronouns: she/hers
+  role: "Research Assistant II"
+  photo: /images/people/Kayla-McDaniel.jpeg
+  bio: |-
+    Kayla has an educational background in Psychology and received her BS in June of 2023. She graduated as a first-generation student and aims to pursue graduate school in the future. Kayla has been a member of the SHARP lab since June, 2022 and has prior experience working in trauma-informed research. She spent a year of her undergraduate studies volunteering in a lab that studied sexual violence prevention in youth serving organizations and college campuses. Throughout her professional experience, she has developed a passion for serving at-risk populations that suffer from PTSD. She's particularly interested in studying gender and sex differences among populations with PTSD. In her time outside the SHARP lab, she enjoys spending time traveling and exploring waterfalls with her 5-year-old American Pitbull Terrier. Kayla has also been an avid painter since she was a child and feels most inspired by dark romanticism and realism.
+
+- first: Zoe
+  last: Potter
+  displayname: "Zoe Potter"
+  pronouns: she/hers
+  role: "Research Assistant"
+  photo: /images/people/Zoe-Potter.jpeg
+  bio: |-
+    Zoe graduated with Honors from Portland State University in 2023 with a BS in Psychology. She joined the SHARP lab in January of 2023 with plans to pursue a graduate degree in Psychology after a couple of years of working in research. Before pursuing this field, she worked in childcare as a KinderCare/Champions teacher. She loved working with kids and was inspired to join a research project at PSU that introduces social and emotional learning curriculums to Preschools. Zoe's research background also includes the prevention of sexual abuse within youth-serving organizations, and stigma and hiring bias within organizational contexts. She is currently interested in how trauma interacts with sex differences. When she's not in the lab, Zoe loves to snowboard, build Lego Technic cars, watch Formula 1 racing, and search for the greatest sushi restaurants. 
+
+- first: Isabella
+  last: Montano
+  displayname: "Isabella Montano"
+  pronouns: she/hers
+  role: "Research Assistant"
+  photo: /images/people/Isabella-Montano.jpeg
+  bio: |-
+    Isabella is a neuroscience major undergraduate student at Reed College interested in attending an MD/PhD program after graduating. She is interested in neurodegenerative diseases as a whole but especially Parkinson's Diseases and Alzheimer's Disease. Additionally, Isabella has an interest in the use of EEG in various settings. Outside of the lab, Isabella enjoys going on hikes and runs in the beautiful nature that Portland has to offer.
+
+- first: Laura
+  last: Dennis
+  displayname: "Laura Dennis"
+  pronouns: null
+  role: "Clinical Research Coordinator"
+  photo: /images/people/Laura-Dennis.jpeg
+  bio: |-
+    Laura received her BS in Bioengineering at Oregon State University and currently splits her time between several labs at OHSU and the Portland VA including the Hoffman Lab (Drs. William Hoffman and Milky Kohno) where she has worked for over 10 years using multi-modal neuroimaging techniques to investigate the effects of methamphetamine and alcohol use disorders on brain, the Piantino Lab (Dr. Juan Piantino) comparing perivascular space (PVS) burden, functional MRI, and diffusion imaging across cohorts with sleep impairments and post-concussive syndrome and the SHARP Lab (Dr. Miranda Lim) where she is the lead coordinator at OHSU for the North American Prodromal Synucleinopathy (NAPS) Consortium study. In her free time, Laura enjoys cuddle sessions with her mini dachshund, going to Timbers games, traveling, and spending time with her family and friends. 
+
+- first: Savanah
+  last: Sicard
+  displayname: "Savanah Sicard"
+  pronouns: null
+  role: "Research Assisstant"
+  photo: /images/people/Savanah-Sicard.jpg
+  bio: |-
+    Savanah graduated with a BS in psychology, along with minors in biology and neuroscience, from Portland State University in 2023. As an undergraduate, she discovered her love for sleep science, specifically the psychological and physiological impacts of REM stage sleep, and wrote two research proposals on the treatment of nightmares. While in school, she worked in Dr. Tori Crains applied sleep research lab, supporting multiple projects in occupational health and I/O psychology. Savanah joined SHARP in the spring of 2023, with an interest in EEG data, sleep phenotyping, and the role that REM sleep plays in disease and cognitive function. In the future, she plans to pursue a PhD in cognitive neuroscience, and hopes to focus on the neural correlates of sleep and dreams. Outside of work, Savanah is an avid patron of the public library, gets lost in the woods about once a month, and enjoys crafting decorations out of scavenged materials.
+
+- first: Leland
+  last: Bates
+  displayname: "Leland Bates"
+  pronouns: null
+  role: "Research Assisstant"
+  photo: /images/profile-placeholder.png
+
+- first: Lorenzo
+  last: Nungaray
+  displayname: "Lorenzo Nungaray"
+  pronouns: null
+  role: "Research Technician"
+  photo: /images/profile-placeholder.png
+
+- first: Jennifer
+  last: D'Silva
+  displayname: "Jennifer D'Silva"
+  pronouns: null
+  role: "Research Technician"
+  photo: /images/profile-placeholder.png
+
+- first: Jasmine
+  last: Loeung
+  displayname: "Jasmine Loeung"
+  pronouns: null
+  role: "Research Assistant"
+  photo: /images/profile-placeholder.png

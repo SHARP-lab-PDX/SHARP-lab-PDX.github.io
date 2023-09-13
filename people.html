@@ -5,7 +5,8 @@ permalink: /people
 ---
 
 <section>
-  <div class="jumbotron taller-jumbo" style="background-image: url(images/group-photo-2022.jpeg); background-position: center;">
+  <div class="jumbotron taller-jumbo"
+    style="background-image: url(images/group-photo-2022.jpeg); background-position: center;">
     <div class="container text-white jumbo-title">
       <h1 class="display-2 sintony"></h1>
     </div>
@@ -24,10 +25,7 @@ permalink: /people
     <div class="row">
 
       <div class="col-12 col-lg-7 p-3 mx-auto my-auto">
-        <img
-          src="/images/SHARP_Lab_Pic_2020.jpeg"
-          class="img-fluid img-border mb-4"
-          style="width: 100%;"
+        <img src="/images/SHARP_Lab_Pic_2020.jpeg" class="img-fluid img-border mb-4" style="width: 100%;"
           alt="Group photo of the SHARP Lab from 2020">
       </div>
 
@@ -79,72 +77,63 @@ permalink: /people
     </h1>
 
     <div class="row ">
-      {% for person in site.people %}
-        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="card mb-4 mx-auto people-card light-theme">
-            <img
-              class="card-img-top img-fluid"
-              src="{{ person.photo }}"
-              alt="{{ person.first }} {{ person.last }}'s' photo">
-            <div class="card-body">
-              <div class="text-center">
-                <p class="card-title fs-4">{{ person.displayname }}</p>
-                <p class="fs-5">
-                  {% if person.pronouns %}
-                    {{ person.pronouns }}
-                  {% else %}
-                    &#9900
-                  {% endif %}
-                </p>
-                <p>{{ person.role }}</p>
-              </div>
-              <!-- Bio -->
-              {% assign content = person.content | strip_newlines %}
-              {% if content != "" %}
-                <div class="accordion accordion-flush" id="accordion{{ person.last }}">
-                  <div class="accordion-item">
-                    <div class="" id="flush-heading{{ person.last }}">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapse{{ person.last }}"
-                        aria-expanded="false"
-                        aria-controls="flush-collapse{{ person.last }}">
-                        Bio
-                      </button>
-                    </div>
-                    <div
-                      id="flush-collapse{{ person.last }}"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="flush-heading{{ person.last }}"
-                      data-bs-parent="#accordion{{ person.last }}">
-                      <div class="accordion-body">
-                        <p class="bio-text text-left">
-                          {{ content }}
-                        </p>
-                      </div>
-                    </div>
+      {% for person in site.data.people.people %}
+      <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+        <div class="card mb-4 mx-auto people-card light-theme">
+          <img class="card-img-top img-fluid" src="{{ person.photo }}"
+            alt="{{ person.first }} {{ person.last }}'s' photo">
+          <div class="card-body">
+            <div class="text-center">
+              <p class="card-title fs-4">{{ person.displayname }}</p>
+              <p class="fs-5">
+                {% if person.pronouns %}
+                {{ person.pronouns }}
+                {% else %}
+                &#9900
+                {% endif %}
+              </p>
+              <p>{{ person.role }}</p>
+            </div>
+            <!-- Bio -->
+            {% assign content = person.content | strip_newlines %}
+            {% if content != "" %}
+            <div class="accordion accordion-flush" id="accordion{{ person.last }}">
+              <div class="accordion-item">
+                <div class="" id="flush-heading{{ person.last }}">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse{{ person.last }}" aria-expanded="false"
+                    aria-controls="flush-collapse{{ person.last }}">
+                    Bio
+                  </button>
+                </div>
+                <div id="flush-collapse{{ person.last }}" class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading{{ person.last }}" data-bs-parent="#accordion{{ person.last }}">
+                  <div class="accordion-body">
+                    <p class="bio-text text-left">
+                      {{ content }}
+                    </p>
                   </div>
                 </div>
-              {% endif %}
-
-              <div class="social-icons text-center">
-                {% if person.googlescholar %}
-                  <a href="{{ person.googlescholar }}" target="_blank">
-                    <i class="ai ai-google-scholar-square ai-3x"></i>
-                  {% endif %}
-                  {% if person.pubmed %}
-                    <a href="{{ person.pubmed }}" target="_blank">
-                      <i class="ai ai-pubmed-square ai-3x"></i>
-                    </a>
-                  {% endif %}
-                </a>
               </div>
             </div>
+            {% endif %}
 
+            <div class="social-icons text-center">
+              {% if person.googlescholar %}
+              <a href="{{ person.googlescholar }}" target="_blank">
+                <i class="ai ai-google-scholar-square ai-3x"></i>
+                {% endif %}
+                {% if person.pubmed %}
+                <a href="{{ person.pubmed }}" target="_blank">
+                  <i class="ai ai-pubmed-square ai-3x blueish-black"></i>
+                </a>
+                {% endif %}
+              </a>
+            </div>
           </div>
+
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>

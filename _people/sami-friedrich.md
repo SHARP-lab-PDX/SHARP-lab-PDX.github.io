@@ -9,4 +9,4 @@ googlescholar: https://scholar.google.com/citations?hl=en&user=ZZ-1asgAAAAJ&view
 ---
 Sami Friedrich completed her PhD at OHSU in the Behavioral Neuroscience program studying sex differences in songbird brain development.
 
-Now she makes responsive, intuitive websites for folks and organizations. You can check out her website at \[samifriedrich.com](https://www.samifriedrich.com).
+Now she makes responsive, intuitive websites for folks and organizations, including the one you're currently browsing. You can check out her website at \[samifriedrich.com](https://www.samifriedrich.com).
