@@ -24,7 +24,7 @@ collections:
         - {label: "Funding sources", name: "funding", widget: "markdown"}
     - label: "People"
       name: people
-      file: _data.people.yml
+      file: _data/people.yml
       create: true
       fields:
         - label: "People"
