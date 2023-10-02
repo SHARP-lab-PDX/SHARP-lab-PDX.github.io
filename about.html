@@ -2,90 +2,78 @@
 title: About
 layout: default
 permalink: /about
+description: "We research the neuroscience of sleep to discover new therapies for TBI, PTSD, chronic pain, neurodevelopmental disorders and dementia."
 ---
+
 {% assign data = site.data.about %}
 <section>
-    <div class="jumbotron taller-jumbo"
-        style="background-image: url(/images/sharp_group_lab-full.jpeg); background-position: 50% 20%; height: 60vh;">
-        <div class="container text-white taller-jumbo-title">
-            <h1 class="display-2 sintony">About SHARP</h1>
-        </div>
-    </div>
+  <div
+    class="jumbotron taller-jumbo"
+    style="
+      background-image: url(/images/sharp_group_lab-full.jpeg);
+      background-position: 50% 20%;
+      height: 60vh;
+    "
+  ></div>
 </section>
-
-
 
 <section>
-
-    <div class="container px-4">
-        <!-- <div class="row">
-                <div class="col-12 col-lg-10 col-xl-12 mx-auto">
-                    <h1 class="sintony display-5 pb-4">Our Research</h1>
-                </div>
-            </div> -->
-
-        <div class="row align-items-center">
-
-            <div class="col-12 col-lg-10 col-xl-5 mx-auto">
-                <h1 class="sintony display-5 pb-4">Our Research</h1>
-
-                {{ data.research-summary | markdownify }}
-
-            </div>
-            <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
-                <img src="/images/sharp-lab-discuss-data.jpeg" class="img-fluid shadow img-border-light img-slant-left"
-                    style="width: 100%;" alt="">
-            </div>
-        </div>
-        <div class="pt-3">
-            <h3>We utilize a range of approaches including:</h3>
-            <div class="row">
-                <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
-                    <h4>Human Subjects</h4>
-                    {{ data.human-methods | markdownify }}
-                </div>
-                <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
-                    <h4>Rodent Subjects</h4>
-                    {{ data.animal-methods | markdownify}}
-                </div>
-            </div>
-        </div>
+  <div class="container px-2">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-10 col-xl-5 mx-auto">
+        <h1 class="sintony display-5 pb-4">Our Research</h1>
+        {{ data.research-summary | markdownify }}
+      </div>
+      <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
+        <img
+          src="/images/sharp-lab-discuss-data.jpeg"
+          class="img-fluid shadow img-border-light img-slant-left"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
     </div>
-
+    <div class="pt-3">
+      <h3>We utilize a range of approaches including:</h3>
+      <div class="row">
+        <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
+          <h4>Human Subjects</h4>
+          {{ data.human-methods | markdownify }}
+        </div>
+        <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
+          <h4>Rodent Subjects</h4>
+          {{ data.animal-methods | markdownify}}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
 
 <section class="light-theme" id="Mission">
-    <div class="container">
-
-        <div class="col-12 col-lg-10 col-xl-12 mx-auto">
-            <h1 class="sintony display-5 pb-4">Mission &amp; Values</h1>
-        </div>
-
-        <div class="row">
-
-            <div class="col-12 col-lg-10 col-xl-5 mx-auto my-auto">
-                {{ data.mission | markdownify }}
-            </div>
-
-            <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
-                <img src="/images/research-fair.jpg" class="img-fluid shadow img-border img-slant-left" alt="">
-            </div>
-
-
-        </div>
-
-
+  <div class="container px-2">
+    <div class="col-12 col-lg-10 col-xl-12 mx-auto">
+      <h1 class="sintony display-5 pb-4">Mission &amp; Values</h1>
     </div>
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xl-5 mx-auto my-auto">
+        {{ data.mission | markdownify }}
+      </div>
+      <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
+        <img
+          src="/images/research-fair.jpg"
+          class="img-fluid shadow img-border img-slant-left"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
 </section>
 
-
 <section>
-    <div class="container">
-        <div class="col-12 col-lg-10 col-xl-12 mx-auto my-auto">
-            <h1 class="sintony display-5 pb-4">Funding</h1>
-            {{ data.funding | markdownify }}
-        </div>
+  <div class="container px-2">
+    <div class="col-12 col-lg-10 col-xl-12 mx-auto my-auto">
+      <h1 class="sintony display-5 pb-4">Funding</h1>
+      {{ data.funding | markdownify }}
     </div>
+  </div>
 </section>

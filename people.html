@@ -2,7 +2,7 @@
 title: People
 layout: default
 permalink: /people
-description: "Meet our team of sleep researchers at Portland's Sleep & Health Applied Research Program lead by
+description: "Meet our team of sleep researchers at Portland's Sleep &amp; Health Applied Research Program lead by
 co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
 ---
 
@@ -15,13 +15,13 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
   </div>
 </section>
 
-<section>
-  <div class="container">
+<div class="container px-2">
+  <section>
+
     <h1 class="sintony display-4 pb-4">One team, many backgrounds.</h1>
 
     <p class="fs-4">
-      Sleep research is a multidisciplinary field, at the crossroads of neuroscience, biology,
-      physiology, medicine, mental health and wellbeing, and even philosophy.
+      Sleep research is a multidisciplinary field, at the crossroads of neuroscience, biology, physiology, medicine, mental health and wellbeing, and even philosophy.
     </p>
 
     <div class="row">
@@ -41,43 +41,31 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
           Neuroscientists, physiologists, biologists, physicists, computer scientists, systems scientists
         </ul>
         <ul>
-          <span class="fs-3">
-            <i class="fa-solid fa-heart-pulse fa-icon"></i>Clinicians</span>
+          <span class="fs-3"><i class="fa-solid fa-heart-pulse fa-icon"></i>Clinicians</span>
           <br>
           Neurologists, psychologists, nurses, personal trainers, health coaches
         </ul>
         <ul>
-          <span class="fs-3">
-            <i class="fa-solid fa-gears fa-icon"></i>Engineers</span>
+          <span class="fs-3"><i class="fa-solid fa-gears fa-icon"></i>Engineers</span>
           <br>
           Electrical, mechanical, and biomedical engineers, materials scientists
         </ul>
         <ul>
-          <span class="fs-3">
-            <i class="fa-solid fa-book-open-reader fa-icon"></i>Students</span>
+          <span class="fs-3"><i class="fa-solid fa-book-open-reader fa-icon"></i>Students</span>
           <br>
           Undergraduate, masters, PhD graduate students, post-doctoral scholars
         </ul>
       </div>
     </div>
-
     <p class="text-center pt-3">
-      <a href="./join-the-lab" class="btn btn-outline-light dblink sintony text-shadow fs-3">Interested in
-        joining our team?</a>
+      <a href="./join-the-lab" class="btn btn-outline-light dblink sintony text-shadow fs-3 px-4">Interested in joining our
+        team?</a>
     </p>
+  </section>
 
-  </div>
-</section>
-
-
-
-<section id="currentMemebers">
-
-  <div class="container">
-
+  <section id="currentMemebers">
     <h1 class="sintony display-4 pb-4 shadow">Current members
     </h1>
-
     <div class="row ">
       {% for person in site.data.people.people %}
       <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
@@ -86,7 +74,7 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
             alt="{{ person.first }} {{ person.last }}'s' photo">
           <div class="card-body">
             <div class="text-center">
-              <p class="card-title fs-4">{{ person.displayname }}</p>
+              <p class="fs-4">{{ person.displayname }}</p>
               <p class="fs-5">
                 {% if person.pronouns %}
                 {{ person.pronouns }}
@@ -142,5 +130,6 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
       </div>
       {% endfor %}
     </div>
-  </div>
-</section>
+
+  </section>
+</div>

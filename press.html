@@ -1,5 +1,5 @@
 ---
-title: Press & Media
+title: Press &amp; Media
 layout: default
 permalink: /press
 description: "Explore news articles, interviews, podcasts, and more on how the research done by the SHARP Lab is
@@ -7,52 +7,56 @@ advancing sleep science."
 ---
 
 <section>
-    <div class="jumbotron"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(images/gradient-bg.jpg); background-position: 0% 60%;">
-        <div class="container text-white jumbo-title">
-            <h1 class="display-2 sintony">Press &amp; Media</h1>
-        </div>
+  <div
+    class="jumbotron"
+    style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url(images/gradient-bg.jpg);
+      background-position: 0% 60%;
+    "
+  >
+    <div class="container text-white jumbo-title">
+      <h1 class="display-2 sintony">Press &amp; Media</h1>
     </div>
+  </div>
 </section>
 
-<section>
-    <div class="container">
-        <h2 class="pb-4 fs-2 sintony">Articles, podcasts, and more featuring SHARP research</h2>
+<div class="container px-2">
+  <section>
+    <h2 class="pb-4 fs-2 sintony">
+      Articles, podcasts, and more featuring SHARP research
+    </h2>
 
-        {% for item in site.data.media.media %}
-        <div class="card mt-4 light-theme card-gradient">
-            <div class="row g-0">
-                <div class="col-1 text-center mx-auto pt-4 ps-2">
-                    {% if item.type == "article" %}
-                    <i class="fa-regular fa-newspaper display-4 blueish-black"></i>
-                    {% elsif item.type == "podcast" %}
-                    <i class="fa-solid fa-headphones display-4 blueish-black"></i>
-                    {% elsif item.type == "award" %}
-                    <i class="fa-solid fa-award display-4 blueish-black"></i>
-                    {% elsif item.type == "video" %}
-                    <i class="fa-solid fa-film display-4 blueish-black"></i>
-                    {% endif %}
-                </div>
-                <div class="col-11 my-auto ps-2">
-                    <div class="card-body">
-                        <h5 class="fs-3">{{ item.title }}</h5>
-                        <p>{{ item.description | markdownify }}</p>
-                        <p>{{ item.source }}. {{ item.month }} {{ item.year }}.</p>
-                        <a href="{{ item.url }}" class="btn btn-outline-dark publink me-3">
-                            {% if item.button-text %}
-                            {{ item.button-text }}
-                            {% elsif item.type == "article" or item.type == "award" %}
-                            Read
-                            {% elsif item.type == "podcast" %}
-                            Listen
-                            {% elsif item.type == "video" %}
-                            Watch
-                            {% endif %}
-                            <i class="fa-solid fa-circle-chevron-right fa-btn-link"></i></a>
-                    </div>
-                </div>
-            </div>
+    {% for item in site.data.media.media %}
+    <div class="card mt-4 light-theme card-gradient">
+      <div class="row g-0">
+        <div class="col-1 text-center mx-auto pt-4 ps-2">
+          {% if item.type == "article" %}
+          <i class="fa-regular fa-newspaper display-4 blueish-black"></i>
+          {% elsif item.type == "podcast" %}
+          <i class="fa-solid fa-headphones display-4 blueish-black"></i>
+          {% elsif item.type == "award" %}
+          <i class="fa-solid fa-award display-4 blueish-black"></i>
+          {% elsif item.type == "video" %}
+          <i class="fa-solid fa-film display-4 blueish-black"></i>
+          {% endif %}
         </div>
-        {% endfor %}
+        <div class="col-11 my-auto ps-2">
+          <div class="card-body">
+            <h5 class="fs-3">{{ item.title }}</h5>
+            <p>{{ item.description | markdownify }}</p>
+            <p>{{ item.source }}. {{ item.month }} {{ item.year }}.</p>
+            <a href="{{ item.url }}" class="btn btn-outline-dark publink me-3">
+              {% if item.button-text %} {{ item.button-text }} {% elsif
+              item.type == "article" or item.type == "award" %} Read {% elsif
+              item.type == "podcast" %} Listen {% elsif item.type == "video" %}
+              Watch {% endif %}
+              <i class="fa-solid fa-circle-chevron-right fa-btn-link"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+    {% endfor %}
+  </section>
+</div>

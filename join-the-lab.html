@@ -2,6 +2,7 @@
 title: Join the Lab
 layout: default
 permalink: /join-the-lab
+description: "Find out about sleep research job openings, internships, and graduate or postdoctoral research positions with the SHARP team."
 ---
 {% assign data = site.data.join-the-lab-text %}
 <section>
@@ -14,7 +15,7 @@ permalink: /join-the-lab
 </section>
 
 <section>
-    <div class="container px-4">
+    <div class="container px-2">
 
         <h1 class="sintony display-6 pb-4 almost-white">Become a member of our team</h1>
 
@@ -44,16 +45,18 @@ permalink: /join-the-lab
 
 
 <section class="light-theme">
-    <div class="container px-4">
+    <div class="container px-2">
 
-        <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
-        {{ data.internships | markdownify }}
+        <div>
+            <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
+            {{ data.internships | markdownify }}
+        </div>
 
     </div>
 </section>
 
-<section class="">
-    <div class="container px-4">
+<section>
+    <div class="container px-2">
 
         <h1 class="sintony display-6 pb-4">How to apply</h1>
 
@@ -69,8 +72,7 @@ permalink: /join-the-lab
                 class="btn dblink fs-6 bold btn-stretch">OHSU Center for Health Systems Effectiveness Jobs</a>
         </p>
 
-        <p><i class="fa-solid fa-circle-exclamation pe-1"></i>Tip: search using the term “Neurology”, then sort by
-            Department</p>
+        <p><i class="fa-solid fa-circle-exclamation pe-1"></i>Tip: search using the term “Neurology”, then sort by Department</p>
 
         </p>
 
@@ -80,15 +82,17 @@ permalink: /join-the-lab
 
 
 <section class="light-theme">
-    <div class="container px-4">
-        <h1>
-            <h1 class="sintony display-5 pb-4">FAQ</h1>
-        </h1>
-        <div class="col">
-            {% for item in site.data.lab-faq.faq %}
-            <div class="bold">{{ item.question | markdownify }}</div>
-            <div class="ms-3">{{ item.answer | markdownify }}</div>
-            {% endfor %}
+    <div class="container px-2">
+        <div class="faq">
+            <h1>
+                <h1 class="sintony display-5 pb-4">FAQ</h1>
+            </h1>
+            <div class="col">
+                {% for item in site.data.lab-faq.faq %}
+                <div class="bold">{{ item.question | markdownify }}</div>
+                <div class="ms-3">{{ item.answer | markdownify }}</div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>

@@ -2,105 +2,108 @@
 title: Contact
 layout: default
 permalink: /contact
+description: "Contact info and driving directions for the SHARP sleep research lab in Portland, Oregon."
 ---
+
 {% assign data = site.data.contact %}
 
 <section class="no-padding">
-  <div class="jumbotron" style="background-image: linear-gradient(rgba(6, 26, 35, 0.4), rgba(6, 26, 35, 0.7)), url(/images/OHSU-tram-overlook-crop.jpeg); background-position: 0% 75%;">
+  <div
+    class="jumbotron"
+    style="
+      background-image: linear-gradient(
+          rgba(6, 26, 35, 0.4),
+          rgba(6, 26, 35, 0.7)
+        ),
+        url(/images/OHSU-tram-overlook-crop.jpeg);
+      background-position: 0% 75%;
+    "
+  >
     <div class="container almost-white jumbo-title">
       <h1 class="display-2 sintony">Contact &amp; Directions</h1>
     </div>
   </div>
 </section>
 
-
-<div class="row flex-column-reverse flex-md-row">
-
-
-  <div class="col-12 col-md-7 ps-4 ">
-    <section>
-      <h1 class="sintony lightest-green pb-4 ps-4">Finding Us</h1>
-      <div class="col p-4">
-        <div class="row">
-
-          <div class="col-1">
-            <i class="fa-solid fa-car pe-3 fs-1"></i>
+<div class="container">
+  <div class="row flex-column-reverse flex-lg-row">
+    <div class="col-12 col-lg-7 ps-4">
+      <section>
+        <h1 class="sintony pb-4 ps-4">Finding Us</h1>
+        <div class="col p-4">
+          <div class="row">
+            <div class="col-1">
+              <i class="fa-solid fa-car pe-3 fs-1"></i>
+            </div>
+            <div class="col-11">
+              <h3 class="sintony pb-3 ps-3 align-vert">Driving directions</h3>
+            </div>
           </div>
-          <div class="col-11">
-            <h3 class="sintony pb-3 ps-3 align-vert">Driving directions</h3>
-          </div>
+          {{ data.driving | markdownify }}
         </div>
-        {{ data.driving | markdownify }}
-      </div>
 
-      <div class="col p-4">
-
-        <div class="row">
-          <div class="col-1">
-            <i class="fa-solid fa-bus fs-1"></i>
+        <div class="col p-4">
+          <div class="row">
+            <div class="col-1">
+              <i class="fa-solid fa-bus fs-1"></i>
+            </div>
+            <div class="col-11">
+              <h3 class="sintony pb-3 align-vert ps-3">
+                Public transit directions
+              </h3>
+            </div>
           </div>
-          <div class="col-11">
-            <h3 class="sintony pb-3 align-vert ps-3">Public transit
-              directions</h3>
-          </div>
+          {{ data.public-transit | markdownify }}
         </div>
-        {{ data.public-transit | markdownify }}
-      </div>
 
-      <div class="col p-4">
-
-
-        <div class="row">
-          <div class="col-1">
-            <i class="fa-solid fa-cable-car pe-3 fs-1"></i>
+        <div class="col p-4">
+          <div class="row">
+            <div class="col-1">
+              <i class="fa-solid fa-cable-car pe-3 fs-1"></i>
+            </div>
+            <div class="col-11">
+              <h3 class="sintony pb-3 ps-3">From the Portland Aerial Tram</h3>
+            </div>
           </div>
-          <div class="col-11">
-            <h3 class="sintony pb-3 ps-3">From the Portland Aerial
-              Tram
-            </h3>
-          </div>
+          {{ data.tram | markdownify }}
         </div>
-        {{ data.tram | markdownify }}
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <div class="col-12 col-md-5 ">
-    <section class="light-theme ps-5 pe-2">
-      <div class="general-contact pb-4">
-        <h1 class="sintony pb-4">Contact</h1>
+    <div class="col-12 col-lg-5">
+      <section class="light-theme ps-5 pe-2">
+        <div class="general-contact pb-4">
+          <h1 class="sintony pb-4">Contact</h1>
 
-        <p>For all SHARP inquiries, please email or call:</p>
+          <p>For all SHARP inquiries, please email or call:</p>
 
-        <p>
-          <a href="mailto:{{data.email}}" class="blueish-black align-vert">
-            <i class="fa-regular fa-envelope pe-2 fs-2"></i>
-            <span class="bold">{{ data.email }}</span>
-          </a>
-        </p>
+          <p>
+            <a href="mailto:{{data.email}}" class="blueish-black align-vert">
+              <i class="fa-regular fa-envelope pe-2 fs-2"></i>
+              <span class="bold">{{ data.email }}</span>
+            </a>
+          </p>
 
-        <p>
-          <a href="tel:{{ data.phone }}" class="blueish-black align-vert">
-            <i class="fa-solid fa-phone pe-2 fs-2"></i>
-            <span class="bold">{{ data.phone }}</span>
-          </a>
-        </p>
-
-      </div>
-      <div class="pb-4">
-        <h3>
-          <i class="fa-solid fa-envelope-open-text pe-3"></i>Mailing address</h3>
-        <p>
-          {{ data.mailing-address | markdownify }}
-        </p>
-      </div>
-      <div class="pb-4">
-        <h3>
-          <i class="fa-solid fa-location-dot pe-3"></i>Physical location</h3>
-        <p>
-          {{ data.physical-loc }}
-        </p>
-      </div>
-    </section>
+          <p>
+            <a href="tel:{{ data.phone }}" class="blueish-black align-vert">
+              <i class="fa-solid fa-phone pe-2 fs-2"></i>
+              <span class="bold">{{ data.phone }}</span>
+            </a>
+          </p>
+        </div>
+        <div class="pb-4">
+          <h3>
+            <i class="fa-solid fa-envelope-open-text pe-3"></i>Mailing address
+          </h3>
+          <p>{{ data.mailing-address | markdownify }}</p>
+        </div>
+        <div>
+          <h3>
+            <i class="fa-solid fa-location-dot pe-3"></i>Physical location
+          </h3>
+          <p>{{ data.physical-loc }}</p>
+        </div>
+      </section>
+    </div>
   </div>
 </div>

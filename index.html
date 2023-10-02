@@ -2,229 +2,295 @@
 layout: default
 index: true
 permalink: /
+description: "The Portland Sleep &amp; Health Applied Research Program is a community of researchers and clinicians
+studying how sleep affects the brain in health and disease."
 ---
+
 {% assign home = site.data.home-text | first %}
 
 <!-- Herobox -->
 <section class="bgimage" id="home">
-  <div class="container-fluid hero-container d-flex justify-content-end align-items-end p-0">
+  <div
+    class="container-fluid hero-container d-flex justify-content-end align-items-end p-0"
+  >
     <div class="col-12 text-end pe-2 pe-md-5">
       <h1 class="lightest-green fjalla text-shadow display-1">SHARP Lab</h1>
     </div>
-    <div class="col-12 text-end pb-4 tagline pe-2 pe-md-5 sintony lightest-green text-shadow">Sleep &amp; Health
-      Applied
-      Research
-      Program
+    <div
+      class="col-12 text-end pb-4 tagline pe-2 pe-md-5 sintony lightest-green text-shadow"
+    >
+      Sleep &amp; Health Applied Research Program
     </div>
-    <div class="col-11 col-md-9 col-lg-10 dark-mask rounded-start-3">
+    <div
+      class="col-11 col-md-9 col-lg-10 dark-mask rounded-start-3"
+      style="max-width: 900px"
+    >
       <p class="hero-desc p-3">{{ home.tagline }}</p>
     </div>
   </div>
 </section>
 
-
 <!-- Welcome -->
 
-<section class="" id="Welcome">
+<section class="container" id="Welcome">
   <div class="container-fluid">
-
     <div class="row d-flex align-items-center justify-content-around g-4">
-
-      <div class="col-11 col-lg-7 p-lg-5 pb-lg-0">
-        <p class="lightest-green display-3 sintony text-shadow">{{ home.heading }}</p>
-
+      <div class="col-12 col-lg-7 pt-4">
+        <p class="lightest-green display-3 sintony text-shadow">
+          {{ home.heading }}
+        </p>
 
         <div class="about-text">
           <p>{{ home.text | markdownify }}</p>
         </div>
-
       </div>
 
-      <div class="light-theme col-11 col-lg-5 p-4 mx-auto text-center shadow">
+      <div class="light-theme col-12 col-lg-5 p-4 mx-auto text-center shadow">
         <h3 class="sintony display-6 pt-2">SHARP Directors</h3>
 
-        <hr class="pb-4 blueish-black">
+        <hr class="pb-4 blueish-black" />
 
         <div class="row" id="Directors">
-
           <div class="col-6">
-            <img class="img-fluid rounded shadow" src="/images/people/miranda-lim.jpeg" alt="">
-            <h5 class="pt-3 fw400">Dr. Miranda M. Lim, MD, PhD
-            </h5>
+            <img
+              class="img-fluid rounded shadow"
+              src="/images/people/miranda-lim.jpeg"
+              alt=""
+            />
+            <h5 class="pt-3 fw400">Dr. Miranda M. Lim, MD, PhD</h5>
             <!-- <p class="bold">SHARP Director</p> -->
-            <a href="#LimBio" class="btn btn-outline-light publink fs-5" onclick="toggler('LimBio');">
-              <i class="pe-2 fa-solid fa-user"></i>Bio</a>
+            <a
+              href="#LimBio"
+              class="btn btn-outline-light publink fs-5"
+              onclick="toggler('LimBio');"
+            >
+              <i class="pe-2 fa-solid fa-user"></i>Bio</a
+            >
           </div>
 
-
           <div class="col-6">
-            <img class="img-fluid rounded shadow" src="/images/people/jonathan-elliott.jpeg" alt="">
+            <img
+              class="img-fluid rounded shadow"
+              src="/images/people/jonathan-elliott.jpeg"
+              alt=""
+            />
             <h5 class="pt-3 fw400">Dr. Jonathan Elliott, PhD</h5>
             <!-- <p class="bold">SHARP Director</p> -->
-            <a href="#ElliottBio" class="btn btn-outline-light publink fs-5" onclick="toggler('ElliottBio');">
-              <i class="pe-2 fa-solid fa-user"></i>Bio</a>
+            <a
+              href="#ElliottBio"
+              class="btn btn-outline-light publink fs-5"
+              onclick="toggler('ElliottBio');"
+            >
+              <i class="pe-2 fa-solid fa-user"></i>Bio</a
+            >
           </div>
-
-
         </div>
       </div>
     </div>
   </div>
-
 </section>
 
 <section class="hidden light-theme" id="LimBio">
-  {% assign miranda = site.data.people.people | where: "nameid", "mlim" | first %}
+  {% assign miranda = site.data.people.people | where: "nameid", "mlim" | first
+  %}
 
-  <div class="container">
+  <div class="container px-2" style="max-width: 100ch">
     <div class="d-flex flex-row-reverse">
-      <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
-        onclick="toggler('LimBio');"></a>
+      <a
+        href="#Directors"
+        class="btn btn-close position-absolute"
+        style="margin-top: 5px"
+        onclick="toggler('LimBio');"
+      ></a>
     </div>
 
     <div class="row d-flex align-items-center">
-      <div class="col-3 col-lg-2 ">
-        <img class="img-fluid rounded shadow float-start" src="{{ miranda.photo }}" alt="">
+      <div class="col-3 col-lg-2">
+        <img
+          class="img-fluid rounded shadow float-start"
+          src="{{ miranda.photo }}"
+          alt=""
+        />
       </div>
       <div class="col-9 col-lg-10">
         <h4 class="body-color fjalla">SHARP Co-Director</h4>
 
-        <h1 class="bold display-6">
-          {{ miranda.displayname}} </h1>
+        <h1 class="bold display-6">{{ miranda.displayname}}</h1>
         <h5>{{ miranda.pronouns }}</h5>
       </div>
-
       <p>{{ miranda.bio | markdownify }}</p>
-
-
-
       <div class="text-end pb-4">
-        <a href="#Directors" class="btn btn-outline-dark fs-6" aria-label="Close" onclick="toggler('LimBio');">Close</a>
+        <a
+          href="#Directors"
+          class="btn btn-outline-dark fs-6"
+          aria-label="Close"
+          onclick="toggler('LimBio');"
+          >Close</a
+        >
       </div>
     </div>
-
-
   </div>
-
 </section>
 
 <section class="hidden light-theme" id="ElliottBio">
-  {% assign jon = site.data.people.people | where: "nameid", "jelliott" | first %}
-  <div class="container">
+  {% assign jon = site.data.people.people | where: "nameid", "jelliott" | first
+  %}
+  <div class="container px-2" style="max-width: 100ch">
     <div class="d-flex flex-row-reverse">
-      <a href="#Directors" class="btn btn-close position-absolute" style="margin-top: 5px;"
-        onclick="toggler('ElliottBio');"></a>
+      <a
+        href="#Directors"
+        class="btn btn-close position-absolute"
+        style="margin-top: 5px"
+        onclick="toggler('ElliottBio');"
+      ></a>
     </div>
 
     <div class="row d-flex align-items-center">
-      <div class="col-3 col-lg-2 ">
-        <img class="img-fluid rounded shadow float-start" src="{{ jon.photo }}" alt="">
+      <div class="col-3 col-lg-2">
+        <img
+          class="img-fluid rounded shadow float-start"
+          src="{{ jon.photo }}"
+          alt=""
+        />
       </div>
       <div class="col-9 col-lg-10">
         <h4 class="body-color fjalla">SHARP Co-Director</h4>
 
-        <h1 class="bold display-6">
-          {{ jon.displayname}} </h1>
+        <h1 class="bold display-6">{{ jon.displayname}}</h1>
       </div>
-
       <p>{{ jon.bio | markdownify }}</p>
-
+      <div class="text-end pb-4">
+        <a
+          href="#Directors"
+          class="btn btn-outline-dark fs-6"
+          aria-label="Close"
+          onclick="toggler('ElliottBio');"
+          >Close</a
+        >
+      </div>
     </div>
   </div>
 </section>
 
-
 <!-- Card links -->
 <section>
-
-  <div class="container-fluid h-100 light-theme">
-
-
-    <div class="row align-items-center justify-content-around">
-
+  <div class="container h-100 light-theme">
+    <div class="row align-items-center justify-content-around no-margin">
       <div class="col-6 col-lg-3 mx-auto p-4">
-
         <div class="card mycard border-0">
-          <img class="card-img-top img-fluid img-border-light shadow rounded"
-            src="/images/home-sleep-study-participant-edit-400px.jpg" alt="Card image">
-          <div class="card-img-overlay d-flex align-items-end px-0 py-0 shadow rounded myhover">
+          <img
+            class="card-img-top img-fluid img-border-light shadow rounded"
+            src="/images/home-sleep-study-participant-edit-400px.jpg"
+            alt="Card image"
+          />
+          <div
+            class="card-img-overlay d-flex align-items-end px-0 py-0 shadow rounded myhover"
+          >
             <div class="card-title pt-1 rounded text-center">
-              <h2 class="sintony lightest-green text-shadow display-6 pt-1 hublink">
+              <h2
+                class="sintony lightest-green text-shadow display-6 pt-1 hublink"
+              >
                 <a href="./join-a-study" class="stretched-link">Join a study</a>
               </h2>
             </div>
-
           </div>
         </div>
       </div>
 
-
       <div class="col-6 col-lg-3 mx-auto p-4">
-
         <div class="card mycard border-0 rounded">
-          <img class="card-img-top img-fluid rounded shadow img-border-light"
-            src="/images/group-photo-2022-edit-400px.jpg" alt="Card image">
-          <div class="card-img-overlay d-flex align-items-end px-0 py-0 rounded myhover">
+          <img
+            class="card-img-top img-fluid rounded shadow img-border-light"
+            src="/images/group-photo-2022-edit-400px.jpg"
+            alt="Card image"
+          />
+          <div
+            class="card-img-overlay d-flex align-items-end px-0 py-0 rounded myhover"
+          >
             <div class="card-title pt-1 rounded text-center">
-              <h2 class="sintony lightest-green text-shadow display-6 pt-1 hublink">
+              <h2
+                class="sintony lightest-green text-shadow display-6 pt-1 hublink"
+              >
                 <a href="./join-the-lab" class="stretched-link">Join the lab</a>
               </h2>
             </div>
-
           </div>
         </div>
       </div>
 
-
-
       <!-- Media carousel -->
-      <div class="col-12 col-lg-6 mx-auto no-padding no-margin" style="background-color: rgba(63, 97, 139, 0);">
-
-
-        <div id="mediaCarousel" class="carousel slide h-100" data-bs-ride="carousel">
-
+      <div
+        class="col-12 col-lg-6 mx-auto no-padding no-margin"
+        style="background-color: rgba(63, 97, 139, 0)"
+      >
+        <div
+          id="mediaCarousel"
+          class="carousel slide h-100"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
-
-            {% assign features = site.data.media.media | where: "featured", true %}
-            {% for feature in features %}
-            {% if feature.description contains "Ologies" %}
+            {% assign features = site.data.media.media | where: "featured", true
+            %} {% for feature in features %} {% if feature.description contains
+            "Ologies" %}
             <div class="carousel-item active">
-              <img src="/images/cardbg1.jpeg" class="d-block img-fluid rel-image dark-filter" alt="...">
+              <img
+                src="/images/cardbg1.jpeg"
+                class="d-block img-fluid rel-image dark-filter"
+                alt="..."
+              />
 
               <div class="overlay-txt px-1 display-6">
                 <p>{{ feature.headline | markdownify }}</p>
                 <p class="pt-2">
-                  <a href="{{ feature.url }}" class="btn btn-outline-light carousel-btn">{{ feature.button-text }}</a>
+                  <a
+                    href="{{ feature.url }}"
+                    class="btn btn-outline-light carousel-btn"
+                    >{{ feature.button-text }}</a
+                  >
                 </p>
               </div>
             </div>
             {% else %}
             <div class="carousel-item">
-              <img src="/images/cardbg1.jpeg" class="d-block img-fluid rel-image dark-filter" alt="...">
+              <img
+                src="/images/cardbg1.jpeg"
+                class="d-block img-fluid rel-image dark-filter"
+                alt="..."
+              />
 
               <div class="overlay-txt px-1 display-6">
                 <p>{{ feature.headline | markdownify }}</p>
                 <p class="pt-2">
-                  <a href="{{ feature.url }}" class="btn btn-outline-light carousel-btn">{{ feature.button-text }}</a>
+                  <a
+                    href="{{ feature.url }}"
+                    class="btn btn-outline-light carousel-btn"
+                    >{{ feature.button-text }}</a
+                  >
                 </p>
               </div>
             </div>
-            {% endif %}
-            {% endfor %}
-
+            {% endif %} {% endfor %}
           </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mediaCarousel"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mediaCarousel"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-
       </div>
     </div>
   </div>
@@ -235,7 +301,7 @@ permalink: /
 </div> --><!-- Netlify -->
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
+    window.netlifyIdentity.on("init", (user) => {
       if (!user) {
         window.netlifyIdentity.on("login", () => {
           document.location.href = "/admin/";

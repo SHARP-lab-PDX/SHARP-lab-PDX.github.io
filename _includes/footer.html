@@ -1,40 +1,43 @@
 <div class="container-fluid p-0 navbar-custom">
-    <footer>
-        <div class="row p-4">
+  <footer class="container">
+    <div class="row p-4">
+      <div class="col-12 col-md-5 offset-md-1 pb-4">
+        <p class="fjalla fs-4 logo-color">SHARP Lab</p>
 
-            <div class="col-12 col-md-5 offset-md-1 pb-4">
+        <ul class="nav flex-column">
+          {% for item in site.data.navigation.navlinks %}
+          <li class="nav-item">
+            <a href="{{ item.url }}" class="nav-link">{{item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
 
-                <p class="fjalla fs-4 logo-color">SHARP Lab</p>
-
-                <ul class="nav flex-column">
-                    {% for item in site.data.navigation.navlinks %}
-                    <li class="nav-item">
-                        <a href="{{ item.url }}" class="nav-link">{{item.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-
-            <div class="col-12 col-md-5">
-                <p class="sintony pb-2">Resources</p>
-                <ul class="nav flex-column">
-                    {% for resource in site.data.ext-resources.resource %}
-                    <li class="nav-item">
-                        <a href="{{ resource.url }}" class="nav-link">{{ resource.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-
-        </div>
-        <hr />
-        <div class="text-center pb-4 pt-2">
-            <p class="pt-1" style="font-size: 0.8em;">Website created by <a href=" http://www.samifriedrich.com" class="byline
-                        ">Sami Friedrich</a></p>
-            <p style="font-size: 0.8em;">Copyright © 2023 Sleep &amp; Health Applied Research Program. All rights
-                reserved.</p>
-
-        </div>
-
-    </footer>
+      <div class="col-12 col-md-5">
+        <p class="sintony pb-2">Resources</p>
+        <ul class="nav flex-column">
+          {% for resource in site.data.ext-resources.resource %}
+          <li class="nav-item">
+            <a href="{{ resource.url }}" class="nav-link"
+              >{{ resource.title }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="text-center pb-4 pt-2">
+      <p class="pt-1" style="font-size: 0.8em">
+        Website created by
+        <a href=" http://www.samifriedrich.com" class="byline"
+          >Sami Friedrich</a
+        >
+      </p>
+      <p style="font-size: 0.8em">
+        Copyright © 2023 Sleep &amp; Health Applied Research Program. All rights
+        reserved.
+      </p>
+    </div>
+  </footer>
 </div>
