@@ -49,7 +49,7 @@ description: "Find out about sleep research job openings, internships, and gradu
 
         <div>
             <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
-            {{ data.internships | markdownify }}
+            <div class="text-container">{{ data.internships | markdownify }}</div>
         </div>
 
     </div>
@@ -87,7 +87,7 @@ description: "Find out about sleep research job openings, internships, and gradu
             <h1>
                 <h1 class="sintony display-5 pb-4">FAQ</h1>
             </h1>
-            <div class="col">
+            <div class="col text-container">
                 {% for item in site.data.lab-faq.faq %}
                 <div class="bold">{{ item.question | markdownify }}</div>
                 <div class="ms-3">{{ item.answer | markdownify }}</div>

@@ -4,81 +4,80 @@ layout: default
 permalink: /join-a-study
 description: "Participate in research studies on sleep and neurological health. Read about current studies, eligibility, and compensation."
 ---
+
 {% assign data = site.data.join-a-study-text %}
 
 <section>
-  <div class="jumbotron"
-    style="background-image: linear-gradient(rgba(16, 64, 86, 0.5), rgba(3, 48, 68, 0.65)), url(images/sleep_traces_2.png); background-position: center;">
+  <div
+    class="jumbotron"
+    style="
+      background-image: linear-gradient(
+          rgba(16, 64, 86, 0.5),
+          rgba(3, 48, 68, 0.65)
+        ),
+        url(images/sleep_traces_2.png);
+      background-position: center;
+    "
+  >
     <div class="container almost-white jumbo-title">
       <h1 class="display-2 sintony">{{ page.title }}</h1>
     </div>
   </div>
 </section>
 
-
-<section>
-  <div class="container px-4">
-    <h1 class="sintony display-6 pb-5">{{ data.heading1 }}</h1>
-
-    <div class="row gx-5 gy-4">
-
-
-      <div class="col-12 col-lg-6">
-        <h3 class="sintony fs-4 bold">{{ data.subheading1 }}</h3>
-        <p>{{ data.text1 | markdownify }}</p>
+<main>
+  <section>
+    <div class="container px-2">
+      <h1 class="sintony display-6 pb-5">{{ data.heading1 }}</h1>
+      <div class="row gx-5 gy-4">
+        <div class="col-12 col-lg-6">
+          <h3 class="sintony fs-4 bold">{{ data.subheading1 }}</h3>
+          <p>{{ data.text1 | markdownify }}</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h3 class="sintony fs-4 bold">{{ data.subheading2 }}</h3>
+          <p>{{ data.text2 | markdownify }}</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-
-      <div class="col-12 col-lg-6">
-        <h3 class="sintony fs-4 bold">{{ data.subheading2 }}</h3>
-        <p>{{ data.text2 | markdownify }}</p>
+  <section class="light-theme">
+    <div class="container px-2">
+      <h1 class="sintony display-5 pb-4">{{ data.heading2}}</h1>
+      <p>{{ data.text3 | markdownify }}</p>
+      <div class="row gy-5 text-center pt-5">
+        {% for study in site.data.studies.studies %}
+        <div class="col-12 col-lg-6">
+          <h3 class="bold">{{ study.title }}</h3>
+          <p>
+            <a href="{{ study.url }}" class="btn btn-outline-dark publink fs-5"
+              >{{ study.button-text }}</a
+            >
+          </p>
+          <p class="study-add-info">
+            {% if study.addinfo %} {{ study.addinfo | markdownify }} {% endif %}
+          </p>
+          <img
+            src="{{ study.image }}"
+            alt="Flyer for {{ study.title }}"
+            class="img-fluid"
+          />
+        </div>
+        {% endfor %}
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<section class="light-theme">
-  <div class="container px-4">
-
-    <h1 class="sintony display-5 pb-4">{{ data.heading2}} </h1>
-    <p>{{ data.text3 | markdownify }}</p>
-
-    <div class="row gy-5 text-center pt-5">
-
-      {% for study in site.data.studies.studies %}
-      <div class="col-12 col-lg-6">
-        <h3 class="bold">{{ study.title }}</h3>
-        <p>
-          <a href="{{ study.url }}" class="btn btn-outline-dark publink fs-5">{{ study.button-text }}</a>
-        </p>
-        <p class="study-add-info">
-          {% if study.addinfo %}
-          {{ study.addinfo | markdownify }}
-          {% endif %}
-        </p>
-        <img src="{{ study.image }}" alt="Flyer for {{ study.title }}" class="img-fluid">
+  <section id="studyFAQ">
+    <div class="container px-2">
+      <h1 class="sintony display-5 pb-4">FAQ</h1>
+      <div class="col text-container">
+        {% for item in site.data.studies-faq.faq %}
+        <div class="bold">{{ item.question | markdownify }}</div>
+        <div class="ms-3">{{ item.answer | markdownify }}</div>
+        {% endfor %}
       </div>
-      {% endfor %}
-
     </div>
-
-
-  </div>
-</section>
-
-
-<section id="studyFAQ">
-  <div class="container px-4">
-
-    <h1 class="sintony display-5 pb-4">FAQ</h1>
-    <div class="col">
-      {% for item in site.data.studies-faq.faq %}
-      <div class="bold">{{ item.question | markdownify }}</div>
-      <div class="ms-3">{{ item.answer | markdownify }}</div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+  </section>
+</main>

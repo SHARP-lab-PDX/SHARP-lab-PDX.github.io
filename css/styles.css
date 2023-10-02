@@ -23,6 +23,7 @@ body {
   background-color: var(--clr-primary-700);
   background-repeat: none;
   font-size: 1.2rem;
+  line-height: 1.75em;
 }
 
 /* remove right overflow margin */
@@ -69,6 +70,10 @@ a {
 .hidden {
   display: none;
 }
+
+/* .line-spacer {
+  line-height: 1.75em;
+} */
 
 .text-shadow {
   text-shadow: 2px 2px 8px #000000b1;
@@ -196,6 +201,14 @@ a {
 
 .container {
   --bs-gutter-x: 0rem;
+}
+
+.slim-container {
+  max-width: 80ch;
+}
+
+.text-container {
+  max-width: 110ch;
 }
 
 .padding-400 {
@@ -485,7 +498,7 @@ section img {
 }
 
 .bio-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: left !important;
 }
 

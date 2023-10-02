@@ -94,7 +94,7 @@ studying how sleep affects the brain in health and disease."
   {% assign miranda = site.data.people.people | where: "nameid", "mlim" | first
   %}
 
-  <div class="container px-2" style="max-width: 100ch">
+  <div class="container slim-container px-2">
     <div class="d-flex flex-row-reverse">
       <a
         href="#Directors"
@@ -118,7 +118,7 @@ studying how sleep affects the brain in health and disease."
         <h1 class="bold display-6">{{ miranda.displayname}}</h1>
         <h5>{{ miranda.pronouns }}</h5>
       </div>
-      <p>{{ miranda.bio | markdownify }}</p>
+      <div>{{ miranda.bio | markdownify }}</div>
       <div class="text-end pb-4">
         <a
           href="#Directors"
@@ -158,7 +158,7 @@ studying how sleep affects the brain in health and disease."
 
         <h1 class="bold display-6">{{ jon.displayname}}</h1>
       </div>
-      <p>{{ jon.bio | markdownify }}</p>
+      <div>{{ jon.bio | markdownify }}</div>
       <div class="text-end pb-4">
         <a
           href="#Directors"
@@ -259,14 +259,14 @@ studying how sleep affects the brain in health and disease."
               />
 
               <div class="overlay-txt px-1 display-6">
-                <p>{{ feature.headline | markdownify }}</p>
-                <p class="pt-2">
+                <div>{{ feature.headline | markdownify }}</div>
+                <div class="pt-2">
                   <a
                     href="{{ feature.url }}"
                     class="btn btn-outline-light carousel-btn"
                     >{{ feature.button-text }}</a
                   >
-                </p>
+                </div>
               </div>
             </div>
             {% endif %} {% endfor %}
