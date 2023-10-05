@@ -2,8 +2,9 @@
 title: Join the Lab
 layout: default
 permalink: /join-the-lab
+description: "Find out about sleep research job openings, internships, and graduate or postdoctoral research positions with the SHARP team."
 ---
-
+{% assign data = site.data.join-the-lab-text %}
 <section>
     <div class="jumbotron taller-jumbo"
         style="background-image: url(images/lab-discusses-data.jpeg); background-position: 65% 30%; height: 50vh">
@@ -12,49 +13,25 @@ permalink: /join-the-lab
         </div>
     </div>
 </section>
-
 <section>
-    <div class="container px-4">
+    <div class="container text-container px-2">
 
         <h1 class="sintony display-6 pb-4 almost-white">Become a member of our team</h1>
 
-        <p class="fs-4">The SHARP lab is always looking for passionate, curious individuals to join our team.</p>
+        <h3 class="fs-4 py-3">The SHARP lab is always looking for passionate, curious individuals to join our team.</h3>
 
-        <div class="row d-flex justify-content-between ligh">
+        <div class="row d-flex justify-content-between">
 
-
-            <div class="col-12 col-lg-7 p-3 mx-auto my-auto ">
-                <img src="/images/group-photo-2022.jpeg" class="img-fluid img-border-light" alt="">
+            <div class="col-12 mx-auto my-auto ">
+                {{ data.join-statement | markdownify }}
             </div>
-
-
-            <div class="col-12 col-lg-5 p-3 mx-auto my-auto ">
-                <p>SHARP conducts vitally important, impactful research studies in a dynamic and engaging scientific
-                    environment.
-                    We are committed to performing ethical research at the highest possible scientific standards.
-                </p>
-                <p> We respect diverse strengths and backgrounds, and we welcome a culture of lifelong learning and
-                    feedback
-                    through active
-                    mentorship at all levels.
-                    We value <span class="bold">teamwork, creativity, independence, organization, transparency,
-                        responsibility,
-                        perseverance,
-                        scientific rigor,
-                        and professionalism.
-                    </span>
-                </p>
+            <div class="col-12 py-4 mx-auto">
+                <img src="/images/group-photo-2022.jpeg" class="img-fluid img-border-light" alt="SHARP lab members smiling in a meeting room" style="width: 100%;">
             </div>
 
             <div class="col">
                 <p class="fs-3 mt-4">We are currently accepting applications for the following positions:</p>
-                <ul>
-                    <li>Graduate students</li>
-                    <li>Postdoctoral students</li>
-                    <li>Research assistants and technicians (full or part time)</li>
-                    <li>Study coordinators</li>
-                    <li>Undergraduate interns</li>
-                </ul>
+                {{ data.open-positions | markdownify }}
             </div>
 
         </div>
@@ -64,41 +41,18 @@ permalink: /join-the-lab
 
 
 <section class="light-theme">
-    <div class="container px-4">
+    <div class="container text-container px-2">
 
-        <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
-
-        <p>We seek highly motivated, detail oriented, analytical, and creative people who are enthusiastic about
-            learning about
-            sleep and neuroscience in a fast-paced laboratory setting. Summer internships are available by
-            application through the
-            following programs:
-
-        <ul>
-            <li>PVARF summer internship program (posted in Feb/March each year <a
-                    href="https://pvarf.applicantpro.com/jobs"
-                    class="bold blueish-black text-decoration-underline">here</a>)</li>
-            <li>OHSU Occupational Health Sciences Summer Internship program (posted in Jan/Feb each year)</li>
-            <li>University of Oregon Human Physiology Summer Internship program (posted in Jan/Feb each year)</li>
-        </ul>
-
-
-        Training will be provided for all techniques, but candidates are expected to be self-starters. Strong
-        candidates will be
-        highly organized workers who are comfortable working both independently and in team dynamics and are
-        enthusiastic about
-        behavioral neuroscience research. There may be opportunities for exceptional interns to be re-interviewed
-        after
-        completion of their summer program for consideration as full-time employees. Prior research experience is a
-        plus but not
-        required. Positions are in person with occasional telework where appropriate.
-        </p>
+        <div>
+            <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
+            <div class="">{{ data.internships | markdownify }}</div>
+        </div>
 
     </div>
 </section>
 
-<section class="">
-    <div class="container px-4">
+<section>
+    <div class="container text-container px-2">
 
         <h1 class="sintony display-6 pb-4">How to apply</h1>
 
@@ -114,8 +68,7 @@ permalink: /join-the-lab
                 class="btn dblink fs-6 bold btn-stretch">OHSU Center for Health Systems Effectiveness Jobs</a>
         </p>
 
-        <p><i class="fa-solid fa-circle-exclamation pe-1"></i>Tip: search using the term “Neurology”, then sort by
-            Department</p>
+        <p><i class="fa-solid fa-circle-exclamation pe-1"></i>Tip: search using the term “Neurology”, then sort by Department</p>
 
         </p>
 
@@ -125,62 +78,17 @@ permalink: /join-the-lab
 
 
 <section class="light-theme">
-    <div class="container px-4">
-        <h1>
-            <h1 class="sintony display-5 pb-4">FAQ</h1>
-        </h1>
-        <div class="col">
-            <p class="bold">It's April or May and I'm still interested in doing a summer internship. Can I apply?
-            </p>
-            <p class="ms-3">Please inquire again next year. We get inquiries starting in December for application
-                decisions between January-March.</p>
-            <p class="bold">I live far away, but I will be in Portland this summer. Can I apply?
-            </p>
-            <p class="ms-3">The onboarding process is onerous and takes between 4-6 months to complete. Several
-                steps are in person. If you are not
-                able to accomplish this before your employment starts, then please inquire again next year.
-            </p>
-            <p class="bold">I am working full-time somewhere else, but am interested in exploring part-time work
-                with SHARP. Should I apply?
-
-            </p>
-            <p class="ms-3">If you are highly motivated and committed, please apply through the job postings above
-                and address this contingency
-                during your interviews. We are flexible and have accommodated this in the past for exceptional
-                candidates.
-            </p>
-
-            <p class="bold">How do I get a letter of recommendation?</p>
-            <p class="ms-3">SHARP leadership is happy to write letters of recommendation or serve as a professional
-                reference for students, research assistants, and any other members of the team. A few guidelines to
-                follow in order to ensure a positive experience for everyone involved:
-            <ol>
-                <li>Wait until the person knows you well before you ask for a letter.</li>
-                <li>Ask the person, “Do you feel comfortable writing me a strong letter of recommendation?”
-                    Otherwise, you risk getting a negative, neutral, or only lukewarm letter.</li>
-                <li>Give the person sufficient notice (e.g. at least 4 weeks) and a thorough description (preferably
-                    written) of what opportunity the letter is for and what you hope to gain from the opportunity.
-                    For professional references, please provide as much notice as possible along with information on
-                    the position and what you hope to gain from it.</li>
-                <li>Specify to whom the letter should be addressed, what (if any) specific instructions there are to
-                    follow for content and submission, and when it is due.</li>
-                <li>A brief outline/draft of suggested bullet points/highlights that you the person to include is
-                    ALWAYS appreciated. The person may not remember what you did in the lab X number of months or
-                    years ago. A copy of your CV is always helpful.</li>
-            </ol>
-            </p>
-
-            <p class="bold">What if I realize that research is not for me?</p>
-            <p class="ms-3">All SHARP employees start with a 3-4 month temporary trial period in the lab while they
-                finalize their onboarding
-                requirements. Continued employment after the trial period is contingent on both a positive
-                performance review and a desire to continue in this field of research. We encourage new employees to
-                continue to look for positions that are a good fit during this time and will always support any
-                decisions to move on to other areas. Most positions within SHARP are intended to be career or
-                academic stepping stones and we encourage folks to have open and honest conversations with their
-                managers about their interests and future goals!
-            </p>
-
+    <div class="container text-container px-2">
+        <div class="faq">
+            <h1>
+                <h1 class="sintony display-5 pb-4">FAQ</h1>
+            </h1>
+            <div class="col">
+                {% for item in site.data.lab-faq.faq %}
+                <div class="bold">{{ item.question | markdownify }}</div>
+                <div class="ms-3">{{ item.answer | markdownify }}</div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>

@@ -2,157 +2,82 @@
 title: Join a Study
 layout: default
 permalink: /join-a-study
+description: "Participate in research studies on sleep and neurological health. Read about current studies, eligibility, and compensation."
 ---
 
-<section>
-    <div class="jumbotron"
-        style="background-image: linear-gradient(rgba(16, 64, 86, 0.5), rgba(3, 48, 68, 0.65)), url(images/sleep_traces_2.png); background-position: center;">
-        <div class="container almost-white jumbo-title">
-            <h1 class="display-2 sintony">Join a Research Study</h1>
-        </div>
-    </div>
-</section>
-
+{% assign data = site.data.join-a-study-text %}
 
 <section>
-    <div class="container px-4">
-        <h1 class="sintony display-6 pb-5">We can't do it without you.</h1>
-
-        <div class="row gx-5 gy-4">
-
-
-            <div class="col-12 col-lg-6">
-                <h3 class="sintony fs-4 bold">Gratitude for our Research Participants</h3>
-                <p>
-                    Our work could not exist without the efforts of research participants who volunteer for our
-                    studies,
-                    giving us both
-                    their trust and time so that we may better understand the nature of sleep, chronic pain, and
-                    memory
-                    problems. We treat
-                    all our research participants with respect, dignity and gratitude for the critical role they
-                    play in
-                    our
-                    work. We are
-                    committed to providing a safe, caring, professional environment for our subjects.</p>
-            </div>
-
-
-            <div class="col-12 col-lg-6">
-                <h3 class="sintony fs-4 bold">Diversity and Inclusion Statement</h3>
-                <p>
-                    SHARP is committed to embracing inclusivity for all our people, including our staff and our
-                    research
-                    participants. Our
-                    program embraces the diversity of human identity: All races, gender identities, ethnicities,
-                    nationalities, sexual
-                    orientations, socio-economic backgrounds, political views and faith perspectives are welcome to
-                    participate in our work.
-                </p>
-            </div>
-
-        </div>
+  <div
+    class="jumbotron"
+    style="
+      background-image: linear-gradient(
+          rgba(16, 64, 86, 0.5),
+          rgba(3, 48, 68, 0.65)
+        ),
+        url(images/sleep_traces_2.png);
+      background-position: center;
+    "
+  >
+    <div class="container px-2 almost-white jumbo-title">
+      <h1 class="display-2 sintony">{{ page.title }}</h1>
     </div>
+  </div>
 </section>
 
-
-
-<section class="light-theme">
-    <div class="container px-4">
-
-        <h1 class="sintony display-5 pb-4">Current studies</h1>
-        <p>We offer a variety of research studies related to sleep and neurological health. Some can be done 100%
-            remotely via
-            mail, phone, or video visits. </p>
-        <p>
-            <span class="bold">
-
-                Please visit the links to online surveys below to see if you are eligible to
-                participate.
-            </span>
-        </p>
-
-
-        <div class="row gy-5 text-center pt-5">
-
-            <div class="col-12 col-lg-6">
-                <h3 class="bold">Sleep &amp; Wellness Study</h3>
-                <p><a href="https://octri.ohsu.edu/redcap/surveys/?s=EDAKYRNTF4"
-                        class="btn btn-outline-dark publink fs-5">Inquire about this study</a></p>
-                <img src="/images/research_studies/4268_flyer_v3_ALL_1108_2021-CR2023.jpeg" alt="" class="img-fluid">
-            </div>
-
-            <div class="col-12 col-lg-6">
-                <h3 class="bold">Dietary Supplement for Sleep</h3>
-                <p><a href="https://octri.ohsu.edu/redcap/surveys/?s=XP8WXFWDA8"
-                        class="btn btn-outline-dark publink fs-5">Inquire about this study</a></p>
-                <img src="/images/research_studies/SmART TBI_flyer_11_22_22.jpeg" alt="" class="img-fluid">
-            </div>
-
-
-
-            <div class="col-12 col-lg-6">
-                <h3 class="bold">Photosensitivity and Pain Study</h3>
-                <p><a href="https://octri.ohsu.edu/redcap/surveys/?s=FEKE8YHPHN"
-                        class="btn btn-outline-dark publink fs-5">Inquire
-                        about this study</a></p>
-                <img src="/images/research_studies/photosensitivity-study_flyer.jpeg" alt="" class="img-fluid">
-            </div>
-
-            <div class="col-12 col-lg-6">
-                <h3 class="bold">REM Sleep Behavior Disorder Study</h3>
-                <p><a href="https://www.naps-rbd.org/" class="btn btn-outline-dark publink fs-5">Find out more at
-                        NAPS</a></p>
-                <p>Or send an email to <a href="mailto:naps@ohsu.edu" class="blueish-black"><span
-                            class="bold">naps@ohsu.edu</span></a></p>
-                <img src="/images/logo-thick-mono.svg" alt="" class="img-fluid filter-teal">
-            </div>
-
+<main>
+  <section>
+    <div class="container px-2">
+      <h1 class="sintony display-6 pb-5">{{ data.heading1 }}</h1>
+      <div class="row gx-5 gy-4">
+        <div class="col-12 col-lg-6">
+          <h3 class="sintony fs-4 bold">{{ data.subheading1 }}</h3>
+          <p>{{ data.text1 | markdownify }}</p>
         </div>
-
-
-    </div>
-</section>
-
-
-
-<section class="hidden">
-    <div class="container px-4">
-
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <h1 class="sintony display-5 pb-4">How to sign up</h1>
-                <p>Please call the contacts listed on the fliers above</p>
-            </div>
-            <div class="col-12 col-lg-6 p-4">
-                <img src="/images/electrodes_home_monitoring.jpeg" alt="" class="img-fluid img-border-light">
-            </div>
+        <div class="col-12 col-lg-6">
+          <h3 class="sintony fs-4 bold">{{ data.subheading2 }}</h3>
+          <p>{{ data.text2 | markdownify }}</p>
         </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
-
-<section class="">
-    <div class="container px-4">
-
-        <h1 class="sintony display-5 pb-4">FAQ</h1>
-        <div class="col">
-            <p class="bold">Is there an age limit to participating in your studies?
-            </p>
-            <p class="ms-3">Please visit the individual study links above to fill out a screening survey to assess
-                your eligibility.</p>
-            <p class="bold">Will I be compensated for participating?</p>
-            <p class="ms-3">Each study provides reimbursement for time and effort for participation. If you are
-                eligible, a study coordinator will
-                contact you with further details.
-            </p>
-            <p class="bold">Do you provide clinical advice or perform clinical testing?
-            </p>
-            <p class="ms-3">While some of our testing is clinical-grade, we do not provide clinical reports or
-                interpretation.
-            </p>
-
+  <section class="light-theme">
+    <div class="container px-2">
+      <h1 class="sintony display-5 pb-4">{{ data.heading2}}</h1>
+      <p>{{ data.text3 | markdownify }}</p>
+      <div class="row gy-5 text-center pt-5">
+        {% for study in site.data.studies.studies %}
+        <div class="col-12 col-xl-6">
+          <h3 class="bold">{{ study.title }}</h3>
+          <p>
+            <a href="{{ study.url }}" class="btn btn-outline-dark publink fs-5"
+              >{{ study.button-text }}</a
+            >
+          </p>
+          <p class="study-add-info">
+            {% if study.addinfo %} {{ study.addinfo | markdownify }} {% endif %}
+          </p>
+          <img
+            src="{{ study.image }}"
+            alt="Sleep study recruitment flyer for {{ study.title }}"
+            class="img-fluid"
+          />
         </div>
+        {% endfor %}
+      </div>
     </div>
-</section>
+  </section>
+
+  <section id="studyFAQ">
+    <div class="container px-2">
+      <h1 class="sintony display-5 pb-4">FAQ</h1>
+      <div class="col text-container">
+        {% for item in site.data.studies-faq.faq %}
+        <div class="bold">{{ item.question | markdownify }}</div>
+        <div class="ms-3">{{ item.answer | markdownify }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>

@@ -2,151 +2,107 @@
 title: Contact
 layout: default
 permalink: /contact
+description: "Contact info and driving directions for the SHARP sleep research lab in Portland, Oregon."
 ---
 
+{% assign data = site.data.contact %}
+
 <section class="no-padding">
-    <div class="jumbotron"
-        style="background-image: linear-gradient(rgba(6, 26, 35, 0.4), rgba(6, 26, 35, 0.7)), url(/images/OHSU-tram-overlook-crop.jpeg); background-position: 0% 75%;">
-        <div class="container almost-white jumbo-title">
-            <h1 class="display-2 sintony">Contact &amp; Directions</h1>
-        </div>
+  <div
+    class="jumbotron"
+    style="
+      background-image: linear-gradient(
+          rgba(6, 26, 35, 0.4),
+          rgba(6, 26, 35, 0.7)
+        ),
+        url(/images/OHSU-tram-overlook-crop.jpeg);
+      background-position: 0% 75%;
+    "
+  >
+    <div class="container px-2 almost-white jumbo-title">
+      <h1 class="display-2 sintony">Contact &amp; Directions</h1>
     </div>
+  </div>
 </section>
 
+<div class="container px-2">
+  <div class="row flex-column-reverse flex-lg-row">
+    <div class="col-12 col-lg-7">
+      <section>
+        <h1 class="sintony pb-4">Finding Us</h1>
 
-<div class="row flex-column-reverse flex-md-row">
-
-
-    <div class="col-12 col-md-7 ps-4 ">
-        <section>
-            <h1 class="sintony lightest-green pb-4 ps-4">Finding Us</h1>
-            <div class="col p-4">
-                <div class="row">
-
-                    <div class="col-1"><i class="fa-solid fa-car pe-3 fs-1"></i></div>
-                    <div class="col-11">
-                        <h3 class="sintony pb-3 ps-3 align-vert">Driving directions</h3>
-                    </div>
-                </div>
-                <ol>
-                    <li>
-                        Use the address:
-                        3710 SW US Veterans Hospital Rd
-                        Portland, OR 97221
-                    </li>
-                    <li>
-                        Follow signs to the VA Patient/Visitor parking garage. If stopped at the gate, tell the
-                        guard
-                        you are here for a
-                        research study with SHARP (Dr. Lim or Dr. Elliott).
-                    </li>
-                    <li>Take the garage elevators up to the main hospital lobby.</li>
-                </ol>
+        <div class="col pb-4">
+          <div class="align-baseline">
+            <div class="col-1">
+              <i class="fa-solid fa-car fs-1"></i>
             </div>
-
-            <div class="col p-4">
-
-                <div class="row">
-                    <div class="col-1">
-                        <i class="fa-solid fa-bus fs-1"></i>
-                    </div>
-                    <div class="col-11">
-                        <h3 class="sintony pb-3 align-vert ps-3">Public transit
-                            directions</h3>
-                    </div>
-                </div>
-                <ul>
-                    <li>
-                        Bus lines that drop off at the VA:
-                        8, 61, 64, 65, 66, 68
-                        <p class="ps-3">If taking one of the VA stop bus
-                            lines, ride until the stop
-                            “VA Main Hospital.”
-                        </p>
-                    </li>
-                    <li>
-                        Bus lines that drop off at the OHSU waterfront: #9, #17, #35, MAX Orange Line,
-                        NS Line Streetcar, B loop
-                        <p class="ps-3">If coming from the waterfront, take the Portland Aerial Tram up the hill.
-                        </p>
-                    </li>
-                </ul>
+            <div class="col-11">
+              <h3 class="sintony pb-3 align-vert">Driving directions</h3>
             </div>
+          </div>
+          {{ data.driving | markdownify }}
+        </div>
 
-            <div class="col p-4">
-
-
-                <div class="row">
-                    <div class="col-1"><i class="fa-solid fa-cable-car pe-3 fs-1"></i></div>
-                    <div class="col-11">
-                        <h3 class="sintony pb-3 ps-3">From the Portland Aerial
-                            Tram </h3>
-                    </div>
-                </div>
-                <ol>
-                    <li>
-                        Take the aerial tram up to OHSU. Tickets are $7.00, or free with proof
-                        of active military or retired Veteran ID card. Study participants can request a tram voucher
-                        prior to their day of travel.
-                    </li>
-                    <li>
-                        Walk through the hospital
-                    </li>
-                    <li>Turn left at the OHSU hosptial main lobby, following signs to the VA. You know you are in
-                        the
-                        Main Hospital lobby by seeing a flagpole out front. Look for the help desk, coffee stand,
-                        and a
-                        grand piano next to the elevators.</li>
-                    <li>Take the OHSU skybridge to the VA (2nd floor of the Main Hospital)</li>
-                    <li>Take the elevator or stairs down to the 1st floor of the hospital and meet in the lobby
-                        (look
-                        for the grand piano next
-                        to the elevators.)</li>
-                </ol>
+        <div class="col pb-4">
+          <div class="align-baseline">
+            <div class="col-1">
+              <i class="fa-solid fa-bus fs-1"></i>
             </div>
-        </section>
+            <div class="col-11">
+              <h3 class="sintony pb-3 align-vert">Public transit directions</h3>
+            </div>
+          </div>
+          {{ data.public-transit | markdownify }}
+        </div>
+
+        <div class="col">
+          <div class="align-baseline">
+            <div class="col-1">
+              <i class="fa-solid fa-cable-car fs-1"></i>
+            </div>
+            <div class="col-11">
+              <h3 class="sintony pb-3">From the Portland Aerial Tram</h3>
+            </div>
+          </div>
+          {{ data.tram | markdownify }}
+        </div>
+      </section>
     </div>
 
-    <div class="col-12 col-md-5 ">
+    <div class="col-12 col-lg-5">
+      <section class="light-theme px-4">
+        <div class="general-contact pb-4">
+          <h1 class="sintony pb-4">Contact</h1>
 
-        <section class="light-theme ps-5 pe-2">
-            <div class="general-contact pb-4">
-                <h1 class="sintony pb-4">Contact</h1>
+          <p>For all SHARP inquiries, please email or call:</p>
 
-                <p>For all SHARP inquiries, please email or call:</p>
+          <p>
+            <a href="mailto:{{data.email}}" class="blueish-black align-vert">
+              <i class="fa-regular fa-envelope pe-2 fs-2"></i>
+              <span class="bold">{{ data.email }}</span>
+            </a>
+          </p>
 
-                <p><a href="mailto:sharp_studies@ohsu.edu" class="blueish-black align-vert"><i
-                            class="fa-regular fa-envelope pe-2 fs-2"></i><span
-                            class="bold">sharp_studies@ohsu.edu</span></a></p>
-
-                <p>
-                    <a href="tel:503-468-6002" class="blueish-black align-vert"><i
-                            class="fa-solid fa-phone pe-2 fs-2"></i><span class="bold">(503)468-6002</span></a>
-                </p>
-
-            </div>
-
-            <div class="pb-4">
-                <h3><i class="fa-solid fa-envelope-open-text pe-3"></i>Mailing address</h3>
-                <p>
-                    Mailcode P3-RD42 <br>
-                    3710 SW US Veterans Hospital Rd <br>
-                    Portland, OR 97221
-                </p>
-            </div>
-
-            <div class="pb-4">
-                <h3><i class="fa-solid fa-location-dot pe-3"></i>Physical location</h3>
-                <p>
-                    VA Portland Health Care System <br>
-                </p>
-            </div>
-
-
-
-        </section>
-
+          <p>
+            <a href="tel:{{ data.phone }}" class="blueish-black align-vert">
+              <i class="fa-solid fa-phone pe-2 fs-2"></i>
+              <span class="bold">{{ data.phone }}</span>
+            </a>
+          </p>
+        </div>
+        <div class="pb-4">
+          <h3>
+            <i class="fa-solid fa-envelope-open-text pe-3"></i>Mailing address
+          </h3>
+          <p>{{ data.mailing-address | markdownify }}</p>
+        </div>
+        <div>
+          <h3>
+            <i class="fa-solid fa-location-dot pe-3"></i>Physical location
+          </h3>
+          <p>{{ data.physical-loc }}</p>
+        </div>
+      </section>
     </div>
-
-
+  </div>
 </div>

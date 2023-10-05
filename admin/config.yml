@@ -1,0 +1,332 @@
+backend:
+  name: git-gateway
+  branch: decap # Branch to update (optional; defaults to master)
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+collections:
+  - label: "Site data"
+    name: "site-data"
+    files:
+      - label: "Home - Text"
+        name: "home"
+        file: "_data/home.yml"
+        fields:
+          - { label: "Tagline/Summary", name: "tagline", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body text", name: "text", widget: "markdown" }
+      - label: "About - Text"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - {
+              label: "Research summary",
+              name: "research-summary",
+              widget: "markdown",
+            }
+          - {
+              label: "Human methods",
+              name: "human-methods",
+              widget: "markdown",
+            }
+          - {
+              label: "Animal methods",
+              name: "animal-methods",
+              widget: "markdown",
+            }
+          - { label: "Mission statement", name: "mission", widget: "markdown" }
+          - { label: "Funding sources", name: "funding", widget: "markdown" }
+      - label: "People"
+        name: people
+        file: _data/people.yml
+        create: true
+        fields:
+          - label: "People"
+            name: people
+            widget: list
+            fields:
+              - { label: "First name", name: "first", widget: "string" }
+              - { label: "Last name", name: "last", widget: "string" }
+              - {
+                  label: "Display name",
+                  name: "displayname",
+                  widget: "string",
+                  hint: 'The display name is how each name will show up under their photo on the People page - generally their preferred first and last name, followed by any degrees, e.g. "Miranda Lim, MD, PhD"',
+                }
+              - { label: "SHARP role", name: "role", widget: "string" }
+              - {
+                  label: "Preferred pronouns",
+                  name: "pronouns",
+                  widget: select,
+                  options: ["she/hers", "he/his", "they/theirs"],
+                  default: null,
+                  hint: "Leave this blank to omit pronouns.",
+                  required: false,
+                }
+              - {
+                  label: "Photo",
+                  name: "photo",
+                  widget: image,
+                  hint: "For best results, photos should be square, no larger than 500 KB, and at least 200px by 200px in dimension.",
+                  allow_multiple: false,
+                  default: "/images/profile-placeholder.png",
+                  media_folder: "/images/people",
+                }
+              - {
+                  label: "Google Scholar URL",
+                  name: "googlescholar",
+                  widget: string,
+                  required: false,
+                  hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://",
+                }
+              - {
+                  label: "PubMed URL",
+                  name: "pubmed",
+                  widget: string,
+                  required: false,
+                  hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://",
+                }
+              - {
+                  label: "Linkedin URL",
+                  name: "linkedin",
+                  widget: string,
+                  required: false,
+                  hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://",
+                }
+              - {
+                  label: "Bio",
+                  name: "bio",
+                  widget: "markdown",
+                  required: false,
+                  hint: "Leave this blank to omit a bio.",
+                }
+      - label: "Press & Media"
+        name: media
+        file: _data/media.yml
+        create: true
+        fields:
+          - label: "Media items"
+            name: media
+            widget: list
+            fields:
+              - { label: "title", name: "title", widget: "string" }
+              - {
+                  label: "Media type",
+                  name: "type",
+                  widget: select,
+                  options: ["article", "podcast", "award", "video"],
+                }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: markdown,
+                  default: null,
+                  required: false,
+                }
+              - {
+                  label: "Source",
+                  name: "source",
+                  widget: "string",
+                  hint: "The name of the host website, magazine, journal, podcast, award-granting institution, etc.",
+                }
+              - {
+                  label: "Month of publication",
+                  name: "month",
+                  widget: "select",
+                  options:
+                    [
+                      "January",
+                      "February",
+                      "March",
+                      "April",
+                      "May",
+                      "June",
+                      "July",
+                      "August",
+                      "September",
+                      "October",
+                      "November",
+                      "December",
+                    ],
+                }
+              - {
+                  label: "Year of publication (YYYY)",
+                  name: "year",
+                  widget: "string",
+                }
+              - {
+                  label: "URL",
+                  name: "url",
+                  widget: string,
+                  hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://",
+                }
+              - {
+                  label: "Feature on homepage?",
+                  name: "featured",
+                  widget: "boolean",
+                  default: false,
+                  hint: "Toggle ON to include as a headline on the rotating homepage news carousel, and complete the 'Homepage headline' and, 'Button text' fields below.",
+                }
+              - {
+                  label: "Homepage headline",
+                  name: "headline",
+                  widget: "markdown",
+                  hint: "IMPORTANT! This field must be filled in if 'Feature on homepage?' is toggled ON. Limit to around ~150 characters.",
+                  default: null,
+                  required: false,
+                }
+              - {
+                  label: "Button text",
+                  name: "button-text",
+                  widget: "string",
+                  hint: "Only use if you wish to override the 'Read', 'Watch', 'Listen' button text defaults.",
+                  default: null,
+                  required: false,
+                }
+      - label: "Publications - Text"
+        name: "publications-text"
+        file: "_data/publications-text.yml"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body text", name: "text", widget: "markdown" }
+      - label: "Publications - List"
+        name: "publications"
+        file: "_data/publications.yml"
+        create: true
+        fields:
+          - label: publications
+            name: publications
+            widget: list
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - {
+                  label: "Citation",
+                  name: citation,
+                  widget: markdown,
+                  hint: "For consistency, use Vancouver citation formatting.",
+                }
+              - { label: "Summary", name: summary, widget: text }
+              - {
+                  label: "DOI URL",
+                  name: doi,
+                  widget: string,
+                  hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://",
+                }
+              - {
+                  label: "Image",
+                  name: image,
+                  widget: image,
+                  allow_multiple: false,
+                  media_folder: /images/publications,
+                  default: "/images/sharperwave.png",
+                  hint: "For best results, images should be at least 400 px in dimension (does not have to be square) and should not exceed 500 KB.",
+                }
+      - label: "Research studies - Recruitment materials"
+        name: "studies"
+        file: "_data/studies.yml"
+        create: true
+        fields:
+          - label: studies
+            name: studies
+            widget: list
+            fields:
+              - { label: "Study name", name: "title", widget: "string" }
+              - {
+                  label: "URL",
+                  name: url,
+                  widget: "string",
+                  hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://",
+                }
+              - {
+                  label: "Button text",
+                  name: "button-text",
+                  widget: "string",
+                  default: "Inquire about this study",
+                }
+              - label: "Flyer or other image"
+                name: "image"
+                widget: "image"
+                allow_multiple: false
+                media_folder: "/images/research_studies"
+                default: "/images/sharperwave.png"
+      - label: "Research studies - FAQ"
+        name: "faq-studies"
+        file: "_data/studies-faq.yml"
+        create: true
+        fields:
+          - label: FAQ
+            name: faq
+            widget: list
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "markdown" }
+      - label: "Join the Lab - FAQ"
+        name: "faq-lab"
+        file: "_data/lab-faq.yml"
+        create: true
+        fields:
+          - label: FAQ
+            name: faq
+            widget: list
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "markdown" }
+      - label: "Join the Lab - Page text"
+        name: "join-the-lab"
+        file: "_data/join-the-lab-text.yml"
+        fields:
+          - {
+              label: "Join the lab statement",
+              name: "join-statement",
+              widget: "markdown",
+            }
+          - {
+              label: "Open positions list",
+              name: "open-positions",
+              widget: "markdown",
+            }
+          - {
+              label: "Internship opportunities",
+              name: "internships",
+              widget: "markdown",
+            }
+      - label: "Contact page info"
+        name: "contact"
+        file: "_data/contact.yml"
+        fields:
+          - label: "Email"
+            name: "email"
+            widget: "string"
+          - label: "Phone (include area code)"
+            name: "phone"
+            widget: "string"
+          - label: "Mailing address"
+            name: "mailing-address"
+            widget: "markdown"
+          - label: "Physical location"
+            name: "physical-loc"
+            widget: "string"
+          - label: "Driving directions"
+            name: "driving"
+            widget: "markdown"
+          - label: "Public transit directions"
+            name: "public-transit"
+            widget: "markdown"
+          - label: "Aerial tram directions"
+            name: "tram"
+            widget: "markdown"
+      - label: "Footer resources"
+        name: "ext-resources"
+        file: _data/ext-resources.yml
+        create: true
+        fields:
+          - label: resource
+            name: resource
+            widget: list
+            fields:
+              - { label: "Name", name: title, widget: string }
+              - {
+                  label: URL,
+                  name: url,
+                  widget: string,
+                  hint: "IMPORTANT! Be sure to provide the complete URL, beginning with http:// or https://",
+                }
