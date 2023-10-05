@@ -1,9 +1,4 @@
 publications:
-  - title: Test title
-    citation: Test citation **with bold text**
-    summary: Test summary
-    doi: https://www.sharplabpdx.com
-    image: /images/publications/favicon-square.png
   - title: The temporal structure of REM sleep shows minute-scale fluctuations
       across brain and body in mice and humans
     citation: "Bueno-Junior LS, Ruckstuhl MS, **Lim MM**, Watson BO. Proc Natl Acad
