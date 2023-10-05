@@ -7,53 +7,76 @@ Jonathan Elliott."
 ---
 
 <section>
-    <div class="jumbotron"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(images/paper-waves.jpeg); background-position: top;">
-        <div class="container text-white jumbo-title">
-            <h1 class="display-2 sintony">Publications</h1>
-        </div>
+  <div
+    class="jumbotron"
+    style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(images/paper-waves.jpeg);
+      background-position: top;
+    "
+  >
+    <div class="container px-2 text-white jumbo-title">
+      <h1 class="display-2 sintony">Publications</h1>
     </div>
+  </div>
 </section>
 <div class="container px-2">
-    <section>
-        <div class="row pb-5 gx-lg-5 gy-4 flex-column-reverse flex-lg-row">
-            <div class="col-12 col-lg-7 pb-4 pe-lg-5">
-                {% assign item = site.data.data-statement | first %}
-                <h1 class="sintony fs-2 pb-3">{{ item.header }}</h1>
-                <div>{{ item.statement | markdownify}}</div>
-            </div>
-            <div class="col-12 col-lg-5 pb-4">
-                <h1 class="sintony fs-2 pb-3">Find all our publications</h1>
-                <a href="https://scholar.google.com/citations?user=rTpUcqYAAAAJ&hl=en"
-                    class="btn btn-outline-light dblink" target="_blank">Google Scholar</a>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Lim+MM&cauthor_id=15201909"
-                    class="btn btn-outline-light dblink" target="_blank">PubMed</a>
-            </div>
+  <section>
+    <div class="row pb-5 gx-lg-5 gy-4 flex-column-reverse flex-lg-row">
+      <div class="col-12 col-lg-7 pb-4 pe-lg-5">
+        {% assign item = site.data.publications-text %}
+        <h1 class="sintony fs-2 pb-3">{{ item.heading }}</h1>
+        <div>{{ item.text | markdownify}}</div>
+      </div>
+
+      <div class="col-12 col-lg-5 pb-4">
+        <h1 class="sintony fs-2 pb-3">Find all our publications</h1>
+        <a
+          href="https://scholar.google.com/citations?user=rTpUcqYAAAAJ&hl=en"
+          class="btn btn-outline-light dblink"
+          target="_blank"
+          >Google Scholar</a
+        >
+        <a
+          href="https://pubmed.ncbi.nlm.nih.gov/?term=Lim+MM&cauthor_id=15201909"
+          class="btn btn-outline-light dblink"
+          target="_blank"
+          >PubMed</a
+        >
+      </div>
+    </div>
+
+    <h1 class="sintony display-6 pb-4">Featured publications</h1>
+
+    {% for pub in site.data.publications.publications %}
+    <div class="card mt-4 light-theme card-gradient">
+      <div class="row g-0">
+        <div class="col-12 col-lg-7 my-auto">
+          <div class="card-body">
+            <h5 class="fs-3 bold pb-2">{{ pub.title }}</h5>
+            <p class="card-text">{{ pub.citation | markdownify }}</p>
+            <p class="card-text">{{ pub.summary }}</p>
+            <p>
+              <a
+                class="btn btn-outline-dark publink"
+                target="_blank"
+                href="{{ pub.doi }}"
+                >Read article<i
+                  class="fa-btn-link fa-solid fa-circle-chevron-right"
+                ></i
+              ></a>
+            </p>
+          </div>
         </div>
-
-        <h1 class="sintony display-6 pb-4">Featured publications</h1>
-
-        {% for pub in site.data.publications.publications %}
-        <div class="card mt-4 light-theme card-gradient">
-            <div class="row g-0">
-
-                <div class="col-12 col-lg-7 my-auto">
-                    <div class="card-body">
-                        <h5 class="fs-3 bold pb-2">{{ pub.title }}</h5>
-                        <p class="card-text">{{ pub.citation | markdownify }}</p>
-                        <p class="card-text">{{ pub.summary }}</p>
-                        <p>
-                            <a class="btn btn-outline-dark publink" target="_blank" href="{{ pub.doi }}">Read article<i
-                                    class="fa-btn-link fa-solid fa-circle-chevron-right"></i></a>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-lg-5 d-block d-lg-flex align-items-center pubimg">
-                    <img src="{{ pub.image }}" class="img-fluid p-2" alt="Data from published study">
-                </div>
-            </div>
+        <div class="col-lg-5 d-block d-lg-flex align-items-center pubimg">
+          <img
+            src="{{ pub.image }}"
+            class="img-fluid p-2"
+            alt="Data from published study"
+          />
         </div>
-        {% endfor %}
-    </section>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
 </div>

@@ -19,7 +19,7 @@ description: "Participate in research studies on sleep and neurological health. 
       background-position: center;
     "
   >
-    <div class="container almost-white jumbo-title">
+    <div class="container px-2 almost-white jumbo-title">
       <h1 class="display-2 sintony">{{ page.title }}</h1>
     </div>
   </div>
@@ -48,7 +48,7 @@ description: "Participate in research studies on sleep and neurological health. 
       <p>{{ data.text3 | markdownify }}</p>
       <div class="row gy-5 text-center pt-5">
         {% for study in site.data.studies.studies %}
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-xl-6">
           <h3 class="bold">{{ study.title }}</h3>
           <p>
             <a href="{{ study.url }}" class="btn btn-outline-dark publink fs-5"

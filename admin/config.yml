@@ -7,13 +7,14 @@ collections:
   - label: "Site data"
     name: "site-data"
     files:
-      - label: "Home - Page text"
-        name: "home-text"
-        file: "_data/home-text.yml"
+      - label: "Home - Text"
+        name: "home"
+        file: "_data/home.yml"
         fields:
           - { label: "Tagline/Summary", name: "tagline", widget: "markdown" }
-          - { label: "Welcome text", name: "text", widget: "markdown" }
-      - label: "About page text"
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body text", name: "text", widget: "markdown" }
+      - label: "About - Text"
         name: "about"
         file: "_data/about.yml"
         fields:
@@ -181,7 +182,13 @@ collections:
                   default: null,
                   required: false,
                 }
-      - label: "Publications"
+      - label: "Publications - Text"
+        name: "publications-text"
+        file: "_data/publications-text.yml"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body text", name: "text", widget: "markdown" }
+      - label: "Publications - List"
         name: "publications"
         file: "_data/publications.yml"
         create: true

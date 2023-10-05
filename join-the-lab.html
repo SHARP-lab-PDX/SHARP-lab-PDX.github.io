@@ -14,22 +14,19 @@ description: "Find out about sleep research job openings, internships, and gradu
     </div>
 </section>
 <section>
-    <div class="container px-2">
+    <div class="container text-container px-2">
 
         <h1 class="sintony display-6 pb-4 almost-white">Become a member of our team</h1>
 
-        <h3 class="fs-4">The SHARP lab is always looking for passionate, curious individuals to join our team.</h3>
+        <h3 class="fs-4 py-3">The SHARP lab is always looking for passionate, curious individuals to join our team.</h3>
 
-        <div class="row d-flex justify-content-between ligh">
+        <div class="row d-flex justify-content-between">
 
-
-            <div class="col-12 col-lg-7 p-3 mx-auto my-auto ">
-                <img src="/images/group-photo-2022.jpeg" class="img-fluid img-border-light" alt="SHARP lab members smiling in a meeting room">
-            </div>
-
-
-            <div class="col-12 col-lg-5 p-3 mx-auto my-auto ">
+            <div class="col-12 mx-auto my-auto ">
                 {{ data.join-statement | markdownify }}
+            </div>
+            <div class="col-12 py-4 mx-auto">
+                <img src="/images/group-photo-2022.jpeg" class="img-fluid img-border-light" alt="SHARP lab members smiling in a meeting room" style="width: 100%;">
             </div>
 
             <div class="col">
@@ -44,18 +41,18 @@ description: "Find out about sleep research job openings, internships, and gradu
 
 
 <section class="light-theme">
-    <div class="container px-2">
+    <div class="container text-container px-2">
 
         <div>
             <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
-            <div class="text-container">{{ data.internships | markdownify }}</div>
+            <div class="">{{ data.internships | markdownify }}</div>
         </div>
 
     </div>
 </section>
 
 <section>
-    <div class="container px-2">
+    <div class="container text-container px-2">
 
         <h1 class="sintony display-6 pb-4">How to apply</h1>
 
@@ -81,12 +78,12 @@ description: "Find out about sleep research job openings, internships, and gradu
 
 
 <section class="light-theme">
-    <div class="container px-2">
+    <div class="container text-container px-2">
         <div class="faq">
             <h1>
                 <h1 class="sintony display-5 pb-4">FAQ</h1>
             </h1>
-            <div class="col text-container">
+            <div class="col">
                 {% for item in site.data.lab-faq.faq %}
                 <div class="bold">{{ item.question | markdownify }}</div>
                 <div class="ms-3">{{ item.answer | markdownify }}</div>

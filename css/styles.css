@@ -23,7 +23,7 @@ body {
   background-color: var(--clr-primary-700);
   background-repeat: none;
   font-size: 1.2rem;
-  line-height: 1.75em;
+  line-height: 1.6em;
 }
 
 /* remove right overflow margin */
@@ -69,6 +69,11 @@ a {
 
 .hidden {
   display: none;
+}
+
+.align-baseline {
+  display: flex;
+  align-items: baseline;
 }
 
 /* .line-spacer {
@@ -208,7 +213,7 @@ a {
 }
 
 .text-container {
-  max-width: 110ch;
+  max-width: 100ch;
 }
 
 .padding-400 {
@@ -337,7 +342,7 @@ a {
 
 .jumbo-title {
   padding-top: 20vh;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   text-shadow: 2px 2px 8px #000000b1;
 }
 
@@ -499,6 +504,7 @@ section img {
 
 .bio-text {
   font-size: 1.1rem;
+  line-height: 1.6;
   text-align: left !important;
 }
 
@@ -578,6 +584,11 @@ section img {
   border-radius: 0 0 0.25rem 0.25rem;
 }
 
+.card-container {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
 /* ************************** */
 /* Join the Lab */
 /* ************************** */
@@ -603,8 +614,7 @@ footer p {
 footer .nav-link,
 footer .nav-item {
   color: hsla(0, 0%, 100%, 0.7);
-  padding: 0px;
-  padding-top: 0.15rem;
+  padding: 0.15rem 0 0 0;
   font-size: 1.1rem;
 }
 
@@ -626,6 +636,10 @@ hr {
   color: var(--clr-primary-100);
 }
 
+.footer__copyright {
+  line-height: 1.6;
+}
+
 /* ************************** */
 /* Media queries  */
 /* ************************** */
@@ -643,10 +657,22 @@ hr {
 
   .hero-desc {
     font-size: 1.1rem;
+    padding-top: 1rem;
   }
 
-  nav {
-    font-size: 1rem;
+  .nav-item {
+    padding-bottom: 0.5rem;
+  }
+
+  /* Full screen navbar */
+  #navbar-content {
+    height: 100vh;
+    align-items: center;
+    background-color: var(--clr-primary-900);
+  }
+
+  .navbar-nav li a {
+    font-size: 1.5rem;
   }
 
   footer {
@@ -671,17 +697,6 @@ hr {
 
   .hublink {
     font-size: 1.1rem;
-  }
-
-  /* Full screen navbar */
-  #navbar-content {
-    height: 100vh;
-    align-items: center;
-    background-color: var(--clr-primary-900);
-  }
-
-  .navbar-nav li a {
-    font-size: 2rem;
   }
 }
 
@@ -722,6 +737,14 @@ hr {
   .hublink {
     font-size: 2rem;
   }
+
+  .nav-item {
+    padding-bottom: 1.5rem;
+  }
+
+  .navbar-nav li a {
+    font-size: 2rem;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -741,10 +764,6 @@ hr {
 
   .hero-desc {
     font-size: 1.2rem;
-  }
-
-  nav {
-    font-size: 1.1rem;
   }
 
   .overlay-txt {
@@ -773,6 +792,10 @@ hr {
 
   #navbar-content {
     height: 80px;
+  }
+
+  .nav-item {
+    padding-bottom: 0;
   }
 
   .navbar-nav li a {

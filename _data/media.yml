@@ -1,23 +1,4 @@
 media:
-  - month: April
-    button-text: Listen to the podcast
-    featured: false
-    url: /
-    headline: How do your **dreams affect your daily stress levels?** The SHARP lab
-      discusses some of their findings on the subject on the *Two Chatty Dudes*
-      podcast.
-    title: Are my dreams spiking my cortisol?
-    type: podcast
-    source: Two Chatty Dudes.
-    description: >-
-      How do your **dreams affect your daily stress levels?** The SHARP lab
-      discusses some of their findings on the subject on the *Two Chatty Dudes*
-      podcast.
-
-
-
-      This one should NOT be featured on the [homepage](/)
-    year: "2023"
   - month: June
     button-text: Read the story
     featured: true
@@ -59,7 +40,8 @@ media:
     button-text: Read the award-winning paper
     featured: true
     url: https://doi.org/10.1016/j.nbscr.2022.100087
-    headline: OHSU School of Medicine awards **Paper of the Month** to publication
+    headline:
+      OHSU School of Medicine awards **Paper of the Month** to publication
       headed by SHARP Associate Director Dr. Carolyn Tinsley
     title: OHSU School of Medicine chooses SHARP publication as Paper of the Month
     type: award
@@ -76,7 +58,8 @@ media:
     title: "Episode #10: Trauma Associated Sleep Disorder"
     type: podcast
     source: The White Noise Podcast
-    description: This episode from The White Noise Podcast features Dr. Miranda Lim
+    description:
+      This episode from The White Noise Podcast features Dr. Miranda Lim
       speaking about the nature and potential treatments of Trauma Associated
       Sleep Disorder.
     year: "2022"
@@ -84,13 +67,16 @@ media:
     button-text: Watch or listen to the interview
     featured: true
     url: https://www.opb.org/article/2022/06/01/the-science-of-sleep-pacific-northwest-researchers-explore-secrets-of-a-good-nights-rest/
-    headline: Oregon Public Broadcasting (OPB) and NPR interview SHARP Director Dr.
+    headline:
+      Oregon Public Broadcasting (OPB) and NPR interview SHARP Director Dr.
       Miranda Lim about what happens during a **good night of sleep**
-    title: "The science of sleep: Pacific Northwest researchers explore secrets of a
+    title:
+      "The science of sleep: Pacific Northwest researchers explore secrets of a
       good night's rest"
     type: video
     source: Oregon Public Broadcasting
-    description: Oregon Public Broadcasting (OPB) and NPR partner to interview SHARP
+    description:
+      Oregon Public Broadcasting (OPB) and NPR partner to interview SHARP
       Director Miranda Lim about what happens during a good night of sleep.
     year: "2022"
   - month: May
@@ -117,12 +103,14 @@ media:
     button-text: Read the story
     featured: true
     url: https://news.ohsu.edu/2021/11/10/honoring-the-ohsu-va-partnership-that-continues-to-pay-it-forward
-    headline: OHSU features their partnership with SHARP Lab and **contributions to
+    headline:
+      OHSU features their partnership with SHARP Lab and **contributions to
       Veteran health** in a tribute to Veterans Day
     title: Honoring the OHSU-VA partnership that continues to pay it forward
     type: article
     source: OHSU News
-    description: OHSU features their partnership with SHARP Lab and contributions to
+    description:
+      OHSU features their partnership with SHARP Lab and contributions to
       Veteran health in a tribute to Veterans Day.
     year: "2021"
   - month: November
@@ -150,7 +138,8 @@ media:
     featured: false
     url: https://fortune.com/2021/07/31/alzheimers-research-treatment-sleep-apnea-business-opportunity/
     headline: null
-    title: "The quest for rest: Sleep could be the key to fighting Alzheimer's—and a
+    title:
+      "The quest for rest: Sleep could be the key to fighting Alzheimer's—and a
       huge business opportunity"
     type: article
     source: Fortune Media
@@ -190,13 +179,15 @@ media:
     button-text: Read the story
     featured: true
     url: https://news.ohsu.edu/2019/10/10/rare-sleep-disorder-common-among-veterans-with-ptsd
-    headline: In one of the largest studies to date, SHARP Co-Director Dr. Jonathan
+    headline:
+      In one of the largest studies to date, SHARP Co-Director Dr. Jonathan
       Elliott reports high rates of **REM sleep behavior disorder** among
       Veterans with PTSD
     title: Rare sleep disorder common among veterans with PTSD
     type: article
     source: OHSU News, Oregon Health and Sciences University
-    description: SHARP Co-Director Jonathan Elliott reports high rates of REM sleep
+    description:
+      SHARP Co-Director Jonathan Elliott reports high rates of REM sleep
       behavior disorder, an early neurodegenerative disorder, among Veterans
       with PTSD in one of the largest published studies to date.
     year: "2019"
@@ -204,7 +195,8 @@ media:
     button-text: Read the story
     featured: true
     url: https://news.ohsu.edu/2019/05/13/ohsu-physician-scientist-focuses-on-a-good-nights-sleep
-    headline: SHARP Director Dr. Miranda Lim describes her drive to **understand the
+    headline:
+      SHARP Director Dr. Miranda Lim describes her drive to **understand the
       function of sleep** across early development, after stress/injury, and in
       later life
     title: OHSU physician-scientist focuses on a good night's sleep
@@ -217,7 +209,8 @@ media:
     featured: false
     url: https://sleepreviewmag.com/sleep-health/parameters/quality/dietary-amino-acids-improve-sleep-problems-in-mice-with-traumatic-brain-injury/
     headline: null
-    title: Dietary Amino Acids Improve Sleep Problems in Mice with Traumatic Brain
+    title:
+      Dietary Amino Acids Improve Sleep Problems in Mice with Traumatic Brain
       Injury
     type: article
     source: Sleep Review Magazine
