@@ -159,3 +159,8 @@ publications:
       single gene within a single brain region.
     doi: https://doi.org/10.1038/nature02539
     image: /images/publications/Lim-2004-Nature-fig1+3.jpeg
+  - image: /images/sharperwave.png
+    title: New publication
+    citation: Citation 2023 *Nature Journal of Fabricated Examples*.
+    summary: A completely useless study
+    doi: doi.url
