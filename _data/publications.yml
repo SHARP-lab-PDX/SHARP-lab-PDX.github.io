@@ -1,4 +1,9 @@
 publications:
+  - image: /images/sharperwave.png
+    title: Brand new very exciting study
+    citation: Citation 2023 *Super High Impact Journal.*
+    summary: Summary
+    doi: doi
   - title: The temporal structure of REM sleep shows minute-scale fluctuations
       across brain and body in mice and humans
     citation: "Bueno-Junior LS, Ruckstuhl MS, **Lim MM**, Watson BO. Proc Natl Acad
@@ -159,8 +164,3 @@ publications:
       single gene within a single brain region.
     doi: https://doi.org/10.1038/nature02539
     image: /images/publications/Lim-2004-Nature-fig1+3.jpeg
-  - image: /images/sharperwave.png
-    title: New publication
-    citation: Citation 2023 *Nature Journal of Fabricated Examples*.
-    summary: A completely useless study
-    doi: doi.url
