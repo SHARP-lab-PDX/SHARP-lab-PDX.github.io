@@ -75,7 +75,7 @@ media:
     year: "2022"
   - month: June
     button-text: Watch or listen to the interview
-    featured: true
+    featured: false
     url: https://www.opb.org/article/2022/06/01/the-science-of-sleep-pacific-northwest-researchers-explore-secrets-of-a-good-nights-rest/
     headline: Oregon Public Broadcasting (OPB) and NPR interview SHARP Director Dr.
       Miranda Lim about what happens during a **good night of sleep**
