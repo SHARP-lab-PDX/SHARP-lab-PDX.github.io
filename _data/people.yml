@@ -349,11 +349,3 @@ people:
     pronouns: null
     role: Research Assistant
     photo: /images/profile-placeholder.png
-  - photo: /images/people/img_0163.png
-    first: Sami
-    last: Friedrich
-    displayname: Sami Friedrich, PhD
-    role: Web Developer
-    pronouns: she/hers
-    bio: Sami loves building fun websites. Check out her work here -
-      [samifriedrich.com](https://www.samifriedrich.com)
