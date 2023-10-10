@@ -7,14 +7,14 @@ collections:
   - label: "Site data"
     name: "site-data"
     files:
-      - label: "Home - Text"
+      - label: "Home - Body text"
         name: "home"
         file: "_data/home.yml"
         fields:
           - { label: "Tagline/Summary", name: "tagline", widget: "markdown" }
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Body text", name: "text", widget: "markdown" }
-      - label: "About - Text"
+      - label: "About - Body text"
         name: "about"
         file: "_data/about.yml"
         fields:
@@ -50,7 +50,7 @@ collections:
                   label: "Display name",
                   name: "displayname",
                   widget: "string",
-                  hint: 'The display name is how each name will show up under their photo on the People page - generally their preferred first and last name, followed by any degrees, e.g. "Miranda Lim, MD, PhD"',
+                  hint: 'The display name is how each name will show up under their photo on the People page - generally their preferred first and last name, followed by any degrees, titles, or other distinctions, e.g. "Miranda Lim, MD, PhD"',
                 }
               - { label: "SHARP role", name: "role", widget: "string" }
               - {
@@ -66,7 +66,7 @@ collections:
                   label: "Photo",
                   name: "photo",
                   widget: image,
-                  hint: "For best results, photos should be square, no larger than 500 KB, and at least 200px by 200px in dimension.",
+                  hint: "For best results, images should be JPEGs, no larger than 500 KB in file size, square and at least 400px by 400px in dimension.",
                   allow_multiple: false,
                   default: "/images/profile-placeholder.png",
                   media_folder: "/images/people",
@@ -164,13 +164,13 @@ collections:
                   name: "featured",
                   widget: "boolean",
                   default: false,
-                  hint: "Toggle ON to include as a headline on the rotating homepage news carousel, and complete the 'Homepage headline' and, 'Button text' fields below.",
+                  hint: "Toggle ON to include as a headline on the rotating homepage news carousel. If toggled to ON, complete the 'Homepage headline' (required) and 'Button text' (optional) fields below.",
                 }
               - {
                   label: "Homepage headline",
                   name: "headline",
                   widget: "markdown",
-                  hint: "IMPORTANT! This field must be filled in if 'Feature on homepage?' is toggled ON. Limit to around ~150 characters.",
+                  hint: "IMPORTANT! This field must be filled in if 'Feature on homepage?' is toggled ON. Limit to ~150 characters.",
                   default: null,
                   required: false,
                 }
@@ -178,11 +178,11 @@ collections:
                   label: "Button text",
                   name: "button-text",
                   widget: "string",
-                  hint: "Only use if you wish to override the 'Read', 'Watch', 'Listen' button text defaults.",
+                  hint: "Only fill this in if you wish to override the 'Read', 'Watch', 'Listen' button defaults.",
                   default: null,
                   required: false,
                 }
-      - label: "Publications - Text"
+      - label: "Publications - Body text"
         name: "publications-text"
         file: "_data/publications-text.yml"
         fields:
@@ -217,10 +217,10 @@ collections:
                   widget: image,
                   allow_multiple: false,
                   media_folder: /images/publications,
-                  default: "/images/sharperwave.png",
-                  hint: "For best results, images should be at least 400 px in dimension (does not have to be square) and should not exceed 500 KB.",
+                  default: "/images/logo.png",
+                  hint: "For best results, images should be JPEGs, at least 400 px in dimension (does not have to be square), and should not exceed 500 KB in file size.",
                 }
-      - label: "Research studies - Recruitment materials"
+      - label: "Join a Study - Recruitment flyers"
         name: "studies"
         file: "_data/studies.yml"
         create: true
@@ -247,8 +247,9 @@ collections:
                 widget: "image"
                 allow_multiple: false
                 media_folder: "/images/research_studies"
-                default: "/images/sharperwave.png"
-      - label: "Research studies - FAQ"
+                default: "/images/logo.png"
+                hint: "For best results, images should be JPEGs. It's okay if study flyers are large (>1000px) in dimension as long as the file size is less than 500KB."
+      - label: "Join a Study - FAQ"
         name: "faq-studies"
         file: "_data/studies-faq.yml"
         create: true
@@ -270,7 +271,7 @@ collections:
             fields:
               - { label: "Question", name: "question", widget: "string" }
               - { label: "Answer", name: "answer", widget: "markdown" }
-      - label: "Join the Lab - Page text"
+      - label: "Join the Lab - Body text"
         name: "join-the-lab"
         file: "_data/join-the-lab-text.yml"
         fields:

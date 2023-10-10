@@ -26,9 +26,7 @@ studying how sleep affects the brain in health and disease."
       style="max-width: 900px"
     >
       <div class="px-2 ps-4 pe-md-5">
-        <div class="hero-desc">
-          {{ home.tagline | markdownify }}
-        </div>
+        <div class="hero-desc">{{ home.tagline | markdownify }}</div>
       </div>
     </div>
   </div>
@@ -38,8 +36,8 @@ studying how sleep affects the brain in health and disease."
 
 <section class="container" id="Welcome">
   <div class="container-fluid">
-    <div class="row d-flex align-items-center justify-content-around g-4">
-      <div class="col-12 col-lg-7 pt-4">
+    <div class="row d-flex align-items-center justify-content-between g-4">
+      <div class="col-12 col-lg-7 pt-4 pe-lg-5">
         <p class="lightest-green display-3 sintony text-shadow">
           {{ home.heading }}
         </p>
@@ -49,7 +47,7 @@ studying how sleep affects the brain in health and disease."
         </div>
       </div>
 
-      <div class="light-theme col-12 col-lg-5 p-4 mx-auto text-center shadow">
+      <div class="light-theme col-12 col-lg-5 p-4 text-center shadow">
         <h3 class="sintony display-6 pt-2">SHARP Directors</h3>
 
         <hr class="pb-4 blueish-black" />
@@ -98,7 +96,7 @@ studying how sleep affects the brain in health and disease."
   {% assign miranda = site.data.people.people | where: "nameid", "mlim" | first
   %}
 
-  <div class="container slim-container px-2">
+  <div class="my-container" data-width="narrow">
     <div class="d-flex flex-row-reverse">
       <a
         href="#Directors"
@@ -122,7 +120,7 @@ studying how sleep affects the brain in health and disease."
         <h1 class="bold display-6">{{ miranda.displayname}}</h1>
         <h5>{{ miranda.pronouns }}</h5>
       </div>
-      <div>{{ miranda.bio | markdownify }}</div>
+      <div class="mt-4">{{ miranda.bio | markdownify }}</div>
       <div class="text-end pb-4">
         <a
           href="#Directors"
@@ -139,7 +137,7 @@ studying how sleep affects the brain in health and disease."
 <section class="hidden light-theme" id="ElliottBio">
   {% assign jon = site.data.people.people | where: "nameid", "jelliott" | first
   %}
-  <div class="container slim-container px-2">
+  <div class="my-container" data-width="narrow">
     <div class="d-flex flex-row-reverse">
       <a
         href="#Directors"
@@ -162,7 +160,7 @@ studying how sleep affects the brain in health and disease."
 
         <h1 class="bold display-6">{{ jon.displayname}}</h1>
       </div>
-      <div>{{ jon.bio | markdownify }}</div>
+      <div class="mt-4">{{ jon.bio | markdownify }}</div>
       <div class="text-end pb-4">
         <a
           href="#Directors"
@@ -180,7 +178,7 @@ studying how sleep affects the brain in health and disease."
 <section>
   <div class="container h-100 light-theme">
     <div class="row align-items-center justify-content-around no-margin">
-      <div class="col-6 col-lg-3 mx-auto p-4">
+      <div class="col-6 col-lg-3 mx-auto py-3">
         <div class="card mycard border-0">
           <img
             class="card-img-top img-fluid img-border-light shadow rounded"
@@ -201,7 +199,7 @@ studying how sleep affects the brain in health and disease."
         </div>
       </div>
 
-      <div class="col-6 col-lg-3 mx-auto p-4">
+      <div class="col-6 col-lg-3 mx-auto py-3">
         <div class="card mycard border-0 rounded">
           <img
             class="card-img-top img-fluid rounded shadow img-border-light"
@@ -244,14 +242,14 @@ studying how sleep affects the brain in health and disease."
               />
 
               <div class="overlay-txt px-1 display-6">
-                <p>{{ feature.headline | markdownify }}</p>
-                <p class="pt-2">
+                <div>{{ feature.headline | markdownify }}</div>
+                <div class="pt-2">
                   <a
                     href="{{ feature.url }}"
                     class="btn btn-outline-light carousel-btn"
                     >{{ feature.button-text }}</a
                   >
-                </p>
+                </div>
               </div>
             </div>
             {% else %}
@@ -259,7 +257,7 @@ studying how sleep affects the brain in health and disease."
               <img
                 src="/images/cardbg1.jpeg"
                 class="d-block img-fluid rel-image dark-filter"
-                alt="..."
+                alt="Abstract teal background"
               />
 
               <div class="overlay-txt px-1 display-6">

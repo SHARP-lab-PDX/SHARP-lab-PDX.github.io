@@ -5,7 +5,7 @@
   --clr-accent-400: hsl(180, 39%, 35%);
   --clr-accent-300: hsl(193, 31%, 56%);
 
-  --clr-primary-200: hsl(183, 25%, 67%);
+  --clr-primary-200: hsl(184, 32%, 73%);
   --clr-primary-100: hsl(184, 33%, 80%);
 
   --clr-neutral-100: hsl(0, 0%, 95%);
@@ -208,16 +208,14 @@ a {
   --bs-gutter-x: 0rem;
 }
 
-.slim-container {
-  max-width: 80ch;
+.my-container {
+  width: min(56.25rem, 90%);
+  margin: 0 auto;
 }
 
-.text-container {
-  max-width: 100ch;
-}
-
-.padding-400 {
-  padding-inline: 1rem;
+.my-container[data-width="narrow"] {
+  width: min(800px, 90%);
+  margin: 0 auto;
 }
 
 /* ************************** */
@@ -227,11 +225,13 @@ a {
 /* Navbar animation */
 
 /* remove border from burger button */
+.navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
   outline: none;
   box-shadow: none;
+  border: none;
 }
 
 /* add animation to burger menu icon */
@@ -390,13 +390,8 @@ a {
   color: #fff;
   width: 80%;
   text-shadow: 2px 2px 4px #00000056;
+  line-height: 1.15;
 }
-
-/*, .carousel-indicators */
-/* .carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
-} */
 
 .carousel-btn {
   font-size: 1rem;
@@ -680,7 +675,7 @@ hr {
   }
 
   .tagline {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .people-card {
@@ -688,11 +683,11 @@ hr {
   }
 
   .overlay-txt {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .overlay-txt a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .hublink {
@@ -709,10 +704,6 @@ hr {
   .overlay-txt {
     width: 75%;
     font-size: 1.5rem;
-  }
-
-  .overlay-txt a {
-    font-size: 1rem;
   }
 
   .hublink {
