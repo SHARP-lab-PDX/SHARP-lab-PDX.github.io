@@ -34,13 +34,11 @@ Jonathan Elliott."
         <a
           href="https://scholar.google.com/citations?user=rTpUcqYAAAAJ&hl=en"
           class="btn btn-outline-light dblink"
-          target="_blank"
           >Google Scholar</a
         >
         <a
           href="https://pubmed.ncbi.nlm.nih.gov/?term=Lim+MM&cauthor_id=15201909"
           class="btn btn-outline-light dblink"
-          target="_blank"
           >PubMed</a
         >
       </div>
@@ -57,10 +55,7 @@ Jonathan Elliott."
             <p class="card-text">{{ pub.citation | markdownify }}</p>
             <p class="card-text">{{ pub.summary }}</p>
             <p>
-              <a
-                class="btn btn-outline-dark publink"
-                target="_blank"
-                href="{{ pub.doi }}"
+              <a class="btn btn-outline-dark publink" href="{{ pub.doi }}"
                 >Read article<i
                   class="fa-btn-link fa-solid fa-circle-chevron-right"
                 ></i

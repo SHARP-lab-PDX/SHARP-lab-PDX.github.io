@@ -220,7 +220,7 @@ collections:
                   default: "/images/logo.png",
                   hint: "For best results, images should be JPEGs, at least 400 px in dimension (does not have to be square), and should not exceed 500 KB in file size.",
                 }
-      - label: "Join a Study - Recruitment flyers"
+      - label: "Join a Study - Recruitment materials"
         name: "studies"
         file: "_data/studies.yml"
         create: true
