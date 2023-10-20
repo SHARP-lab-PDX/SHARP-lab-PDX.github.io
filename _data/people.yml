@@ -361,7 +361,7 @@ people:
   - photo: /images/people/jessica-brewer.jpg
     first: Jessica
     last: Brewer
-    displayname: Jessica B.
+    displayname: Jessica Brewer
     role: Clinical Research Assistant
     bio: Jessica is a recent graduate with a BS in human physiology and in
       journalism, with a minor in science communication research, from the
@@ -376,3 +376,19 @@ people:
       based on their health. Outside of the lab, Jessica enjoys reading, going
       to concerts and exploring the Pacific Northwest with her friends and
       family.
+  - photo: /images/people/jessica-locke.jpg
+    first: Jessica
+    last: Locke
+    displayname: Jessica Locke
+    role: Sr. Clinical Research Associate
+    bio: Jessica Locke, PhD, APRN, FNP-BC, earned her PhD in Neuroscience from the
+      University of Florida (UF) in 2005, studying the effects of aging on
+      microglial activation. She then went on to become a clinician, earning an
+      MSN from UF in 2007. For over 15 years Dr. Locke practiced as a
+      board-certified nurse practitioner with the UF Department of Neurology,
+      specializing in management of epilepsy, sleep and cognitive disorders,
+      before recently moving to Oregon to join SHARP in 2023. Her research
+      interests include the interrelationship between sleep, aging, neurological
+      stress, and neurodegenerative diseases. In her spare time, she enjoys
+      ultrarunning, hiking, getting lost in the woods, barre, yoga, traveling
+      with her family, and concerts.
