@@ -204,6 +204,40 @@ people:
       to share with her wonderful coworkers. She also enjoys planning highly
       detailed parties for her kids, crafting, and reading/learning about
       everything.
+  - first: Laura
+    last: Dennis
+    displayname: Laura Dennis
+    pronouns: null
+    role: Clinical Research Coordinator
+    photo: /images/people/Laura-Dennis.jpeg
+    bio: "Laura received her BS in Bioengineering at Oregon State University and
+      currently splits her time between several labs at OHSU and the Portland VA
+      including the Hoffman Lab (Drs. William Hoffman and Milky Kohno) where she
+      has worked for over 10 years using multi-modal neuroimaging techniques to
+      investigate the effects of methamphetamine and alcohol use disorders on
+      brain, the Piantino Lab (Dr. Juan Piantino) comparing perivascular space
+      (PVS) burden, functional MRI, and diffusion imaging across cohorts with
+      sleep impairments and post-concussive syndrome and the SHARP Lab (Dr.
+      Miranda Lim) where she is the lead coordinator at OHSU for the North
+      American Prodromal Synucleinopathy (NAPS) Consortium study. In her free
+      time, Laura enjoys cuddle sessions with her mini dachshund, going to
+      Timbers games, traveling, and spending time with her family and friends. "
+  - photo: /images/people/jessica-locke.jpg
+    first: Jessica
+    last: Locke
+    displayname: Jessica Locke
+    role: Sr. Clinical Research Associate
+    bio: Jessica Locke, PhD, APRN, FNP-BC, earned her PhD in Neuroscience from the
+      University of Florida (UF) in 2005, studying the effects of aging on
+      microglial activation. She then went on to become a clinician, earning an
+      MSN from UF in 2007. For over 15 years Dr. Locke practiced as a
+      board-certified nurse practitioner with the UF Department of Neurology,
+      specializing in management of epilepsy, sleep and cognitive disorders,
+      before recently moving to Oregon to join SHARP in 2023. Her research
+      interests include the interrelationship between sleep, aging, neurological
+      stress, and neurodegenerative diseases. In her spare time, she enjoys
+      ultrarunning, hiking, getting lost in the woods, barre, yoga, traveling
+      with her family, and concerts.
   - first: Arlynn
     last: Ekis
     displayname: Arlynn Ekis
@@ -274,6 +308,24 @@ people:
       When she's not in the lab, Zoe loves to snowboard, build Lego Technic
       cars, watch Formula 1 racing, and search for the greatest sushi
       restaurants. "
+  - photo: /images/people/jessica-brewer.jpg
+    first: Jessica
+    last: Brewer
+    displayname: Jessica Brewer
+    role: Clinical Research Assistant
+    bio: Jessica is a recent graduate with a BS in human physiology and in
+      journalism, with a minor in science communication research, from the
+      University of Oregon in 2023. She’s interested in sleep physiology,
+      research that improves treatments for sleep-related disorders and creating
+      better ways of communicating science, research and medical treatment to
+      the public. Jessica is planning to become a physician assistant in the
+      future, while also writing stories that center people and their
+      interactions with medicine and public health. Her long-term goal is to
+      change how people interact with medical or scientific information in the
+      public sphere and improve their ability to understand or make choices
+      based on their health. Outside of the lab, Jessica enjoys reading, going
+      to concerts and exploring the Pacific Northwest with her friends and
+      family.
   - first: Isabella
     last: Montano
     displayname: Isabella Montano
@@ -287,24 +339,6 @@ people:
       an interest in the use of EEG in various settings. Outside of the lab,
       Isabella enjoys going on hikes and runs in the beautiful nature that
       Portland has to offer.
-  - first: Laura
-    last: Dennis
-    displayname: Laura Dennis
-    pronouns: null
-    role: Clinical Research Coordinator
-    photo: /images/people/Laura-Dennis.jpeg
-    bio: "Laura received her BS in Bioengineering at Oregon State University and
-      currently splits her time between several labs at OHSU and the Portland VA
-      including the Hoffman Lab (Drs. William Hoffman and Milky Kohno) where she
-      has worked for over 10 years using multi-modal neuroimaging techniques to
-      investigate the effects of methamphetamine and alcohol use disorders on
-      brain, the Piantino Lab (Dr. Juan Piantino) comparing perivascular space
-      (PVS) burden, functional MRI, and diffusion imaging across cohorts with
-      sleep impairments and post-concussive syndrome and the SHARP Lab (Dr.
-      Miranda Lim) where she is the lead coordinator at OHSU for the North
-      American Prodromal Synucleinopathy (NAPS) Consortium study. In her free
-      time, Laura enjoys cuddle sessions with her mini dachshund, going to
-      Timbers games, traveling, and spending time with her family and friends. "
   - first: Savanah
     last: Sicard
     displayname: Savanah Sicard
@@ -336,7 +370,16 @@ people:
     displayname: Lorenzo Nungaray
     pronouns: null
     role: Research Technician
-    photo: /images/profile-placeholder.png
+    photo: /images/people/lorenzo.jpg
+    bio: Lorenzo graduated from Portland State University in 2023 with a BS in
+      Biology. He joined the SHARP lab in June of 2023 as an intern through the
+      Portland VA Research Foundation and plans to continue with his education
+      in hopes of attending a graduate program in neuroscience. Afterward, he
+      plans to continue with research with an interest in neurodegenerative
+      diseases, cognition, memory, and learning. Outside of the lab, Lorenzo
+      likes to explore different parts of the Portland area seeing all that the
+      city has to offer including scenery, restaurants, and various outdoor
+      activities.
   - first: Jennifer
     last: D'Silva
     displayname: Jennifer D'Silva
@@ -349,3 +392,16 @@ people:
     pronouns: null
     role: Research Assistant
     photo: /images/profile-placeholder.png
+  - photo: /images/people/nathan.jpg
+    first: Nathan
+    last: McGuire
+    displayname: Nathan McGuire
+    role: Research Assistant
+    bio: Nathan graduated from the University of Oregon in 2023 with a BS in human
+      physiology and minors in chemistry and biology. He joined the SHARP lab in
+      June of 2023 with plans to pursue graduate school in the future. This is
+      his first experience in a research lab and is excited to help gain a
+      better understanding of the interplay between developmental sleep and
+      social behavior and how this relationship can be optimized to improve
+      quality of life. Outside of SHARP, Nathan enjoys paddle boarding and
+      hiking around Oregon, taking on DIY projects, and watching sports.
