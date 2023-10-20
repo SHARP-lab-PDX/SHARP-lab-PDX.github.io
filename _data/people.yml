@@ -336,7 +336,16 @@ people:
     displayname: Lorenzo Nungaray
     pronouns: null
     role: Research Technician
-    photo: /images/profile-placeholder.png
+    photo: /images/people/lorenzo.jpg
+    bio: Lorenzo graduated from Portland State University in 2023 with a BS in
+      Biology. He joined the SHARP lab in June of 2023 as an intern through the
+      Portland VA Research Foundation and plans to continue with his education
+      in hopes of attending a graduate program in neuroscience. Afterward, he
+      plans to continue with research with an interest in neurodegenerative
+      diseases, cognition, memory, and learning. Outside of the lab, Lorenzo
+      likes to explore different parts of the Portland area seeing all that the
+      city has to offer including scenery, restaurants, and various outdoor
+      activities.
   - first: Jennifer
     last: D'Silva
     displayname: Jennifer D'Silva
