@@ -50,7 +50,7 @@ studying how sleep affects the brain in health and disease."
       <div class="light-theme col-12 col-lg-5 p-4 text-center shadow">
         <h3 class="sintony display-6 pt-2">SHARP Directors</h3>
 
-        <hr class="pb-4 blueish-black" />
+        <hr class="pb-4 blueish-black"/>
 
         <div class="row" id="Directors">
           <div class="col-6">
@@ -58,7 +58,7 @@ studying how sleep affects the brain in health and disease."
               class="img-fluid rounded shadow"
               src="/images/people/miranda-lim.jpeg"
               alt="Headshot of Dr. Miranda Lim"
-            />
+/>
             <h5 class="pt-3 fw400">Dr. Miranda M. Lim, MD, PhD</h5>
             <!-- <p class="bold">SHARP Director</p> -->
             <a
@@ -75,7 +75,7 @@ studying how sleep affects the brain in health and disease."
               class="img-fluid rounded shadow"
               src="/images/people/jonathan-elliott.jpeg"
               alt="Headshot of Dr. Jonathan Elliot"
-            />
+/>
             <h5 class="pt-3 fw400">Dr. Jonathan Elliott, PhD</h5>
             <!-- <p class="bold">SHARP Director</p> -->
             <a
@@ -93,8 +93,9 @@ studying how sleep affects the brain in health and disease."
 </section>
 
 <section class="hidden light-theme" id="LimBio">
-  {% assign miranda = site.data.people.people | where: "nameid", "mlim" | first
-  %}
+  {% assign miranda = site.data.people.people | where : "nameid",
+  "mlim" | first
+ %}
 
   <div class="my-container" data-width="narrow">
     <div class="d-flex flex-row-reverse">
@@ -112,7 +113,7 @@ studying how sleep affects the brain in health and disease."
           class="img-fluid rounded shadow float-start"
           src="{{ miranda.photo }}"
           alt="Headshot of Dr. Miranda Lim"
-        />
+/>
       </div>
       <div class="col-9 col-lg-10">
         <h4 class="body-color fjalla">SHARP Co-Director</h4>
@@ -135,8 +136,9 @@ studying how sleep affects the brain in health and disease."
 </section>
 
 <section class="hidden light-theme" id="ElliottBio">
-  {% assign jon = site.data.people.people | where: "nameid", "jelliott" | first
-  %}
+  {% assign jon = site.data.people.people | where : "nameid",
+  "jelliott" | first
+ %}
   <div class="my-container" data-width="narrow">
     <div class="d-flex flex-row-reverse">
       <a
@@ -153,7 +155,7 @@ studying how sleep affects the brain in health and disease."
           class="img-fluid rounded shadow float-start"
           src="{{ jon.photo }}"
           alt="Headshot of Dr. Jonathan Elliott"
-        />
+/>
       </div>
       <div class="col-9 col-lg-10">
         <h4 class="body-color fjalla">SHARP Co-Director</h4>
@@ -184,7 +186,7 @@ studying how sleep affects the brain in health and disease."
             class="card-img-top img-fluid img-border-light shadow rounded"
             src="/images/home-sleep-study-participant-edit-400px.jpg"
             alt="Sleep study participant wearing recording electrodes"
-          />
+/>
           <div
             class="card-img-overlay d-flex align-items-end px-0 py-0 shadow rounded myhover"
           >
@@ -205,7 +207,7 @@ studying how sleep affects the brain in health and disease."
             class="card-img-top img-fluid rounded shadow img-border-light"
             src="/images/group-photo-2022-edit-400px.jpg"
             alt="Group photo of SHARP researchers in the lab"
-          />
+/>
           <div
             class="card-img-overlay d-flex align-items-end px-0 py-0 rounded myhover"
           >
@@ -231,47 +233,49 @@ studying how sleep affects the brain in health and disease."
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            {% assign features = site.data.media.media | where: "featured", true
-            %} {% for feature in features %} {% if feature.description contains
-            "Ologies" %}
-            <div class="carousel-item active">
-              <img
+            {% assign features = site.data.media.media | where : "featured",
+            true %}
+            {% for feature in features %}
+              {% if forloop.first == true %}
+                <div class="carousel-item active">
+                  <img
                 src="/images/cardbg1.jpeg"
                 class="d-block img-fluid rel-image dark-filter"
                 alt="Abstract teal background"
-              />
+/>
 
-              <div class="overlay-txt px-1 display-6">
-                <div>{{ feature.headline | markdownify }}</div>
-                <div class="pt-2">
-                  <a
+                  <div class="overlay-txt px-1 display-6">
+                    <div>{{ feature.headline | markdownify }}</div>
+                    <div class="pt-2">
+                      <a
                     href="{{ feature.url }}"
                     class="btn btn-outline-light carousel-btn"
                     >{{ feature.button-text }}</a
                   >
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            {% else %}
-            <div class="carousel-item">
-              <img
+              {% else %}
+                <div class="carousel-item">
+                  <img
                 src="/images/cardbg1.jpeg"
                 class="d-block img-fluid rel-image dark-filter"
                 alt="Abstract teal background"
-              />
+/>
 
-              <div class="overlay-txt px-1 display-6">
-                <div>{{ feature.headline | markdownify }}</div>
-                <div class="pt-2">
-                  <a
+                  <div class="overlay-txt px-1 display-6">
+                    <div>{{ feature.headline | markdownify }}</div>
+                    <div class="pt-2">
+                      <a
                     href="{{ feature.url }}"
                     class="btn btn-outline-light carousel-btn"
                     >{{ feature.button-text }}</a
                   >
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            {% endif %} {% endfor %}
+              {% endif %}
+            {% endfor %}
           </div>
 
           <button
@@ -301,12 +305,16 @@ studying how sleep affects the brain in health and disease."
 <!-- Netlify -->
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
+    window
+      .netlifyIdentity
+      .on("init", (user) => {
+        if (!user) {
+          window
+            .netlifyIdentity
+            .on("login", () => {
+              document.location.href = "/admin/";
+            });
+        }
+      });
   }
 </script>
