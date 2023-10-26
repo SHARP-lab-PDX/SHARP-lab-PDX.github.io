@@ -332,12 +332,12 @@ a {
 }
 
 .logo-inline {
-  max-height: clamp(2rem, 2rem + 5vw, 7rem);
+  max-width: clamp(3rem, 3rem + 5vw, 10rem);
+  max-height: clamp(2rem, 2rem + 5vw, 10rem);
   display: inline-block;
   position: relative;
-  padding-inline: .5rem;
+  padding: 0 10px;
   top: -5px;
-  /* padding-left: 1.5vw; */
 }
 
 .tagline {
