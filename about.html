@@ -6,44 +6,63 @@ description: "We research the neuroscience of sleep to discover new therapies fo
 ---
 
 {% assign data = site.data.about %}
-<section>
+
   <div
     class="jumbotron taller-jumbo"
     style="
       background-image: url(/images/sharp_group_lab-full.jpeg);
-      background-position: 50% 20%;
+      background-position: 50% 0%;
       height: 60vh;
     "
   ></div>
-</section>
 
 <section>
   <div class="container px-3">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-10 col-xl-5 mx-auto">
-        <h1 class="sintony display-5 pb-4">Our Research</h1>
-        {{ data.research-summary | markdownify }}
-      </div>
-      <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
+    <div class="col-12 col-lg-10 col-xl-12 mx-auto">
+      <h1 class="sintony display-5 mx-auto section-title">Our Research</h1>
+    </div>
+    <div class="row align-items-center g-4 pb-4">
+      <div class="col-12 col-lg-10 order-xl-2 col-xl-7 p-3 mx-auto my-auto">
         <img
           src="/images/sharp-lab-discuss-data.jpeg"
-          class="img-fluid shadow img-border-light img-slant-left"
+          class="img-fluid img-border--offset-left"
           style="width: 100%"
           alt="Miranda Lim analyzing sleep lab data with Jonathan Elliot and other team members"
         />
       </div>
+      <div class="col-12 col-lg-10 col-xl-5 mx-auto">
+        {{ data.research-summary | markdownify }}
+      </div>
     </div>
-    <div class="pt-3">
-      <h3>We utilize a range of approaches including:</h3>
-      <div class="row">
-        <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
-          <h4>Human Subjects</h4>
-          {{ data.human-methods | markdownify }}
-        </div>
-        <div class="col-12 col-lg-5 col-xl-6 mx-auto mt-3">
-          <h4>Rodent Subjects</h4>
-          {{ data.animal-methods | markdownify}}
-        </div>
+
+    <div class="row align-items-center pb-4">
+      <div class="col-12 col-xl-5 pb-4">
+        <img
+          class="img-fluid img-border--offset"
+          src="/images/carolyn-tinsley-looks-through-microscope.jpg"
+          alt="Carolyn Tinsley looking through a microscrope"
+        />
+        <div class="fs-6 pt-2 justify-right italic">Photo by Fritz Liedtke</div>
+      </div>
+      <div class="col-12 col-lg-10 col-xl-6 mx-auto mt-3">
+        <h3>We utilize a range of approaches including:</h3>
+        <h4>Human Subjects</h4>
+        {{ data.human-methods | markdownify }}
+      </div>
+    </div>
+
+    <div class="row align-items-center pb-4">
+      <div class="col-12 col-xl-5 pb-4">
+        <img
+          class="img-fluid img-border--offset"
+          src="/images/jonathan-elliott-and-miranda-lim-discuss-sleep-data.jpeg"
+          alt="Jonathan Elliott and Miranda Lim discussing sleep data"
+        />
+        <div class="fs-6 pt-2 justify-right italic">Photo by Fritz Liedtke</div>
+      </div>
+      <div class="col-12 col-lg-10 col-xl-6 mx-auto mt-3">
+        <h4>Rodent Subjects</h4>
+        {{ data.animal-methods | markdownify}}
       </div>
     </div>
   </div>
@@ -52,7 +71,7 @@ description: "We research the neuroscience of sleep to discover new therapies fo
 <section class="light-theme" id="Mission">
   <div class="container px-3">
     <div class="col-12 col-lg-10 col-xl-12 mx-auto">
-      <h1 class="sintony display-5 pb-4">Mission &amp; Values</h1>
+      <h1 class="sintony display-5 section-title">Mission &amp; Values</h1>
     </div>
     <div class="row">
       <div class="col-12 col-lg-10 col-xl-5 mx-auto my-auto">
@@ -61,7 +80,7 @@ description: "We research the neuroscience of sleep to discover new therapies fo
       <div class="col-12 col-lg-10 col-xl-7 p-3 mx-auto my-auto">
         <img
           src="/images/research-fair.jpg"
-          class="img-fluid shadow img-border img-slant-left"
+          class="img-fluid img-border--offset-dark"
           alt="Undergraduate researchers discuss sleep science at an outreach event"
         />
       </div>
@@ -72,7 +91,7 @@ description: "We research the neuroscience of sleep to discover new therapies fo
 <section>
   <div class="container px-3">
     <div class="col-12 col-lg-10 col-xl-12 mx-auto my-auto">
-      <h1 class="sintony display-5 pb-4">Funding</h1>
+      <h1 class="sintony display-5 section-title">Funding</h1>
       {{ data.funding | markdownify }}
     </div>
   </div>

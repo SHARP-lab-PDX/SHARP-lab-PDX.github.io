@@ -28,15 +28,27 @@ description: "Participate in research studies on sleep and neurological health. 
 <main>
   <section>
     <div class="container px-3">
-      <h1 class="sintony display-6 pb-5">{{ data.heading1 }}</h1>
-      <div class="row gx-5 gy-4">
-        <div class="col-12 col-lg-6">
-          <h3 class="sintony fs-4 bold">{{ data.subheading1 }}</h3>
-          <p>{{ data.text1 | markdownify }}</p>
+      <div class="col-12 col-lg-10">
+        <h1 class="sintony display-6 pb-5">{{ data.heading1 }}</h1>
+      </div>
+      <div class="row gx-5 gy-4 align-items-center">
+        <div class="col-12 offset-lg-1 col-lg-10 offset-xl-0 col-xl-6">
+          <div>
+            <h3 class="sintony fs-4 bold">{{ data.subheading1 }}</h3>
+            <div class="ps-md-4">
+              <p>{{ data.text1 | markdownify }}</p>
+            </div>
+          </div>
+          <div class="pt-4">
+            <h3 class="sintony fs-4 bold">{{ data.subheading2 }}</h3>
+            <div class="ps-md-4">
+              <p>{{ data.text2 | markdownify }}</p>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <h3 class="sintony fs-4 bold">{{ data.subheading2 }}</h3>
-          <p>{{ data.text2 | markdownify }}</p>
+        <div class="col-12 col-lg-10 mx-auto col-xl-6 mt-4">
+          <img class="img-fluid img-border--offset" src="/images/sleep-researcher-conducting-study.jpg" alt="Sleep researcher conducting study">
+          <div class="fs-6 pt-2 justify-right italic">Photo by Fritz Liedtke</div>
         </div>
       </div>
     </div>
@@ -48,22 +60,24 @@ description: "Participate in research studies on sleep and neurological health. 
       <p>{{ data.text3 | markdownify }}</p>
       <div class="row gy-5 text-center pt-5">
         {% for study in site.data.studies.studies %}
-        <div class="col-12 col-xl-6">
-          <h3 class="bold">{{ study.title }}</h3>
-          <p>
-            <a href="{{ study.url }}" class="btn btn-outline-dark publink fs-5"
+          <div class="col-12 col-xl-6">
+            <h3 class="bold">{{ study.title }}</h3>
+            <p>
+              <a href="{{ study.url }}" class="btn btn-outline-dark publink fs-5"
               >{{ study.button-text }}</a
             >
-          </p>
-          <p class="study-add-info">
-            {% if study.addinfo %} {{ study.addinfo | markdownify }} {% endif %}
-          </p>
-          <img
+            </p>
+            <p class="study-add-info">
+              {% if study.addinfo %}
+                {{ study.addinfo | markdownify }}
+              {% endif %}
+            </p>
+            <img
             src="{{ study.image }}"
             alt="Sleep study recruitment flyer for {{ study.title }}"
             class="img-fluid"
-          />
-        </div>
+/>
+          </div>
         {% endfor %}
       </div>
     </div>
@@ -74,8 +88,8 @@ description: "Participate in research studies on sleep and neurological health. 
       <h1 class="sintony display-5 pb-4">FAQ</h1>
       <div class="col text-container">
         {% for item in site.data.studies-faq.faq %}
-        <div class="bold">{{ item.question | markdownify }}</div>
-        <div class="ms-3">{{ item.answer | markdownify }}</div>
+          <div class="bold">{{ item.question | markdownify }}</div>
+          <div class="ms-3">{{ item.answer | markdownify }}</div>
         {% endfor %}
       </div>
     </div>

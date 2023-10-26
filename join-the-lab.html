@@ -6,12 +6,12 @@ description: "Find out about sleep research job openings, internships, and gradu
 ---
 
 {% assign data = site.data.join-the-lab-text %}
-<section>
+
   <div
     class="jumbotron taller-jumbo"
     style="
       background-image: url(images/lab-discusses-data.jpeg);
-      background-position: 65% 30%;
+      background-position: 65% 25%;
       height: 50vh;
     "
   >
@@ -19,34 +19,44 @@ description: "Find out about sleep research job openings, internships, and gradu
       <h1 class="display-2 sintony"></h1>
     </div>
   </div>
-</section>
+
 <section>
   <div class="my-container">
     <div>
-      <h1 class="sintony display-6 pb-4 almost-white">
-        Become a member of our team
+      <h1 class="sintony display-6 section-title">
+        Become a member of our amazing team.
       </h1>
 
-      <h3 class="fs-4 py-3">
+
+        <h3 class="fs-4 pt-4 section-title">
         The SHARP lab is always looking for passionate, curious individuals to
         join our team.
       </h3>
+
+      <div class="col-12 pb-5 mx-auto">
+        <img
+            src="/images/group-photo-2022.jpeg"
+            class="img-fluid img-border--offset-left"
+            alt="SHARP lab members smiling in a meeting room"/>
+      </div>
 
       <div class="row d-flex justify-content-between">
         <div class="col-12 mx-auto my-auto">
           {{ data.join-statement | markdownify }}
         </div>
-        <div class="col-12 py-4 mx-auto">
+
+
+        <div class="col-12 py-5 mx-auto">
           <img
-            src="/images/group-photo-2022.jpeg"
-            class="img-fluid img-border-light"
-            alt="SHARP lab members smiling in a meeting room"
-            style="width: 100%"
-          />
+            src="/images/sharp-researchers-smiling-in-front-of-lab-equipment.jpg"
+            class="img-fluid img-border--offset"
+            alt="SHARP researchers smiling in front of lab equipment"/>
+          <div class="fs-6 pt-2 justify-right italic">Photo by Fritz Liedtke</div>
+
         </div>
 
         <div class="col">
-          <p class="fs-3 mt-4">
+          <p class="fs-3">
             We are currently accepting applications for the following positions:
           </p>
           {{ data.open-positions | markdownify }}
@@ -58,14 +68,14 @@ description: "Find out about sleep research job openings, internships, and gradu
 
 <section class="light-theme">
   <div class="my-container">
-    <h1 class="sintony display-6 pb-4">Internship opportunities</h1>
+    <h1 class="sintony display-6 section-title">Internship opportunities</h1>
     <div class="">{{ data.internships | markdownify }}</div>
   </div>
 </section>
 
 <section>
   <div class="my-container">
-    <h1 class="sintony display-6 pb-4">How to apply</h1>
+    <h1 class="sintony display-6 section-title">How to apply</h1>
 
     <p>Please check the following websites for SHARP job postings:</p>
     <p>
@@ -95,12 +105,12 @@ description: "Find out about sleep research job openings, internships, and gradu
   <div class="my-container">
     <div class="faq">
       <h1>
-        <h1 class="sintony display-5 pb-4">FAQ</h1>
+        <h1 class="sintony display-5 section-title">FAQ</h1>
       </h1>
       <div class="col">
         {% for item in site.data.lab-faq.faq %}
-        <div class="bold">{{ item.question | markdownify }}</div>
-        <div class="ms-3">{{ item.answer | markdownify }}</div>
+          <div class="bold">{{ item.question | markdownify }}</div>
+          <div class="ms-3">{{ item.answer | markdownify }}</div>
         {% endfor %}
       </div>
     </div>
