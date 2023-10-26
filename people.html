@@ -6,14 +6,12 @@ description: "Meet our team of sleep researchers at Portland's Sleep &amp; Healt
 co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
 ---
 
-<section>
-  <div class="jumbotron taller-jumbo"
+<div class="jumbotron taller-jumbo"
     style="background-image: url(images/group-photo-2022.jpeg); background-position: center;">
-    <div class="container text-white jumbo-title">
-      <h1 class="display-2 sintony"></h1>
-    </div>
+  <div class="container text-white jumbo-title">
+    <h1 class="display-2 sintony"></h1>
   </div>
-</section>
+</div>
 
 <div class="container px-3">
   <section>
@@ -41,17 +39,20 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
           Neuroscientists, physiologists, biologists, physicists, computer scientists, systems scientists
         </ul>
         <ul>
-          <span class="fs-3"><i class="fa-solid fa-heart-pulse fa-icon"></i>Clinicians</span>
+          <span class="fs-3">
+            <i class="fa-solid fa-heart-pulse fa-icon"></i>Clinicians</span>
           <br>
           Neurologists, psychologists, nurses, personal trainers, health coaches
         </ul>
         <ul>
-          <span class="fs-3"><i class="fa-solid fa-gears fa-icon"></i>Engineers</span>
+          <span class="fs-3">
+            <i class="fa-solid fa-gears fa-icon"></i>Engineers</span>
           <br>
           Electrical, mechanical, and biomedical engineers, materials scientists
         </ul>
         <ul>
-          <span class="fs-3"><i class="fa-solid fa-book-open-reader fa-icon"></i>Students</span>
+          <span class="fs-3">
+            <i class="fa-solid fa-book-open-reader fa-icon"></i>Students</span>
           <br>
           Undergraduate, masters, PhD graduate students, post-doctoral scholars
         </ul>
@@ -68,66 +69,66 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
     </h1>
     <div class="row ">
       {% for person in site.data.people.people %}
-      <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-        <div class="card mb-4 mx-auto people-card light-theme">
-          <img class="card-img-top img-fluid" src="{{ person.photo }}"
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div class="card mb-4 mx-auto people-card light-theme">
+            <img class="card-img-top img-fluid" src="{{ person.photo }}"
             alt="Headshot of {{ person.first }} {{ person.last }}">
-          <div class="card-body">
-            <div class="text-center">
-              <p class="fs-4">{{ person.displayname }}</p>
-              <p class="fs-5">
-                {% if person.pronouns %}
-                {{ person.pronouns }}
-                {% else %}
+            <div class="card-body">
+              <div class="text-center">
+                <p class="fs-4">{{ person.displayname }}</p>
+                <p class="fs-5">
+                  {% if person.pronouns %}
+                    {{ person.pronouns }}
+                  {% else %}
                 &#9900
                 {% endif %}
-              </p>
-              <p>{{ person.role }}</p>
-            </div>
-            <!-- Bio -->
-            {% if person.bio %}
-            <div class="accordion accordion-flush" id="accordion{{ person.last }}">
-              <div class="accordion-item">
-                <div class="" id="flush-heading{{ person.last }}">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                </p>
+                <p>{{ person.role }}</p>
+              </div>
+              <!-- Bio -->
+              {% if person.bio %}
+                <div class="accordion accordion-flush" id="accordion{{ person.last }}">
+                  <div class="accordion-item">
+                    <div class="" id="flush-heading{{ person.last }}">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapse{{ person.last }}" aria-expanded="false"
                     aria-controls="flush-collapse{{ person.last }}">
                     Bio
                   </button>
-                </div>
-                <div id="flush-collapse{{ person.last }}" class="accordion-collapse collapse"
+                    </div>
+                    <div id="flush-collapse{{ person.last }}" class="accordion-collapse collapse"
                   aria-labelledby="flush-heading{{ person.last }}" data-bs-parent="#accordion{{ person.last }}">
-                  <div class="accordion-body">
-                    <div class="bio-text text-left">
-                      {{ person.bio | markdownify }}
+                      <div class="accordion-body">
+                        <div class="bio-text text-left">
+                          {{ person.bio | markdownify }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              {% endif %}
+
+              <div class="text-center social-icons pt-2">
+                {% if person.googlescholar %}
+                  <a href="{{ person.googlescholar }}" >
+                    <i class="ai ai-google-scholar-square ai-2x"></i>
+                  </a>
+                {% endif %}
+                {% if person.pubmed %}
+                  <a href="{{ person.pubmed }}" >
+                    <i class="ai ai-pubmed-square ai-2x"></i>
+                  </a>
+                {% endif %}
+                {% if person.linkedin %}
+                  <a href="{{ person.linkedin }}" >
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                {% endif %}
               </div>
             </div>
-            {% endif %}
 
-            <div class="text-center social-icons pt-2">
-              {% if person.googlescholar %}
-              <a href="{{ person.googlescholar }}" >
-                <i class="ai ai-google-scholar-square ai-2x"></i>
-              </a>
-              {% endif %}
-              {% if person.pubmed %}
-              <a href="{{ person.pubmed }}" >
-                <i class="ai ai-pubmed-square ai-2x"></i>
-              </a>
-              {% endif %}
-              {% if person.linkedin %}
-              <a href="{{ person.linkedin }}" >
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </a>
-              {% endif %}
-            </div>
           </div>
-
         </div>
-      </div>
       {% endfor %}
     </div>
 

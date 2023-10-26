@@ -6,8 +6,7 @@ description: "Explore news articles, interviews, podcasts, and more on how the r
 advancing sleep science."
 ---
 
-<section>
-  <div
+<div
     class="jumbotron"
     style="
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
@@ -15,13 +14,12 @@ advancing sleep science."
       background-position: 0% 60%;
     "
   >
-    <div class="container px-3 text-white jumbo-title">
-      <div class="card-container">
-        <h1 class="display-2 sintony">Press &amp; Media</h1>
-      </div>
+  <div class="container px-3 text-white jumbo-title">
+    <div class="card-container">
+      <h1 class="display-2 sintony">Press &amp; Media</h1>
     </div>
   </div>
-</section>
+</div>
 
 <div class="container px-3">
   <section>
@@ -31,40 +29,44 @@ advancing sleep science."
       </h2>
 
       {% for item in site.data.media.media %}
-      <div class="card mt-4 light-theme card-gradient">
-        <div class="row g-0">
-          <div class="col-1 text-center mx-auto pt-4 ps-2">
-            {% if item.type == "article" %}
-            <i class="fa-regular fa-newspaper display-4 blueish-black"></i>
-            {% elsif item.type == "podcast" %}
-            <i class="fa-solid fa-headphones display-4 blueish-black"></i>
-            {% elsif item.type == "award" %}
-            <i class="fa-solid fa-award display-4 blueish-black"></i>
-            {% elsif item.type == "video" %}
-            <i class="fa-solid fa-film display-4 blueish-black"></i>
-            {% endif %}
-          </div>
-          <div class="col-11 my-auto ps-2 pe-md-4">
-            <div class="card-body">
-              <h5 class="fs-3">{{ item.title }}</h5>
-              <p>{{ item.description | markdownify }}</p>
-              <p>
-                <em>{{ item.source }}. {{ item.month }} {{ item.year }}.</em>
-              </p>
-              <a
+        <div class="card mt-4 light-theme card-gradient">
+          <div class="row g-0">
+            <div class="col-1 text-center mx-auto pt-4 ps-2">
+              {% if item.type == "article" %}
+                <i class="fa-regular fa-newspaper display-4 blueish-black"></i>
+                {% elsif item.type == "podcast" %}
+                <i class="fa-solid fa-headphones display-4 blueish-black"></i>
+                {% elsif item.type == "award" %}
+                <i class="fa-solid fa-award display-4 blueish-black"></i>
+                {% elsif item.type == "video" %}
+                <i class="fa-solid fa-film display-4 blueish-black"></i>
+              {% endif %}
+            </div>
+            <div class="col-11 my-auto ps-2 pe-md-4">
+              <div class="card-body">
+                <h5 class="fs-3">{{ item.title }}</h5>
+                <p>{{ item.description | markdownify }}</p>
+                <p>
+                  <em>{{ item.source }}. {{ item.month }}
+                    {{ item.year }}.</em>
+                </p>
+                <a
                 href="{{ item.url }}"
                 class="btn btn-outline-dark publink me-3"
               >
-                {% if item.button-text %} {{ item.button-text }} {% elsif
-                item.type == "article" or item.type == "award" %} Read {% elsif
-                item.type == "podcast" %} Listen {% elsif item.type == "video"
-                %} Watch {% endif %}
-                <i class="fa-solid fa-circle-chevron-right fa-btn-link"></i
-              ></a>
+                  {% if item.button-text %}
+                    {{ item.button-text }}
+                    {% elsif
+                    item.type == "article" or item.type == "award" %} Read {% elsif
+                    item.type == "podcast" %} Listen {% elsif item.type == "video"
+ %} Watch {% endif %}
+                  <i class="fa-solid fa-circle-chevron-right fa-btn-link"></i
+              >
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </section>

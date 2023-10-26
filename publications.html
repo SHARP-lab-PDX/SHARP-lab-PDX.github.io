@@ -6,8 +6,7 @@ description: "Read peer-reviewed publications on sleep and neurological health r
 Jonathan Elliott."
 ---
 
-<section>
-  <div
+<div
     class="jumbotron"
     style="
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
@@ -15,11 +14,11 @@ Jonathan Elliott."
       background-position: top;
     "
   >
-    <div class="container px-3 text-white jumbo-title">
-      <h1 class="display-2 sintony">Publications</h1>
-    </div>
+  <div class="container px-3 text-white jumbo-title">
+    <h1 class="display-2 sintony">Publications</h1>
   </div>
-</section>
+</div>
+
 <div class="container px-3">
   <section>
     <div class="row pb-5 gx-lg-5 gy-4 flex-column-reverse flex-lg-row">
@@ -47,31 +46,32 @@ Jonathan Elliott."
     <h1 class="sintony display-6 pb-4">Featured publications</h1>
 
     {% for pub in site.data.publications.publications %}
-    <div class="card mt-4 light-theme card-gradient">
-      <div class="row g-0">
-        <div class="col-12 col-lg-7 my-auto">
-          <div class="card-body">
-            <h5 class="fs-3 bold pb-2">{{ pub.title }}</h5>
-            <p class="card-text">{{ pub.citation | markdownify }}</p>
-            <p class="card-text">{{ pub.summary }}</p>
-            <p>
-              <a class="btn btn-outline-dark publink" href="{{ pub.doi }}"
+      <div class="card mt-4 light-theme card-gradient">
+        <div class="row g-0">
+          <div class="col-12 col-lg-7 my-auto">
+            <div class="card-body">
+              <h5 class="fs-3 bold pb-2">{{ pub.title }}</h5>
+              <p class="card-text">{{ pub.citation | markdownify }}</p>
+              <p class="card-text">{{ pub.summary }}</p>
+              <p>
+                <a class="btn btn-outline-dark publink" href="{{ pub.doi }}"
                 >Read article<i
                   class="fa-btn-link fa-solid fa-circle-chevron-right"
                 ></i
-              ></a>
-            </p>
+              >
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-5 d-block d-lg-flex align-items-center pubimg">
-          <img
+          <div class="col-lg-5 d-block d-lg-flex align-items-center pubimg">
+            <img
             src="{{ pub.image }}"
             class="img-fluid p-2"
             alt="Data from published study"
-          />
+/>
+          </div>
         </div>
       </div>
-    </div>
     {% endfor %}
   </section>
 </div>
