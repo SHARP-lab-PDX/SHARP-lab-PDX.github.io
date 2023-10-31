@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 200 900;
+  src: url("../fonts/SourceSans3-VariableFont_wght.woff2"), format("woff2");
+}
+
 :root {
   --clr-primary-900: hsl(203, 67%, 7%);
   --clr-primary-700: hsl(203, 64%, 15%);
@@ -19,7 +25,7 @@ html {
 
 body {
   font-family: "Source Sans 3", sans-serif;
-  font-weight: 300;
+  font-weight: 350;
   background-color: var(--clr-primary-700);
   background-repeat: none;
   font-size: 1.2rem;
@@ -44,6 +50,11 @@ section {
 
 section:last-of-type {
   padding-bottom: 3rem;
+}
+
+section img {
+  margin: auto;
+  display: block;
 }
 
 a {
@@ -103,7 +114,7 @@ a {
 }
 
 .big-text {
-  font-size: clamp(2rem, 2rem + 5vw, 7rem);
+  font-size: clamp(2rem, 2rem + 3vw, 7rem);
 }
 
 /* ************************** */
@@ -122,18 +133,12 @@ a {
   font-family: "Source Sans 3", sans-serif;
 }
 
-/* Font styles (for Source Sans Pro) */
-
-.fw400 {
-  font-weight: 400;
-}
-
 .bold {
   font-weight: 600;
 }
 
-.extrabold {
-  font-weight: 700;
+strong {
+  font-weight: 600;
 }
 
 .italic {
@@ -333,7 +338,7 @@ a {
 
 .logo-inline {
   max-width: clamp(3rem, 3rem + 5vw, 10rem);
-  max-height: clamp(2rem, 2rem + 5vw, 10rem);
+  max-height: clamp(2rem, 2rem + 3vw, 7rem);
   display: inline-block;
   position: relative;
   padding: 0 10px;
@@ -341,10 +346,16 @@ a {
 }
 
 .tagline {
-  font-size: clamp(1rem, 0.85rem + 1vw, 4rem);
+  font-size: clamp(1rem, 0.85rem + 0.9vw, 4rem);
 }
 
 .hero-desc {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  font-size: clamp(1rem, 1rem + 0.4vw, 2rem);
+}
+
+.hero-desc > p {
   margin-bottom: 0;
 }
 
@@ -365,23 +376,14 @@ a {
   background-position: center;
 }
 
-.taller-jumbo {
-  height: 60vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .jumbo-title {
   padding-top: 20vh;
-  /* padding-left: 2rem; */
   text-shadow: 2px 2px 8px #000000b1;
 }
 
-.taller-jumbo-title {
-  padding-top: 47vh;
-  text-shadow: 2px 2px 8px #000000b1;
+.director-bio-img {
+  max-width: min(100%, 300px);
+  margin: 0;
 }
 
 .mycard {
@@ -447,11 +449,6 @@ a {
     background-size: cover;
     background-position: center;
 } */
-
-section img {
-  margin: auto;
-  display: block;
-}
 
 .img-border--offset {
   box-shadow: 12px 12px 0px 0px hsla(176, 42%, 85%, 0.239);
@@ -679,16 +676,6 @@ hr {
 @media (min-width: 0px) {
   body {
     font-size: 1.1rem;
-    font-weight: 300;
-  }
-
-  .bold {
-    font-weight: 700;
-  }
-
-  .hero-desc {
-    font-size: 1.1rem;
-    padding-top: 1rem;
   }
 
   .nav-item {
@@ -766,15 +753,6 @@ hr {
 @media (min-width: 768px) {
   body {
     font-size: 1.3rem;
-    font-weight: 300;
-  }
-
-  .bold {
-    font-weight: 600;
-  }
-
-  .hero-desc {
-    font-size: 1.2rem;
   }
 
   .overlay-txt {
@@ -797,10 +775,6 @@ hr {
 
 /* Large */
 @media (min-width: 992px) {
-  .hero-desc {
-    font-size: 1.3rem;
-  }
-
   #navbar-content {
     height: 80px;
   }
@@ -837,10 +811,6 @@ hr {
 
 /* X Large */
 @media (min-width: 1200px) {
-  .hero-desc {
-    font-size: 1.5rem;
-  }
-
   .navbar-nav li a {
     font-size: 1.2rem;
   }
