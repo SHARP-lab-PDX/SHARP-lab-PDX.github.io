@@ -330,6 +330,13 @@ strong {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("../images/miranda-lim-and-jonathan-elliott-discuss-sleep-data.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    image-set(
+      "../images/miranda-lim-and-jonathan-elliott-discuss-sleep-data.avif"
+        type("image/avif"),
+      "../images/miranda-lim-and-jonathan-elliott-discuss-sleep-data.webp"
+        type("image/webp")
+    );
   background-size: cover;
   background-position: center;
   position: relative;
