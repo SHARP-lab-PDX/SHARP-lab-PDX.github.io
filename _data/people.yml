@@ -1,12 +1,5 @@
 people:
   - nameid: mlim
-    director: true
-    first: Miranda
-    last: Lim
-    displayname: Miranda Lim, MD, PhD
-    pronouns: she/hers
-    role: Co-Director
-    photo: /images/people/miranda-lim.jpeg
     bio: >-
       Associate Professor | Department of Neurology\
 
@@ -33,14 +26,14 @@ people:
 
 
       On a personal note, Miranda enjoys taking on new challenges and is always open to trying new things. Prior examples of this outside of science include, living in 6 states across all far-flung corners of the US, playing NCAA Division I Women's Water Polo at University of Southern California, running half-marathons, rock climbing, yoga, ecstatic dance, partnering, parenting, and most recently, and mindfulness meditation (by far, the greatest challenge yet). Given all this, you might be surprised to learn that her number 1 strength per StrengthsFinder is RELATOR -- perhaps the highly social prairie voles that she has been studying since 1999 have finally rubbed off?
-  - nameid: jelliott
+    pronouns: she/hers
     director: true
-    first: Jonathan
-    last: Elliott
-    displayname: Jonathan E. Elliott, PhD
-    pronouns: null
+    displayname: Miranda Lim, MD, PhD
+    first: Miranda
+    photo: /images/people/miranda-lim.jpeg
     role: Co-Director
-    photo: /images/people/jonathan-elliott.jpeg
+    last: Lim
+  - nameid: jelliott
     bio: >-
       Assistant Professor | Department of Neurology\
 
@@ -59,8 +52,14 @@ people:
 
 
       Outside of the lab, Jonathan (Jon) enjoys all things Pacific Northwest, including snowboarding, mountain biking, kayaking, and camping, as well as exploring the ever-changing restaurant and brewery scene in Portland.
-  - bio:
-      Carolyn Tinsley (formerly Jones) oversees preclinical research within SHARP
+    pronouns: null
+    director: true
+    displayname: Jonathan E. Elliott, PhD
+    first: Jonathan
+    photo: /images/people/jonathan-elliott.jpeg
+    role: Co-Director
+    last: Elliott
+  - bio: Carolyn Tinsley (formerly Jones) oversees preclinical research within SHARP
       as well as logistics and operations of SHARP as a whole. Dr. Tinsley has
       undergraduate degrees in Biomedical Engineering and Psychology from Duke
       University, a PhD in Behavioral Neuroscience from the University of Texas
@@ -108,8 +107,7 @@ people:
     pronouns: null
     role: Research Associate
     photo: /images/people/peyton.jpg
-    bio:
-      "Peyton Wickham (Née: Teutsch) has an undergraduate degree in Biochemistry
+    bio: "Peyton Wickham (Née: Teutsch) has an undergraduate degree in Biochemistry
       from the University of Portland, and has been with SHARP since graduating
       in 2016. Since joining the lab her roles have evolved, but the core of her
       time has been in pursuit of better understanding the relationship between
@@ -139,8 +137,7 @@ people:
     pronouns: null
     role: Postdoctoral Scholar
     photo: /images/people/Darren-Ginder.jpeg
-    bio:
-      "Darren earned his MS Biology in 2019 from Eastern Washington University
+    bio: "Darren earned his MS Biology in 2019 from Eastern Washington University
       where his focus was on interactions between the neurotransmitters dopamine
       and oxytocin. After completing his MS, he went on to receive his PhD in
       Experimental Psychology from Washington State University in 2023. The
@@ -194,8 +191,7 @@ people:
     pronouns: null
     role: Clinical Research Coordinator
     photo: /images/people/Cosette-Olivo.jpeg
-    bio:
-      Cosette graduated in 2008 from Columbia University with a BA in Biology and
+    bio: Cosette graduated in 2008 from Columbia University with a BA in Biology and
       Psychology. Her work in clinical research began as a student at Columbia
       University, when she started working for the Mothers and Newborns Study at
       the Mailman School of Public Health. After graduating, she continued
@@ -233,8 +229,7 @@ people:
     last: Locke
     displayname: Jessica Locke
     role: Sr. Clinical Research Associate
-    bio:
-      Jessica Locke, PhD, APRN, FNP-BC, earned her PhD in Neuroscience from the
+    bio: Jessica Locke, PhD, APRN, FNP-BC, earned her PhD in Neuroscience from the
       University of Florida (UF) in 2005, studying the effects of aging on
       microglial activation. She then went on to become a clinician, earning an
       MSN from UF in 2007. For over 15 years Dr. Locke practiced as a
@@ -268,8 +263,7 @@ people:
     pronouns: she/hers
     role: Study Coordinator
     photo: /images/people/Abbie-Hansen.jpeg
-    bio:
-      Abbie graduated from the University of Northern Colorado with a Master's
+    bio: Abbie graduated from the University of Northern Colorado with a Master's
       Degree in Educational Psychology in 2019. Abbie joined the SHARP lab in
       March 2023 and is hoping to pursue further education in Neuroscience in
       the future. Before coming to the lab, Abbie taught secondary special
@@ -284,8 +278,7 @@ people:
     pronouns: she/hers
     role: Research Assistant II
     photo: /images/people/Kayla-McDaniel.jpeg
-    bio:
-      Kayla has an educational background in Psychology and received her BS in
+    bio: Kayla has an educational background in Psychology and received her BS in
       June of 2023. She graduated as a first-generation student and aims to
       pursue graduate school in the future. Kayla has been a member of the SHARP
       lab since June, 2022 and has prior experience working in trauma-informed
@@ -298,26 +291,6 @@ people:
       spending time traveling and exploring waterfalls with her 5-year-old
       American Pitbull Terrier. Kayla has also been an avid painter since she
       was a child and feels most inspired by dark romanticism and realism.
-  - first: Zoe
-    last: Potter
-    displayname: Zoe Potter
-    pronouns: she/hers
-    role: Research Assistant
-    photo: /images/people/Zoe-Potter.jpeg
-    bio:
-      "Zoe graduated with Honors from Portland State University in 2023 with a BS
-      in Psychology. She joined the SHARP lab in January of 2023 with plans to
-      pursue a graduate degree in Psychology after a couple of years of working
-      in research. Before pursuing this field, she worked in childcare as a
-      KinderCare/Champions teacher. She loved working with kids and was inspired
-      to join a research project at PSU that introduces social and emotional
-      learning curriculums to Preschools. Zoe's research background also
-      includes the prevention of sexual abuse within youth-serving
-      organizations, and stigma and hiring bias within organizational contexts.
-      She is currently interested in how trauma interacts with sex differences.
-      When she's not in the lab, Zoe loves to snowboard, build Lego Technic
-      cars, watch Formula 1 racing, and search for the greatest sushi
-      restaurants. "
   - photo: /images/people/jessica-brewer.jpg
     first: Jessica
     last: Brewer
@@ -355,8 +328,7 @@ people:
     pronouns: null
     role: Research Assisstant
     photo: /images/people/Savanah-Sicard.jpg
-    bio:
-      Savanah graduated with a BS in psychology, along with minors in biology and
+    bio: Savanah graduated with a BS in psychology, along with minors in biology and
       neuroscience, from Portland State University in 2023. As an undergraduate,
       she discovered her love for sleep science, specifically the psychological
       and physiological impacts of REM stage sleep, and wrote two research
@@ -391,12 +363,6 @@ people:
       likes to explore different parts of the Portland area seeing all that the
       city has to offer including scenery, restaurants, and various outdoor
       activities.
-  - first: Jennifer
-    last: D'Silva
-    displayname: Jennifer D'Silva
-    pronouns: null
-    role: Research Technician
-    photo: /images/profile-placeholder.png
   - first: Jasmine
     last: Loeung
     displayname: Jasmine Loeung
@@ -407,9 +373,8 @@ people:
     first: Nathan
     last: McGuire
     displayname: Nathan McGuire
-    role: Research Assistant
-    bio:
-      Nathan graduated from the University of Oregon in 2023 with a BS in human
+    role: Research Assistant 2
+    bio: Nathan graduated from the University of Oregon in 2023 with a BS in human
       physiology and minors in chemistry and biology. He joined the SHARP lab in
       June of 2023 with plans to pursue graduate school in the future. This is
       his first experience in a research lab and is excited to help gain a
