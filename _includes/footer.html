@@ -6,9 +6,9 @@
 
         <ul class="nav flex-column">
           {% for item in site.data.navigation.navlinks %}
-          <li class="nav-item">
-            <a href="{{ item.url }}" class="nav-link">{{item.title }}</a>
-          </li>
+            <li class="nav-item">
+              <a href="{{ item.url }}" class="nav-link">{{item.title }}</a>
+            </li>
           {% endfor %}
         </ul>
       </div>
@@ -17,16 +17,16 @@
         <p class="sintony pb-2">Resources</p>
         <ul class="nav flex-column">
           {% for resource in site.data.ext-resources.resource %}
-          <li class="nav-item">
-            <a href="{{ resource.url }}" class="nav-link"
+            <li class="nav-item">
+              <a href="{{ resource.url }}" class="nav-link"
               >{{ resource.title }}</a
             >
-          </li>
+            </li>
           {% endfor %}
         </ul>
       </div>
     </div>
-    <hr />
+    <hr/>
     <div class="footer__copyright text-center pb-4 pt-2">
       <p class="pt-1" style="font-size: 0.8em">
         Website created by
@@ -35,9 +35,18 @@
         >
       </p>
       <p style="font-size: 0.8em">
-        Copyright © 2023 Sleep &amp; Health Applied Research Program. All rights
+        Copyright &copy <span id="copyrightYear"></span> Sleep &amp; Health Applied Research Program. All rights
         reserved.
       </p>
     </div>
   </footer>
 </div>
+<script>
+  function getCopyrightYear(date) {
+    return date.getFullYear();
+  }
+  const newDate = new Date();
+  document
+    .querySelector("#copyrightYear")
+    .textContent = getCopyrightYear(newDate);
+</script>
