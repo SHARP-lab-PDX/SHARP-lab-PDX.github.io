@@ -10,9 +10,13 @@ studies:
   - title: Photosensitivity and Pain Study
     url: https://octri.ohsu.edu/redcap/surveys/?s=FEKE8YHPHN
     button-text: Inquire about this study
-    image: /images/research_studies/photosensitivity-study_flyer.jpeg
+    image: /images/research_studies/chronic-pain_va-recriutment.jpg
   - title: REM Sleep Behavior Disorder Study
     url: https://www.naps-rbd.org/
     button-text: Find out more at NAPS
     image: /images/logo.png
     addinfo: Or send an email to **[naps@ohsu.edu](mailto:naps@ohsu.edu)**
+  - button-text: Study info coming soon!
+    image: /images/research_studies/glimpse-pd.jpg
+    title: Brain MRI Study
+    url: https://www.sharplabpdx.com/join-a-study
