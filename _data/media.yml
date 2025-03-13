@@ -1,5 +1,6 @@
 media:
   - month: January
+    button-text: Listen
     featured: true
     url: https://p.ftur.io/kxl/2195
     headline: SHARP Directors, Miranda Lim and Jon Elliott, **discuss a new study**
@@ -14,6 +15,7 @@ media:
       SHARP Directors, Miranda Lim and Jon Elliott, discuss a new study on the connection between REM Sleep Behavior Disorder and Parkinson's Disease.
     year: "2025"
   - month: January
+    button-text: Read the Story
     featured: true
     url: https://www.educationandcareernews.com/careers-in-healthcare/bridging-science-and-patient-care-insights-from-a-physician-scientist/
     headline: "Bridging Science and Patient Care: Insights from a Physician-Scientist"
@@ -25,6 +27,7 @@ media:
       A physician-scientist student and his mentor, Dr. Miranda Lim, discuss the challenges of running a research lab while delivering uncompromising patient care.
     year: "2025"
   - month: January
+    button-text: Read the Story
     featured: true
     url: https://www.kgw.com/article/news/health/ohsu-study-possible-link-ptsd-sleep-issues-parkinsons-disease/283-ce23e529-987c-45cd-93e1-8664ba9747c2
     headline: KGW features new SHARP study examining the potential link between
@@ -38,6 +41,7 @@ media:
       Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
     year: "2025"
   - month: January
+    button-text: Read the Story
     featured: true
     url: https://news.ohsu.edu/2025/01/21/accolades-awards-honors-and-appointments-january#MirandaLim
     headline: SHARP Director, Miranda Lim, wins US PECASE Award
