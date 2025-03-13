@@ -10,6 +10,19 @@ media:
       
       A physician-scientist student and his mentor, Dr. Miranda Lim, discuss the challenges of running a research lab while delivering uncompromising patient care.
     year: "2025"
+  - month: January
+    featured: true
+    url: https://www.kgw.com/article/news/health/ohsu-study-possible-link-ptsd-sleep-issues-parkinsons-disease/283-ce23e529-987c-45cd-93e1-8664ba9747c2
+    headline: KGW features new SHARP study examining the potential link between
+      PTSD, sleep issues and Parkinson's disease
+    title: New OHSU study examines potential link between PTSD, sleep issues and
+      Parkinson's disease
+    type: article
+    source: KGW
+    description: >-
+      
+      Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
+    year: "2025"
   - month: June
     button-text: Read the story
     featured: true
@@ -235,16 +248,3 @@ media:
     source: Nature News
     description: null
     year: "2004"
-  - month: January
-    featured: true
-    url: https://www.kgw.com/article/news/health/ohsu-study-possible-link-ptsd-sleep-issues-parkinsons-disease/283-ce23e529-987c-45cd-93e1-8664ba9747c2
-    headline: KGW features new SHARP study examining the potential link between
-      PTSD, sleep issues and Parkinson's disease
-    title: New OHSU study examines potential link between PTSD, sleep issues and
-      Parkinson's disease
-    type: article
-    source: KGW
-    description: >-
-      
-      Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
-    year: "2025"
