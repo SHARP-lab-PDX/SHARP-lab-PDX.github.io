@@ -1,4 +1,15 @@
 media:
+  - month: January
+    featured: true
+    url: https://www.educationandcareernews.com/careers-in-healthcare/bridging-science-and-patient-care-insights-from-a-physician-scientist/
+    headline: "Bridging Science and Patient Care: Insights from a Physician-Scientist"
+    title: "Bridging Science and Patient Care: Insights from a Physician-Scientist"
+    type: article
+    source: Education and Career News
+    description: >-
+      
+      A physician-scientist student and his mentor, Dr. Miranda Lim, discuss the challenges of running a research lab while delivering uncompromising patient care.
+    year: "2025"
   - month: June
     button-text: Read the story
     featured: true
@@ -226,12 +237,14 @@ media:
     year: "2004"
   - month: January
     featured: true
-    url: https://www.educationandcareernews.com/careers-in-healthcare/bridging-science-and-patient-care-insights-from-a-physician-scientist/
-    headline: "Bridging Science and Patient Care: Insights from a Physician-Scientist"
-    title: "Bridging Science and Patient Care: Insights from a Physician-Scientist"
+    url: https://www.kgw.com/article/news/health/ohsu-study-possible-link-ptsd-sleep-issues-parkinsons-disease/283-ce23e529-987c-45cd-93e1-8664ba9747c2
+    headline: KGW features new SHARP study examining the potential link between
+      PTSD, sleep issues and Parkinson's disease
+    title: New OHSU study examines potential link between PTSD, sleep issues and
+      Parkinson's disease
     type: article
-    source: Education and Career News
+    source: KGW
     description: >-
       
-      A physician-scientist student and his mentor, Dr. Miranda Lim, discuss the challenges of running a research lab while delivering uncompromising patient care.
+      Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
     year: "2025"
