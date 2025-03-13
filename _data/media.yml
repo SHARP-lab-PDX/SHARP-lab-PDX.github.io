@@ -248,3 +248,18 @@ media:
     source: Nature News
     description: null
     year: "2004"
+  - month: January
+    featured: true
+    url: https://p.ftur.io/kxl/2195
+    headline: SHARP Directors, Miranda Lim and Jon Elliott, **discuss a new study**
+      on the connection between REM Sleep Behavior Disorder and Parkinson's
+      Disease.
+    title: " Deeper Dive: OHSU Study on Connection Between Sleep Disorder and
+      Parkinson's Disease Deeper Dive: OHSU Study on Connection Between Sleep
+      Disorder and Parkinson's Disease"
+    type: podcast
+    source: KXL
+    description: >-
+      
+      SHARP Directors, Miranda Lim and Jon Elliott, discuss a new study on the connection between REM Sleep Behavior Disorder and Parkinson's Disease.
+    year: "2025"
