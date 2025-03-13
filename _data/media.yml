@@ -37,6 +37,19 @@ media:
       
       Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
     year: "2025"
+  - month: January
+    featured: true
+    url: https://news.ohsu.edu/2025/01/21/accolades-awards-honors-and-appointments-january#MirandaLim
+    headline: SHARP Director, Miranda Lim, wins US PECASE Award
+    title: Miranda Lim wins US PECASE Award
+    type: article
+    source: OHSU
+    description: On Jan. 14, President Joe Biden recognized SHARP Director Miranda
+      Lim among recipients of the Presidential Early Career Award for Scientists
+      and Engineers. Dr. Lim is among just 14 early career scientists from the
+      U.S. Department of Veterans Affairs to be recognized, and one of about 400
+      across all federal agencies nationwide.
+    year: "2025"
   - month: June
     button-text: Read the story
     featured: true
@@ -262,16 +275,3 @@ media:
     source: Nature News
     description: null
     year: "2004"
-  - month: January
-    featured: true
-    url: https://news.ohsu.edu/2025/01/21/accolades-awards-honors-and-appointments-january#MirandaLim
-    headline: SHARP Director, Miranda Lim, wins US PECASE Award
-    title: Miranda Lim wins US PECASE Award
-    type: article
-    source: OHSU
-    description: On Jan. 14, President Joe Biden recognized SHARP Director Miranda
-      Lim among recipients of the Presidential Early Career Award for Scientists
-      and Engineers. Dr. Lim is among just 14 early career scientists from the
-      U.S. Department of Veterans Affairs to be recognized, and one of about 400
-      across all federal agencies nationwide.
-    year: "2025"
