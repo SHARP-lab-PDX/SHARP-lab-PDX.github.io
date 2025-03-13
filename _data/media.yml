@@ -1,5 +1,21 @@
 media:
   - month: January
+    button-text: Listen
+    featured: true
+    url: https://p.ftur.io/kxl/2195
+    headline: SHARP Directors, Miranda Lim and Jon Elliott, **discuss a new study**
+      on the connection between REM Sleep Behavior Disorder and Parkinson's
+      Disease.
+    title: " Deeper Dive: OHSU Study on Connection Between Sleep Disorder and
+      Parkinson's Disease"
+    type: podcast
+    source: KXL
+    description: >-
+      
+      SHARP Directors, Miranda Lim and Jon Elliott, discuss a new study on the connection between REM Sleep Behavior Disorder and Parkinson's Disease.
+    year: "2025"
+  - month: January
+    button-text: Read the Story
     featured: true
     url: https://www.educationandcareernews.com/careers-in-healthcare/bridging-science-and-patient-care-insights-from-a-physician-scientist/
     headline: "Bridging Science and Patient Care: Insights from a Physician-Scientist"
@@ -9,6 +25,34 @@ media:
     description: >-
       
       A physician-scientist student and his mentor, Dr. Miranda Lim, discuss the challenges of running a research lab while delivering uncompromising patient care.
+    year: "2025"
+  - month: January
+    button-text: Read the Story
+    featured: true
+    url: https://www.kgw.com/article/news/health/ohsu-study-possible-link-ptsd-sleep-issues-parkinsons-disease/283-ce23e529-987c-45cd-93e1-8664ba9747c2
+    headline: KGW features new SHARP study examining the potential link between
+      PTSD, sleep issues and Parkinson's disease
+    title: New OHSU study examines potential link between PTSD, sleep issues and
+      Parkinson's disease
+    type: article
+    source: KGW
+    description: >-
+      
+      Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
+    year: "2025"
+  - month: January
+    button-text: Read the Story
+    featured: true
+    url: https://news.ohsu.edu/2025/01/21/accolades-awards-honors-and-appointments-january#MirandaLim
+    headline: SHARP Director, Miranda Lim, wins US PECASE Award
+    title: Miranda Lim wins US PECASE Award
+    type: article
+    source: OHSU
+    description: On Jan. 14, President Joe Biden recognized SHARP Director Miranda
+      Lim among recipients of the Presidential Early Career Award for Scientists
+      and Engineers. Dr. Lim is among just 14 early career scientists from the
+      U.S. Department of Veterans Affairs to be recognized, and one of about 400
+      across all federal agencies nationwide.
     year: "2025"
   - month: June
     button-text: Read the story
@@ -235,16 +279,3 @@ media:
     source: Nature News
     description: null
     year: "2004"
-  - month: January
-    featured: true
-    url: https://www.kgw.com/article/news/health/ohsu-study-possible-link-ptsd-sleep-issues-parkinsons-disease/283-ce23e529-987c-45cd-93e1-8664ba9747c2
-    headline: KGW features new SHARP study examining the potential link between
-      PTSD, sleep issues and Parkinson's disease
-    title: New OHSU study examines potential link between PTSD, sleep issues and
-      Parkinson's disease
-    type: article
-    source: KGW
-    description: >-
-      
-      Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
-    year: "2025"
