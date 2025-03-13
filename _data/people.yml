@@ -131,6 +131,18 @@ people:
       fascinated by many aspects of translational science and loves being able
       to contribute to a team and to a greater body of science. Rachel enjoys
       renovating her historic home and going on outings with her teenagers.
+  - photo: /images/people/laura-dovek.jpeg
+    first: Laura
+    last: Dovek
+    displayname: Laura Dovek, PhD
+    role: Post-doctoral Scholar
+    bio: Laura has an undergraduate degree in Psychobiology from the University of
+      California, Los Angeles and a PhD in biomedical sciences from the
+      University of California, Riverside.  She is interested in studying the
+      mechanisms of neurotrauma induced neurodegeneration and searching for
+      targeted approaches to attenuate or stop disease progression. When not in
+      lab, Laura enjoys exploring nearby hiking trails, trying new foods and
+      spending time with friends and family.
   - first: Noah
     last: Milman
     displayname: Noah Milman
@@ -343,15 +355,3 @@ people:
       social behavior and how this relationship can be optimized to improve
       quality of life. Outside of SHARP, Nathan enjoys paddle boarding and
       hiking around Oregon, taking on DIY projects, and watching sports.
-  - photo: /images/people/laura-dovek.jpeg
-    first: Laura
-    last: Dovek
-    displayname: Laura Dovek, PhD
-    role: Post-doctoral Scholar
-    bio: Laura has an undergraduate degree in Psychobiology from the University of
-      California, Los Angeles and a PhD in biomedical sciences from the
-      University of California, Riverside.  She is interested in studying the
-      mechanisms of neurotrauma induced neurodegeneration and searching for
-      targeted approaches to attenuate or stop disease progression. When not in
-      lab, Laura enjoys exploring nearby hiking trails, trying new foods and
-      spending time with friends and family.
