@@ -6,9 +6,9 @@
 
         <ul class="nav flex-column">
           {% for item in site.data.navigation.navlinks %}
-            <li class="nav-item">
-              <a href="{{ item.url }}" class="nav-link">{{item.title }}</a>
-            </li>
+          <li class="nav-item">
+            <a href="{{ item.url }}" class="nav-link">{{item.title }}</a>
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -17,26 +17,33 @@
         <p class="sintony pb-2">Resources</p>
         <ul class="nav flex-column">
           {% for resource in site.data.ext-resources.resource %}
-            <li class="nav-item">
-              <a href="{{ resource.url }}" class="nav-link"
+          <li class="nav-item">
+            <a href="{{ resource.url }}" class="nav-link"
               >{{ resource.title }}</a
             >
-            </li>
+          </li>
           {% endfor %}
         </ul>
       </div>
     </div>
-    <hr/>
-    <div class="footer__copyright text-center pb-4 pt-2">
-      <p class="pt-1" style="font-size: 0.8em">
+    <hr />
+    <div
+      class="footer__copyright text-center pb-4 pt-2"
+      style="font-size: 0.9rem"
+    >
+      <p>
+        Copyright &copy <span id="copyrightYear"></span> Sleep &amp; Health
+        Applied Research Program. All rights reserved.
+      </p>
+      <p>
+        These contents do not represent the views of the US Department of
+        Veterans Affairs or the United States Government.
+      </p>
+      <p class="pt-1">
         Website created by
         <a href=" http://www.samifriedrich.com" class="byline"
           >Sami Friedrich</a
         >
-      </p>
-      <p style="font-size: 0.8em">
-        Copyright &copy <span id="copyrightYear"></span> Sleep &amp; Health Applied Research Program. All rights
-        reserved.
       </p>
     </div>
   </footer>
@@ -46,7 +53,6 @@
     return date.getFullYear();
   }
   const newDate = new Date();
-  document
-    .querySelector("#copyrightYear")
-    .textContent = getCopyrightYear(newDate);
+  document.querySelector("#copyrightYear").textContent =
+    getCopyrightYear(newDate);
 </script>

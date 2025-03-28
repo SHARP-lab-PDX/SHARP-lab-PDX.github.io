@@ -55,9 +55,11 @@ studying how sleep affects the brain in health and disease."
 
         <div class="row" id="Directors">
           <div class="col-6">
+            {% assign miranda = site.data.people.people | where : "nameid",
+            "mlim" | first %}
             <img
               class="img-fluid rounded shadow"
-              src="/images/people/miranda-lim.jpeg"
+              src="{{ miranda.photo }}"
               alt="Headshot of Dr. Miranda Lim"
             />
             <h5 class="pt-3 fw400">Dr. Miranda M. Lim, MD, PhD</h5>
@@ -71,9 +73,11 @@ studying how sleep affects the brain in health and disease."
           </div>
 
           <div class="col-6">
+            {% assign jon = site.data.people.people | where : "nameid",
+            "jelliott" | first %}
             <img
               class="img-fluid rounded shadow"
-              src="/images/people/jonathan-elliott.jpeg"
+              src="{{ jon.photo }}"
               alt="Headshot of Dr. Jonathan Elliot"
             />
             <h5 class="pt-3 fw400">Dr. Jonathan Elliott, PhD</h5>
@@ -180,7 +184,7 @@ studying how sleep affects the brain in health and disease."
 
 <!-- Card links -->
 <section>
-  <div class="container h-100 light-theme">
+  <div class="container h-100 light-theme rounded">
     <div class="row align-items-center justify-content-around no-margin">
       <div class="col-6 col-lg-3 mx-auto py-3">
         <div class="card mycard border-0">
@@ -207,7 +211,7 @@ studying how sleep affects the brain in health and disease."
         <div class="card mycard border-0 rounded">
           <img
             class="card-img-top img-fluid rounded shadow img-border-light"
-            src="/images/group-photo-2022-edit-400px.jpg"
+            src="/images/2024_Summer_400w.jpg"
             alt="Group photo of SHARP researchers in the lab"
           />
           <div
@@ -234,7 +238,7 @@ studying how sleep affects the brain in health and disease."
           class="carousel slide h-100"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner rounded-end">
             {% assign features = site.data.media.media | where : "featured",
             true %} {% for feature in features %} {% if forloop.first == true %}
             <div class="carousel-item active">
