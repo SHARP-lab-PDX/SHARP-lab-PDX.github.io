@@ -54,14 +54,14 @@ studying how sleep affects the brain in health and disease."
         <hr class="pb-4 blueish-black" />
 
         <div class="row" id="Directors">
+          <img
+            class="img-fluid"
+            src="/images/Miranda-and-Jon_1000w.jpg"
+            alt="Miranda Lim and Jonathan Elliot standing smiling in a sunny hall"
+          />
           <div class="col-6">
             {% assign miranda = site.data.people.people | where : "nameid",
             "mlim" | first %}
-            <img
-              class="img-fluid rounded shadow"
-              src="{{ miranda.photo }}"
-              alt="Headshot of Dr. Miranda Lim"
-            />
             <h5 class="pt-3 fw400">Dr. Miranda M. Lim, MD, PhD</h5>
             <a
               href="#LimBio"
@@ -75,11 +75,6 @@ studying how sleep affects the brain in health and disease."
           <div class="col-6">
             {% assign jon = site.data.people.people | where : "nameid",
             "jelliott" | first %}
-            <img
-              class="img-fluid rounded shadow"
-              src="{{ jon.photo }}"
-              alt="Headshot of Dr. Jonathan Elliot"
-            />
             <h5 class="pt-3 fw400">Dr. Jonathan Elliott, PhD</h5>
             <a
               href="#ElliottBio"

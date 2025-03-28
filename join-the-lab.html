@@ -8,13 +8,12 @@ description: "Find out about sleep research job openings, internships, and gradu
 {% assign data = site.data.join-the-lab-text %}
 
 <div
-    class="jumbotron"
-    style="
-      background-image: url(images/lab-discusses-data.jpeg);
-      background-position: 65% 25%;
-      height: 50vh;
-    "
-  >
+  class="jumbotron jumbo-photo"
+  style="
+    background-image: url(images/lab-discusses-data.jpeg);
+    background-position: 65% 25%;
+  "
+>
   <div class="container text-white jumbo-title" style="padding-top: 14rem">
     <h1 class="display-2 sintony"></h1>
   </div>
@@ -34,9 +33,10 @@ description: "Find out about sleep research job openings, internships, and gradu
 
       <div class="col-12 pb-5 mx-auto">
         <img
-            src="/images/sharp-lab-group-photo.jpg"
-            class="img-fluid img-border--offset-left"
-            alt="SHARP lab members smiling in a meeting room"/>
+          src="/images/sharp-lab-group-photo.jpg"
+          class="img-fluid img-border--offset-left"
+          alt="SHARP lab members smiling in a meeting room"
+        />
       </div>
 
       <div class="row d-flex justify-content-between">
@@ -48,9 +48,11 @@ description: "Find out about sleep research job openings, internships, and gradu
           <img
             src="/images/sharp-researchers-smiling-in-front-of-lab-equipment.jpg"
             class="img-fluid img-border--offset"
-            alt="SHARP researchers smiling in front of lab equipment"/>
-          <div class="fs-6 pt-2 justify-right italic">Photo by Fritz Liedtke</div>
-
+            alt="SHARP researchers smiling in front of lab equipment"
+          />
+          <div class="fs-6 pt-2 justify-right italic">
+            Photo by Fritz Liedtke
+          </div>
         </div>
 
         <div class="col">
@@ -107,8 +109,8 @@ description: "Find out about sleep research job openings, internships, and gradu
       </h1>
       <div class="col">
         {% for item in site.data.lab-faq.faq %}
-          <div class="bold">{{ item.question | markdownify }}</div>
-          <div class="ms-3">{{ item.answer | markdownify }}</div>
+        <div class="bold">{{ item.question | markdownify }}</div>
+        <div class="ms-3">{{ item.answer | markdownify }}</div>
         {% endfor %}
       </div>
     </div>
