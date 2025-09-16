@@ -1,4 +1,8 @@
 studies:
+  - button-text: Consent and screening survey
+    image: /images/research_studies/naps2-control-flyer_ohsu_v2_oct2024.png
+    title: Need Healthy Volunteers for Sleep Study
+    url: "https://redcap.wustl.edu/redcap/surveys/?s=97JPWRL8787WDMXK "
   - title: Sleep & Wellness Study
     url: https://octri.ohsu.edu/redcap/surveys/?s=EDAKYRNTF4
     button-text: Inquire about this study
@@ -20,7 +24,3 @@ studies:
     image: /images/research_studies/glimpse-pd.jpg
     title: Brain MRI Study
     url: https://www.sharplabpdx.com/join-a-study
-  - button-text: Consent and screening survey
-    image: /images/research_studies/naps2-control-flyer_ohsu_v2_oct2024.png
-    title: Need Healthy Volunteers for Sleep Study
-    url: "https://redcap.wustl.edu/redcap/surveys/?s=97JPWRL8787WDMXK "
