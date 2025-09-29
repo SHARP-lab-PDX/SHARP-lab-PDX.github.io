@@ -1,4 +1,21 @@
 media:
+  - featured: false
+    url: https://news.ohsu.edu/2025/09/29/alzheimers-disease-research-center-at-ohsu-earns-22-8-million-renewal
+    title: Alzheimer's Disease Research Center at OHSU earns $22.8 million renewal
+    type: article
+    button-text: ""
+    year: "2025"
+    month: September
+    source: OHSU
+  - month: December
+    button-text: Read
+    featured: true
+    url: https://ohsufoundation.org/stories/lim-ignite/
+    headline: Unlocking brain health through better sleep
+    title: Unlocking brain health through better sleep
+    type: article
+    source: Ignite Magazine
+    year: "2024"
   - month: January
     button-text: Listen
     featured: true
@@ -267,7 +284,8 @@ media:
     title: Sleep Loss Linked to Increase in Alzheimer's Plaques
     type: article
     source: Sleep Review Magazine
-    description: null
+    description: Miranda Lim discusses SHARP's research on sleep and the brain with
+      Ignite Magazine.
     year: "2009"
   - month: June
     button-text: null
