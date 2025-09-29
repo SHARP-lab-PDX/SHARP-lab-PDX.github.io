@@ -288,3 +288,11 @@ media:
     source: Nature News
     description: null
     year: "2004"
+  - featured: false
+    url: https://news.ohsu.edu/2025/09/29/alzheimers-disease-research-center-at-ohsu-earns-22-8-million-renewal
+    title: Alzheimer's Disease Research Center at OHSU earns $22.8 million renewal
+    type: article
+    button-text: ""
+    year: "2025"
+    month: September
+    source: OHSU
