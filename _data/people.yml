@@ -1,7 +1,7 @@
 people:
   - nameid: mlim
     bio: >-
-      Associate Professor | Department of Neurology\
+      Professor | Department of Neurology\
 
       Co-Director | Oregon Alzheimer's Disease Research Center (OADRC)\
 
@@ -13,7 +13,6 @@ people:
       Associate Director of Research and Co-Associate Director of Education (MIRT) | VA VISN20 Northwest Mental Illness Research Education Clinical Center (MIRECC)\
 
       **VA Portland Health Care System**
-
 
 
       Dr. Lim earned a combined MD/PhD degree from Emory University in Atlanta in 2006 and completed a neurology residency at Washington University in Saint Louis in 2010. She then completed fellowship training in Sleep Medicine at the University of Pennsylvania. Notable scientific contributions include understanding mechanisms of social behavior in the monogamous prairie vole *(Lim et al., Nature, 2004; Jones et al., Science Advances, 2019)*, defining the role of sleep in the pathogenesis of Alzheimer's disease *(Kang, Lim et al., Science, 2009)*, traumatic brain injury *(Lim et al., Science Translational Medicine, 2013)*, and Parkinson's and related disorders *(Elliott, Lim et al., Annals of Clinical and Translational Neurology, 2023)*.
@@ -59,8 +58,7 @@ people:
     photo: /images/people/jonathan-elliott.jpeg
     role: Co-Director
     last: Elliott
-  - bio:
-      Carolyn Tinsley (formerly Jones) oversees preclinical research within SHARP
+  - bio: Carolyn Tinsley (formerly Jones) oversees preclinical research within SHARP
       as well as logistics and operations of SHARP as a whole. Dr. Tinsley has
       undergraduate degrees in Biomedical Engineering and Psychology from Duke
       University, a PhD in Behavioral Neuroscience from the University of Texas
@@ -108,8 +106,7 @@ people:
     pronouns: null
     role: Research Associate
     photo: /images/people/peyton.jpg
-    bio:
-      "Peyton Wickham (Née: Teutsch) has an undergraduate degree in Biochemistry
+    bio: "Peyton Wickham (Née: Teutsch) has an undergraduate degree in Biochemistry
       from the University of Portland, and has been with SHARP since graduating
       in 2016. Since joining the lab her roles have evolved, but the core of her
       time has been in pursuit of better understanding the relationship between
@@ -138,8 +135,7 @@ people:
     last: Dovek
     displayname: Laura Dovek, PhD
     role: Post-doctoral Scholar
-    bio:
-      Laura has an undergraduate degree in Psychobiology from the University of
+    bio: Laura has an undergraduate degree in Psychobiology from the University of
       California, Los Angeles and a PhD in biomedical sciences from the
       University of California, Riverside.  She is interested in studying the
       mechanisms of neurotrauma induced neurodegeneration and searching for
@@ -182,8 +178,7 @@ people:
     pronouns: null
     role: Clinical Research Coordinator
     photo: /images/people/Cosette-Olivo.jpeg
-    bio:
-      Cosette graduated in 2008 from Columbia University with a BA in Biology and
+    bio: Cosette graduated in 2008 from Columbia University with a BA in Biology and
       Psychology. Her work in clinical research began as a student at Columbia
       University, when she started working for the Mothers and Newborns Study at
       the Mailman School of Public Health. After graduating, she continued
@@ -221,8 +216,7 @@ people:
     last: Locke
     displayname: Jessica Locke
     role: Sr. Clinical Research Associate
-    bio:
-      Jessica Locke, PhD, APRN, FNP-BC, earned her PhD in Neuroscience from the
+    bio: Jessica Locke, PhD, APRN, FNP-BC, earned her PhD in Neuroscience from the
       University of Florida (UF) in 2005, studying the effects of aging on
       microglial activation. She then went on to become a clinician, earning an
       MSN from UF in 2007. For over 15 years Dr. Locke practiced as a
@@ -256,8 +250,7 @@ people:
     pronouns: she/hers
     role: Research Assistant II
     photo: /images/people/Kayla-McDaniel.jpeg
-    bio:
-      Kayla has an educational background in Psychology and received her BS in
+    bio: Kayla has an educational background in Psychology and received her BS in
       June of 2023. She graduated as a first-generation student and aims to
       pursue graduate school in the future. Kayla has been a member of the SHARP
       lab since June, 2022 and has prior experience working in trauma-informed
@@ -307,8 +300,7 @@ people:
     pronouns: null
     role: Research Assisstant
     photo: /images/people/Savanah-Sicard.jpg
-    bio:
-      Savanah graduated with a BS in psychology, along with minors in biology and
+    bio: Savanah graduated with a BS in psychology, along with minors in biology and
       neuroscience, from Portland State University in 2023. As an undergraduate,
       she discovered her love for sleep science, specifically the psychological
       and physiological impacts of REM stage sleep, and wrote two research
@@ -354,8 +346,7 @@ people:
     last: McGuire
     displayname: Nathan McGuire
     role: Research Assistant 2
-    bio:
-      Nathan graduated from the University of Oregon in 2023 with a BS in human
+    bio: Nathan graduated from the University of Oregon in 2023 with a BS in human
       physiology and minors in chemistry and biology. He joined the SHARP lab in
       June of 2023 with plans to pursue graduate school in the future. This is
       his first experience in a research lab and is excited to help gain a
