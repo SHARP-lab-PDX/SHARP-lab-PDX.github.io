@@ -1,4 +1,13 @@
 media:
+  - month: December
+    button-text: Read
+    featured: true
+    url: https://ohsufoundation.org/stories/lim-ignite/
+    headline: Unlocking brain health through better sleep
+    title: Unlocking brain health through better sleep
+    type: article
+    source: Ignite Magazine
+    year: "2024"
   - month: January
     button-text: Listen
     featured: true
@@ -279,12 +288,3 @@ media:
     source: Nature News
     description: null
     year: "2004"
-  - month: December
-    button-text: Read
-    featured: true
-    url: https://ohsufoundation.org/stories/lim-ignite/
-    headline: Unlocking brain health through better sleep
-    title: Unlocking brain health through better sleep
-    type: article
-    source: Ignite Magazine
-    year: "2024"
