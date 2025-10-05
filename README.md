@@ -2,11 +2,11 @@
 
 Last dev update: Oct 5, 2025
 
-Domain: www.sharplabpdx.com
-Site generator: Jekyll 4.3
-CMS: Decap 3.0
-Deployed with: Netlify
-Package list: Gemfile
+Domain: www.sharplabpdx.com \
+Site generator: Jekyll 4.3 \
+CMS: Decap 3.0 \
+Deployed with: Netlify \
+Package list: Gemfile \
 
 ## Installing the project
 
@@ -14,7 +14,7 @@ Package list: Gemfile
 
 ## Running the dev server
 
-`jekyll serve`
+`jekyll serve` \
 Local server: http://127.0.0.1:4000/
 
 ## Build testing
@@ -29,6 +29,6 @@ Local server: http://127.0.0.1:4000/
 
 ## Fonts
 
-Source Sans 3 (variable)
-Sintony (regular)
-Fjalla (regular)
+Source Sans 3 (variable) \
+Sintony (regular) \
+Fjalla (regular) \
