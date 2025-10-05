@@ -3,6 +3,18 @@
   font-weight: 200 900;
   src: url("../fonts/SourceSans3-VariableFont_wght.woff2"), format("woff2");
 }
+@font-face {
+  font-family: "Sintony";
+  font-weight: 400;
+  font-weight: normal;
+  src: url("../fonts/Sintony-Regular.ttf"), format("ttf");
+}
+
+@font-face {
+  font-family: "Fjalla One";
+  font-weight: 700;
+  src: url("../fonts/FjallaOne-Regular.woff2"), format("woff2");
+}
 
 :root {
   --clr-primary-900: hsl(203, 67%, 7%);
@@ -348,7 +360,6 @@ strong {
   max-height: clamp(2rem, 2rem + 3vw, 7rem);
   display: inline-block;
   position: relative;
-  padding: 0 10px;
   top: -5px;
 }
 
