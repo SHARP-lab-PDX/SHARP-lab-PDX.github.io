@@ -227,23 +227,6 @@ people:
       stress, and neurodegenerative diseases. In her spare time, she enjoys
       ultrarunning, hiking, getting lost in the woods, barre, yoga, traveling
       with her family, and concerts.
-  - first: Arlynn
-    last: Ekis
-    displayname: Arlynn Ekis
-    pronouns: null
-    role: Study Coordinator
-    photo: /images/people/Arlynn-Ekis.jpeg
-    bio: Arlynn has been a SHARP member since August 2022. They have a BS in
-      psychology and are currently in school pursuing their MHA. Arlynn has 3
-      years of crisis-work experience and is skilled in collaborative problem
-      solving, informational interviewing, and trauma-informed-care. Throughout
-      their professional experience, Arlynn has found a passion for connecting
-      with people, allowing them to feel heard, and ensuring they get the best
-      possible individualized care. Prior to working in research and mental
-      health, not only was Arlynn a competitive dance coach for children ages
-      4-17, but was a competitive dancer themselves! Arlynn enjoys dance
-      sessions of free movement, camping, trying new restaurants, and playing
-      with their Aussie in the river.
   - first: Kayla
     last: McDaniel
     displayname: Kayla McDaniel
@@ -281,19 +264,6 @@ people:
       based on their health. Outside of the lab, Jessica enjoys reading, going
       to concerts and exploring the Pacific Northwest with her friends and
       family.
-  - first: Isabella
-    last: Montano
-    displayname: Isabella Montano
-    pronouns: she/hers
-    role: Research Assistant
-    photo: /images/people/Isabella-Montano.jpeg
-    bio: Isabella is a neuroscience major undergraduate student at Reed College
-      interested in attending an MD/PhD program after graduating. She is
-      interested in neurodegenerative diseases as a whole but especially
-      Parkinson's Diseases and Alzheimer's Disease. Additionally, Isabella has
-      an interest in the use of EEG in various settings. Outside of the lab,
-      Isabella enjoys going on hikes and runs in the beautiful nature that
-      Portland has to offer.
   - first: Savanah
     last: Sicard
     displayname: Savanah Sicard
@@ -314,27 +284,6 @@ people:
       Savanah is an avid patron of the public library, gets lost in the woods
       about once a month, and enjoys crafting decorations out of scavenged
       materials.
-  - first: Leland
-    last: Bates
-    displayname: Leland Bates
-    pronouns: null
-    role: Research Assisstant
-    photo: /images/profile-placeholder.png
-  - first: Lorenzo
-    last: Nungaray
-    displayname: Lorenzo Nungaray
-    pronouns: null
-    role: Research Technician
-    photo: /images/people/lorenzo.jpg
-    bio: Lorenzo graduated from Portland State University in 2023 with a BS in
-      Biology. He joined the SHARP lab in June of 2023 as an intern through the
-      Portland VA Research Foundation and plans to continue with his education
-      in hopes of attending a graduate program in neuroscience. Afterward, he
-      plans to continue with research with an interest in neurodegenerative
-      diseases, cognition, memory, and learning. Outside of the lab, Lorenzo
-      likes to explore different parts of the Portland area seeing all that the
-      city has to offer including scenery, restaurants, and various outdoor
-      activities.
   - first: Jasmine
     last: Loeung
     displayname: Jasmine Loeung
@@ -354,3 +303,14 @@ people:
       social behavior and how this relationship can be optimized to improve
       quality of life. Outside of SHARP, Nathan enjoys paddle boarding and
       hiking around Oregon, taking on DIY projects, and watching sports.
+  - photo: /images/people/mirely-avila-avila.jpg
+    first: Mirely
+    last: Avila-Avila
+    displayname: Mirely Avila-Avila
+    role: Research Assistant
+    bio: >-
+      Mirely graduated from Portland State University with a Bachelor of Science
+      degree in Biology and Science in 2025. Her interests include sleep
+      physiology, the effects of Post-traumatic stress disorder on
+
+      sleep, REM stages and dream patterns. She is a first-generation student and aims to enroll in a graduate program. Outside of the lab, Mirely enjoys reading, film watching, recreational activities and spending time with her family.
