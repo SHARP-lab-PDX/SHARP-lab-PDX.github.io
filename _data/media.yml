@@ -1,4 +1,12 @@
 media:
+  - featured: true
+    title: New OHSU research examining bright light therapy and brain health
+    type: article
+    month: November
+    year: "2025"
+    url: https://news.ohsu.edu/2025/11/14/ohsu-research-will-examine-effect-of-bright-light-therapy-on-brain-health
+    source: OHSU
+    button-text: Read
   - featured: false
     url: https://news.ohsu.edu/2025/09/29/alzheimers-disease-research-center-at-ohsu-earns-22-8-million-renewal
     title: Alzheimer's Disease Research Center at OHSU earns $22.8 million renewal
@@ -57,14 +65,6 @@ media:
       
       Veterans diagnosed with post-traumatic stress disorder may experience thrashing sleep, which can lead to more extensive health issues.
     year: "2025"
-  - featured: true
-    title: New OHSU research examining bright light therapy and brain health
-    type: article
-    month: November
-    year: "2025"
-    url: https://news.ohsu.edu/2025/11/14/ohsu-research-will-examine-effect-of-bright-light-therapy-on-brain-health
-    source: OHSU
-    button-text: Read
   - month: January
     button-text: Read the Story
     featured: true
@@ -307,3 +307,19 @@ media:
       GLIMPSE-LION study to see if bright-light therapy improves brain function
       to reduce neurodegenerative risk.
     year: "2004"
+  - month: November
+    featured: true
+    url: https://www.nytimes.com/2025/11/24/well/mind/sleep-apnea-parkinsons-disease.html
+    headline: SHARP study reveals that untreated sleep apnea increases the risk of
+      later Parkinson's Disease, New York Times reports.
+    title: "SHARP Featured in The New York Times: Sleep apnea linked to Parkinson's
+      Disease"
+    type: article
+    source: New York Times
+    description: "SHARP collaborators Gregory Scott, MD and Lee Neilson, MD featured
+      in New York Times for recent publication in *[JAMA
+      Neurology](https://jamanetwork.com/journals/jamaneurology/article-abstrac\
+      t/2841763)* linking obstructive sleep apnea (OSA) with Parkinson's
+      Disease. Co-authors include SHARP researchers: Isabella Montano, Savanah
+      Sicard, Jonathan Elliott, and Miranda Lim."
+    year: "2025"
