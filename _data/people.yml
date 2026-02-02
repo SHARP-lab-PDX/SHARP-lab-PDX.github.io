@@ -172,6 +172,16 @@ people:
       organization Bikes Not Bombs in Boston, MA, as a teacher for a community
       bike repair course. One day, he hopes to be a Professor at a primarily
       undergraduate institution. "
+  - photo: /images/people/hannah.jpg
+    first: Hannah
+    last: Cunningham
+    displayname: Hannah Cunningham, MS
+    role: PhD Graduate Student
+    bio: >-
+      Hannah earned her BS in Biomedical Engineering and MS in Kinesiology from
+      Michigan Technological
+
+      University in 2018 and 2020, respectively. As both an undergraduate and graduate researcher, she worked with Dr. Jason Carter, contributing to studies on the neural control of the cardiovascular system and the impact of sleep on cardiovascular disease in humans. After completing her MS, Hannah served as a Clinical Research Associate at Stanford University, where she coordinated pragmatic clinical trials and biomarker studies related to chronic pain. In fall 2023, she joined the Behavioral Neuroscience department at OHSU, beginning her work in the Lim Lab. Her research interests focus on understanding healthy aging and early indicators of neurodegenerative diseases such as Alzheimer's and Parkinson’s. Outside the lab, Hannah enjoys spending time at her local theater, attending science lectures, and experimenting with new recipes.
   - first: Cosette
     last: Olivo
     displayname: Cosette Olivo
@@ -314,13 +324,3 @@ people:
       physiology, the effects of Post-traumatic stress disorder on
 
       sleep, REM stages and dream patterns. She is a first-generation student and aims to enroll in a graduate program. Outside of the lab, Mirely enjoys reading, film watching, recreational activities and spending time with her family.
-  - photo: /images/people/hannah.jpg
-    first: Hannah
-    last: Cunningham
-    displayname: Hannah Cunningham, MS
-    role: PhD Graduate Student
-    bio: >-
-      Hannah earned her BS in Biomedical Engineering and MS in Kinesiology from
-      Michigan Technological
-
-      University in 2018 and 2020, respectively. As both an undergraduate and graduate researcher, she worked with Dr. Jason Carter, contributing to studies on the neural control of the cardiovascular system and the impact of sleep on cardiovascular disease in humans. After completing her MS, Hannah served as a Clinical Research Associate at Stanford University, where she coordinated pragmatic clinical trials and biomarker studies related to chronic pain. In fall 2023, she joined the Behavioral Neuroscience department at OHSU, beginning her work in the Lim Lab. Her research interests focus on understanding healthy aging and early indicators of neurodegenerative diseases such as Alzheimer's and Parkinson’s. Outside the lab, Hannah enjoys spending time at her local theater, attending science lectures, and experimenting with new recipes.
