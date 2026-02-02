@@ -159,3 +159,15 @@ publications:
       single gene within a single brain region.
     doi: https://doi.org/10.1038/nature02539
     image: /images/publications/Lim-2004-Nature-fig1+3.jpeg
+  - image: /images/logo.png
+    title: Obstructive Sleep Apnea, Positive Airway Pressure, and Implications of
+      Early Treatment in Parkinson Disease
+    citation: >-
+      
+      Neilson LE, **Montaño I**, May JL, **Sicard S**, Cho Y, Iliff JJ, **Elliott JE, Lim MM**, Scott GD. Obstructive Sleep Apnea, Positive Airway Pressure, and Implications of Early Treatment in Parkinson Disease. *JAMA Neurol.* 2026;83(1):68–75. doi:10.1001/jamaneurol.2025.4691
+    summary: In this electronic health record–based cohort study of more than 11
+      million veterans with mean (SD) of 4.9 (1.8) years of follow-up, OSA was
+      associated with incident PD, even after adjusting for competing risk of
+      death, age, body mass index, and comorbidity burden. This risk was
+      attenuated by OSA treatment with positive airway pressure.
+    doi: https://jamanetwork.com/journals/jamaneurology/article-abstract/2841763
