@@ -1,4 +1,16 @@
 media:
+  - month: December
+    button-text: Listen
+    featured: true
+    url: https://www.opb.org/article/2025/12/09/think-out-loud-ohsu-sleep-researchers-grant-bright-light-therapy/
+    headline: SHARP Co-Director Jonathan Elliott featured on OPB discussing new DoD
+      study for bright light therapy
+    title: Jon Elliott featured on OPB discussing new DoD study
+    type: podcast
+    source: OPB
+    description: SHARP Co-Director Jonathan Elliott featured on OPB discussing new
+      DoD study for bright light therapy
+    year: "2025"
   - month: November
     featured: true
     url: https://www.nytimes.com/2025/11/24/well/mind/sleep-apnea-parkinsons-disease.html
@@ -323,15 +335,3 @@ media:
       GLIMPSE-LION study to see if bright-light therapy improves brain function
       to reduce neurodegenerative risk.
     year: "2004"
-  - month: December
-    button-text: Listen
-    featured: true
-    url: https://www.opb.org/article/2025/12/09/think-out-loud-ohsu-sleep-researchers-grant-bright-light-therapy/
-    headline: SHARP Co-Director Jonathan Elliott featured on OPB discussing new DoD
-      study for bright light therapy
-    title: Jon Elliott featured on OPB discussing new DoD study
-    type: podcast
-    source: OPB
-    description: SHARP Co-Director Jonathan Elliott featured on OPB discussing new
-      DoD study for bright light therapy
-    year: "2025"
