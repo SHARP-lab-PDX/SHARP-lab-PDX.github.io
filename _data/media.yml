@@ -1,4 +1,20 @@
 media:
+  - month: November
+    featured: true
+    url: https://www.nytimes.com/2025/11/24/well/mind/sleep-apnea-parkinsons-disease.html
+    headline: SHARP study reveals that untreated sleep apnea increases the risk of
+      later Parkinson's Disease, New York Times reports.
+    title: "SHARP Featured in The New York Times: Sleep apnea linked to Parkinson's
+      Disease"
+    type: article
+    source: New York Times
+    description: "SHARP collaborators Gregory Scott, MD and Lee Neilson, MD featured
+      in New York Times for recent publication in *[JAMA
+      Neurology](https://jamanetwork.com/journals/jamaneurology/article-abstrac\
+      t/2841763)* linking obstructive sleep apnea (OSA) with Parkinson's
+      Disease. Co-authors include SHARP researchers: Isabella Montano, Savanah
+      Sicard, Jonathan Elliott, and Miranda Lim."
+    year: "2025"
   - featured: true
     title: New OHSU research examining bright light therapy and brain health
     type: article
@@ -307,19 +323,15 @@ media:
       GLIMPSE-LION study to see if bright-light therapy improves brain function
       to reduce neurodegenerative risk.
     year: "2004"
-  - month: November
+  - month: December
+    button-text: Listen
     featured: true
-    url: https://www.nytimes.com/2025/11/24/well/mind/sleep-apnea-parkinsons-disease.html
-    headline: SHARP study reveals that untreated sleep apnea increases the risk of
-      later Parkinson's Disease, New York Times reports.
-    title: "SHARP Featured in The New York Times: Sleep apnea linked to Parkinson's
-      Disease"
-    type: article
-    source: New York Times
-    description: "SHARP collaborators Gregory Scott, MD and Lee Neilson, MD featured
-      in New York Times for recent publication in *[JAMA
-      Neurology](https://jamanetwork.com/journals/jamaneurology/article-abstrac\
-      t/2841763)* linking obstructive sleep apnea (OSA) with Parkinson's
-      Disease. Co-authors include SHARP researchers: Isabella Montano, Savanah
-      Sicard, Jonathan Elliott, and Miranda Lim."
+    url: https://www.opb.org/article/2025/12/09/think-out-loud-ohsu-sleep-researchers-grant-bright-light-therapy/
+    headline: SHARP Co-Director Jonathan Elliott featured on OPB discussing new DoD
+      study for bright light therapy
+    title: Jon Elliott featured on OPB discussing new DoD study
+    type: podcast
+    source: OPB
+    description: SHARP Co-Director Jonathan Elliott featured on OPB discussing new
+      DoD study for bright light therapy
     year: "2025"
