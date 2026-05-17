@@ -523,6 +523,10 @@ strong {
   background-color: hsl(176, 42%, 85%);
 }
 
+.people-card .text-center > p {
+  margin: 0;
+}
+
 .people-card .card-title {
   background-color: transparent;
 }

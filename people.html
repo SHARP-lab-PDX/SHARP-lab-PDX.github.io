@@ -83,7 +83,7 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
             alt="Headshot of {{ person.first }} {{ person.last }}">
             <div class="card-body">
               <div class="text-center">
-                <p class="fs-4">{{ person.displayname }}</p>
+                <p class="fs-4 sintony">{{ person.displayname }}</p>
                 <p class="fs-5">
                   {% if person.pronouns %}
                     {{ person.pronouns }}
@@ -91,7 +91,7 @@ co-directors Dr. Miranda Lim and Dr. Jonathan Elliott."
                 &#9900
                 {% endif %}
                 </p>
-                <p>{{ person.role }}</p>
+                <p class="fs-4" style="font-weight: 500;">{{ person.role }}</p>
               </div>
               <!-- Bio -->
               {% if person.bio %}
