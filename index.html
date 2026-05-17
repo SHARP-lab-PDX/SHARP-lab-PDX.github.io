@@ -40,7 +40,7 @@ studying how sleep affects the brain in health and disease."
 <section class="container" id="Welcome">
   <div class="container-fluid">
     <div class="row d-flex align-items-center justify-content-between g-4">
-      <div class="col-12 col-lg-7 pt-4 pe-lg-5">
+      <div class="col-12 col-lg-6 pt-4 pe-lg-5">
         <p class="display-3 sintony text-shadow">{{ home.heading }}</p>
 
         <div class="about-text">
@@ -49,7 +49,7 @@ studying how sleep affects the brain in health and disease."
       </div>
 
       <div
-        class="light-theme col-12 col-lg-5 p-4 text-center img-border--offset"
+        class="light-theme col-12 col-lg-6 p-4 text-center img-border--offset"
       >
         <h3 class="sintony display-6 pt-2">SHARP Directors</h3>
 
@@ -58,13 +58,25 @@ studying how sleep affects the brain in health and disease."
         <div class="row" id="Directors">
           <img
             class="img-fluid"
-            src="/images/Miranda-and-Jon_1000w.jpg"
+            src="/images/SHARP CoDirectors 2026_1000w.jpg"
             alt="Miranda Lim and Jonathan Elliot standing smiling in a sunny hall"
           />
-          <div class="col-6">
+          <div class="col-4">
+            {% assign carolyn = site.data.people.people | where : "nameid",
+            "ctinsley" | first %}
+            <h5 class="pt-3 fw400">{{ carolyn.displayname}}</h5>
+            <a
+              href="#TinsleyBio"
+              class="btn btn-outline-light publink fs-5"
+              onclick="toggler('TinsleyBio');"
+            >
+              <i class="pe-2 fa-solid fa-user"></i>Bio</a
+            >
+          </div>
+          <div class="col-4">
             {% assign miranda = site.data.people.people | where : "nameid",
             "mlim" | first %}
-            <h5 class="pt-3 fw400">Dr. Miranda M. Lim, MD, PhD</h5>
+            <h5 class="pt-3 fw400">{{ miranda.displayname}}</h5>
             <a
               href="#LimBio"
               class="btn btn-outline-light publink fs-5"
@@ -74,10 +86,10 @@ studying how sleep affects the brain in health and disease."
             >
           </div>
 
-          <div class="col-6">
+          <div class="col-4">
             {% assign jon = site.data.people.people | where : "nameid",
             "jelliott" | first %}
-            <h5 class="pt-3 fw400">Dr. Jonathan Elliott, PhD</h5>
+            <h5 class="pt-3 fw400">{{ jon.displayname}}</h5>
             <a
               href="#ElliottBio"
               class="btn btn-outline-light publink fs-5"
@@ -178,6 +190,48 @@ studying how sleep affects the brain in health and disease."
     </div>
   </div>
 </section>
+<section class="hidden light-theme" id="TinsleyBio">
+  {% assign carolyn = site.data.people.people | where : "nameid", "ctinsley" | first
+  %}
+  <div class="my-container" data-width="narrow">
+    <div class="d-flex flex-row-reverse">
+      <a
+        href="#Directors"
+        class="btn btn-close position-absolute"
+        style="margin-top: -25px"
+        onclick="toggler('TinsleyBio');"
+      ></a>
+    </div>
+
+    <div class="row">
+      <div
+        class="col-12 col-md-7 order-md-2 mb-3 mb-md-0 d-flex align-items-center"
+      >
+        <div class="director-name">
+          <h4 class="body-color fjalla">SHARP Co-Director</h4>
+          <h1 class="bold display-6">{{ carolyn.displayname}}</h1>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 order-md-1">
+        <img
+          class="img-fluid rounded shadow director-bio-img"
+          src="{{ carolyn.photo }}"
+          alt="Headshot of Dr. Carolyn Tinsley"
+        />
+      </div>
+    </div>
+    <div class="mt-4">{{ carolyn.bio | markdownify }}</div>
+    <div class="text-end pb-4">
+      <a
+        href="#Directors"
+        class="btn btn-outline-dark fs-6"
+        aria-label="Close"
+        onclick="toggler('CarolynBio');"
+        >Close</a
+      >
+    </div>
+  </div>
+</section>
 
 <!-- Card links -->
 <section>
@@ -237,22 +291,34 @@ studying how sleep affects the brain in health and disease."
         >
           <div class="carousel-inner rounded-end">
             {% assign features = site.data.media.media | where : "featured",
-            true %} {% for feature in features %} {% if forloop.first == true %}
+            true %} {% for feature in features limit:5 %} {% if forloop.first == true %}
             <div class="carousel-item active">
               <img
                 src="/images/cardbg1.jpeg"
-                class="d-block img-fluid rel-image dark-filter"
+                class="d-block img-fluid rel-image blue-filter"
                 alt="Abstract teal background"
               />
 
               <div class="overlay-txt px-1 display-6">
-                <div>{{ feature.headline | markdownify }}</div>
+                <div>                  
+                  {% if feature.headline %}
+                  {{ feature.headline | markdownify }}
+                  {% else %}
+                  {{ feature.title}}
+                  {% endif %}
+                </div>
                 <div class="pt-2">
                   <a
                     href="{{ feature.url }}"
                     class="btn btn-outline-light carousel-btn"
-                    >{{ feature.button-text }}</a
-                  >
+                    >
+                    {% if feature.button-text %}
+                    {{ feature.button-text }}
+                    {% elsif
+                    feature.type == "article" or feature.type == "award" %} Read {% elsif
+                    feature.type == "podcast" %} Listen {% elsif feature.type == "video"
+ %} Watch {% endif %}
+                    </a>
                 </div>
               </div>
             </div>
@@ -260,17 +326,29 @@ studying how sleep affects the brain in health and disease."
             <div class="carousel-item">
               <img
                 src="/images/cardbg1.jpeg"
-                class="d-block img-fluid rel-image dark-filter"
+                class="d-block img-fluid rel-image blue-filter"
                 alt="Abstract teal background"
               />
 
               <div class="overlay-txt px-1 display-6">
-                <div>{{ feature.headline | markdownify }}</div>
+                <div>
+                  {% if feature.headline %}
+                  {{ feature.headline | markdownify }}
+                  {% else %}
+                  {{ feature.title}}
+                  {% endif %}
+                </div>
                 <div class="pt-2">
                   <a
                     href="{{ feature.url }}"
                     class="btn btn-outline-light carousel-btn"
-                    >{{ feature.button-text }}</a
+                    >                    
+                    {% if feature.button-text %}
+                    {{ feature.button-text }}
+                    {% elsif
+                    feature.type == "article" or feature.type == "award" %} Read {% elsif
+                    feature.type == "podcast" %} Listen {% elsif feature.type == "video"
+ %} Watch {% endif %}</a
                   >
                 </div>
               </div>

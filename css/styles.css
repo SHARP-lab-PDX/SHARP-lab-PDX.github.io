@@ -420,12 +420,21 @@ strong {
 }
 
 .card-title {
-  background-color: hsla(0, 0%, 0%, 0.75);
   width: 100%;
+  background-color: hsla(204, 64%, 15%, 0.6);
+
+  a {
+    text-shadow: 
+                 1px -1px 10px rgba(0,0,0,0.91);
+  }
 }
 
 .dark-filter {
   filter: brightness(75%);
+}
+
+.blue-filter {
+  filter: hue-rotate(10deg) brightness(75%);
 }
 
 .myhover:hover {
@@ -727,6 +736,10 @@ hr {
     font-size: 1.5rem;
   }
 
+  #Directors .col-4 h5 {
+  font-size: 1rem;
+}
+
   footer {
     font-weight: 300;
   }
@@ -805,6 +818,10 @@ hr {
   .btn-stretch {
     width: 70%;
   }
+
+  #Directors .col-4 h5 {
+  font-size: 1.15rem;
+}
 }
 
 /* Large */
@@ -841,6 +858,10 @@ hr {
   .btn-stretch {
     width: 50%;
   }
+
+  #Directors .col-4 h5 {
+    font-size: 1.25rem;
+}
 }
 
 /* X Large */
