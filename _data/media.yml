@@ -1,4 +1,36 @@
 media:
+  - featured: false
+    title: "Now Playing at PDX Airport! The Science of Sleep: Pacific Northwest
+      Researchers Explore Secrets of a Good Night’s Rest"
+    url: https://hollywoodtheatre.org/pdx-airport/
+    year: "2026"
+    month: November
+    type: article
+    description: >-
+      The Science of Sleep: Pacific Northwest Researchers Explore Secrets of a
+      Good Night’s Rest
+
+
+      By OPB/All Science. No Fiction. Jes Burns and Brandon Swanson
+
+
+      Getting enough sleep is tough for a lot of people: new parents, nightshift workers, soldiers and almost everyone as we age. Scientists in Oregon and Washington have created a headband that uses a quirk of neurobiology to coax your brain into getting better deep sleep.
+    source: Hollywood Theatre
+  - featured: false
+    url: https://news.ohsu.edu/2026/11/16/ohsu-va-portland-study-links-parkinsons-disease-to-agent-orange-exposure
+    description: >-
+      Veterans who directly handled Agent Orange in the Vietnam War are 99% more
+      likely to develop Parkinson’s
+
+
+
+
+      <https://jamanetwork.com/journals/jamaneurology/article-abstract/2856723>
+    title: SHARP Collaborators Link Parkinson’s Disease to Agent Orange Exposure
+    type: article
+    year: "2026"
+    month: November
+    source: JAMA Neurology
   - month: December
     button-text: Listen
     featured: true
@@ -335,35 +367,3 @@ media:
       GLIMPSE-LION study to see if bright-light therapy improves brain function
       to reduce neurodegenerative risk.
     year: "2004"
-  - featured: false
-    url: https://news.ohsu.edu/2026/11/16/ohsu-va-portland-study-links-parkinsons-disease-to-agent-orange-exposure
-    description: >-
-      Veterans who directly handled Agent Orange in the Vietnam War are 99% more
-      likely to develop Parkinson’s
-
-
-
-
-      <https://jamanetwork.com/journals/jamaneurology/article-abstract/2856723>
-    title: SHARP Collaborators Link Parkinson’s Disease to Agent Orange Exposure
-    type: article
-    year: "2026"
-    month: November
-    source: JAMA Neurology
-  - featured: false
-    title: "Now Playing at PDX Airport! The Science of Sleep: Pacific Northwest
-      Researchers Explore Secrets of a Good Night’s Rest"
-    url: https://hollywoodtheatre.org/pdx-airport/
-    year: "2026"
-    month: November
-    type: article
-    description: >-
-      The Science of Sleep: Pacific Northwest Researchers Explore Secrets of a
-      Good Night’s Rest
-
-
-      By OPB/All Science. No Fiction. Jes Burns and Brandon Swanson
-
-
-      Getting enough sleep is tough for a lot of people: new parents, nightshift workers, soldiers and almost everyone as we age. Scientists in Oregon and Washington have created a headband that uses a quirk of neurobiology to coax your brain into getting better deep sleep.
-    source: Hollywood Theatre
